@@ -39,3 +39,142 @@ Den här hemsidan har jag kodat för att söka uppdrag som frontend-utvecklare (
 Tveka inte att höra av dig, du kan maila till tovajertfelt@gmail.com
 
 Tova Jertfelt 2021 - 2022
+
+
+
+
+
+
+
+
+Inlämningsuppgift 2 - Informationssida om tillgänglighet (IG/G)
+
+Din uppgift är att skapa en informationssida om tillgänglighet. Använd er utav bilder, text och/eller illustrationer för att uppnå detta.
+
+Innehåll - Sidan ska tydligt förmedla nedanstående information.
+
+Förklara vad tillgänglighet betyder. KLAR
+
+Förklara vad tillgänglighet på webben innebär. KLAR
+
+Ge minst fem konkreta exempel på hur man skapar tillgänglig design på en webbplats. KLAR 
+
+Ge minst fem konkreta exempel på vad man som frontend-utvecklare kan tänka på för att skapa tillgänglig kod. KLAR
+
+Minst tre länkar till vidareläsning om tillgänglighet. KLAR
+
+Tekniska krav - Sidan ska kodas på följande sätt:
+
+Sidan ska vara responsiv (bilder, text och element ska se bra ut i mobilstorlek och desktop) och CSS:en ska använda sig utav en mobile-first-approach. KLAR
+
+Använd dig utav semantisk HTML. Sidan ska ha en <header> och <footer>-tagg. KLAR
+Din HTML ska valideras. https://validator.w3.org/
+Använd minst två externa typsnitt (fonter) (som du hämtar från t.ex Google Fonts) på din sida. KLAR
+Använd minst två fallback fonts. KLAR
+
+Övrigt
+Du får använda dig utav ren CSS eller Sass.
+
+Senast inlämning 15/12
+
+
+https://webbriktlinjer.se/files/2017/06/resizeproblem.png
+
+https://webbriktlinjer.se/principer/tillganglig/ 
+https://www.visma.se/blogg/webbtillganglighet-vad-ar-det-och-varfor-ar-det-viktigt/
+https://www.metamatrix.se/vad-vi-gor/optimering/tillganglighet-pa-webben/
+
+Google Lighthouse: https://developers.google.com/web/tools/lighthouse
+
+Axe DevTools: https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
+
+
+Ankademin Quiz - JavaScript
+
+Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel.
+
+Kravsättning
+
+- Quizet ska innehålla 10 frågor (KLAR)
+- Användaren ska utöver att besvara frågor för quizet, även kunna byta utseende på sidan till dark mode (dvs mörk bakgrundsfärg med ljus text ) och light mode (ljus bakgrundsfärg med mörk text). (CSS ej obligatoriskt)
+(KLAR))
+
+
+VG = Tre svarsalternativ 
+KRAV:
+
+- Under varje fråga ska det finnas minst tre svarsalternativ. (KLAR)
+
+- Frågorna ska besvaras med <input type=”radio”> för - svarsalternativen. (KLAR)
+
+- Om svaret var korrekt eller inte ska detta INTE skrivas ut direkt när användaren väljer ett svarsalternativ (dvs det ska alltså inte visas något svar) (DET SPARAS TILL SENARE ISTÄLLET) - för de "vanliga frågorna" är detta nu löst, saknas för multiplechoices
+
+- Minst en fråga kan besvaras med flera svar. Svarsalternativen (som ska vara minst tre stycken) ska vara av typen <input type=”checkbox”>. (KLAR)
+
+För att få rätt på denna fråga, behöver samtliga rätta svar vara ifyllda, varken fler eller mindre. (KLAR 1000000 ÅR SENARE) 
+
+- Längst ned i quizet ska det finnas en knapp med texten “Check answers”. (KLAR)
+
+När den klickas på, ska det visas hur många rätt användaren hade (ska skrivas ut i DOM:en). (KLAR)
+Om användaren har över hälften rätt, ska meddelandet stå i orange färg. Om användaren har över 75% rätt, ska meddelandet stå i grön färg. (PÅ G)
+
+- Skapa en “Retry”-knapp som användaren kan klicka på för att spela igen. (KLAR, RELOAD) 
+
+OBS: MINST 3 GITHUBS (KLART)
+
+
+Inlämningsuppgift #2 - Digitalt kösystem (IG/G)
+
+Din uppgift är att ansvara för ett kösystem för incheckning av bagage på Arlanda flygplats. Skapa ett verktyg som hjälper dig visualisera och hålla reda på kön.
+
+Kravställning
+
+1. När applikationen laddas ska kön vara tom. (klar)
+
+2. Det ska finnas en lista med samtliga personer i kön samt vilken plats i kön personen har. (klar)
+
+3. Du ska kunna skriva in en persons namn, och med ett knapptryck placera kunden sist i kön. (klar)
+
+4. Det ska finnas en Fast Track-knapp, som placerar personen längst fram i kön. (klar)
+
+5. När en person har checkat in, ska det gå att klicka på en knapp för att ta bort den första personen i kön. 
+(klar)
+
+6. Om kön är tom, skriv ut meddelandet “There’s currently no people standing in line” på sidan. 
+(klar)
+
+Komprimerad zipfil eller en githublänk som läggs upp i studentportalen
+a) arraymetoder b) dom 
+
+Inlämning senast fredag 22/10
+
+    © 2021 GitHub, Inc.
+
+    Terms
+    Privacy
+    Security
+
+    Inlämningsuppgift 1 - Receptsida (IG/G)
+
+Din uppgift är att skapa en receptsida innehållandes tre recept på för olika maträtter. För att åstadkomma detta bör du använda följande:
+
+HTML
+Varje recept ska innehålla följande
+
+Sidan ska använda sig utav semantiska HTML-taggar.
+Använd minst tre nivåer av rubriker.
+Det ska finnas minst en bild för varje maträtt.
+En onumrerad lista för ingredienser.
+En numrerad lista för vilka steg man tar för att tillaga rätten.
+En faktaruta med en intressant/rolig fakta om maträtten.
+Minst två externa länkar till liknande recept. Dessa ska öppnas i ny flik/fönster.
+HTML-filen ska valideras utan fel på https://validator.w3.org/ .
+
+CSS
+Använd minst två olika typsnitt på sidan.
+Använd minst två bakgrundsfärger/bakgrundsbilder.
+
+Inlämningsmapp i studentportalen skapas på onsdag 17 november. 
+Uppgiften ska lämnas in som .zip-fil alternativt en länk till Github-repository.
+
+Senast inlämnings 24/11

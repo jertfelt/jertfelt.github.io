@@ -1,0 +1,88 @@
+//paragraph texts
+
+.text {
+  font-family: $font--primary;
+  
+  &--light {
+    color: $color--primary--light;
+  }
+
+  &--white{
+    color: $color--white;
+  }
+
+  &--font-black {
+    color: $color--fontblack;
+  }
+
+  &--black {
+    color: $color--black;
+  }
+  &--blue {
+    color: $color--primary--blue;
+  }
+
+  &--dark {
+    background-color: $color--primary--dark;
+  }
+
+  &--pink-light {
+    color:$color--alternative--pink;
+  }
+
+  &--pink-dark {
+    color:$color--alternative--darkerpink;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--cursive {
+    font-style: italic;
+  }
+
+  &--center {
+    text-align: center;
+  }
+  
+  &--left {
+    text-align: left;
+  }
+
+  &--xl {
+    @include font-size(72);
+  }
+
+  &--l {
+    @include font-size(34);
+    @include breakpoint(small-max) {
+      @include font-size(54);
+      line-height: 60px;
+    }
+  }
+  &--m {
+    @include font-size(48);
+  }
+  &--s {
+    @include font-size(22);
+    line-height: 28px;
+    @include breakpoint(small-max) {
+      @include font-size(36);
+      line-height: 42px;
+    }
+  }
+
+  &--xs {
+    @include font-size(18);
+    line-height: 22px;
+    @include breakpoint(small-max) {
+      @include font-size(24);
+      line-height: 30px;
+    }
+  }
+  &--xxs {
+    @include font-size(16);
+    line-height: 25px;
+  }
+}

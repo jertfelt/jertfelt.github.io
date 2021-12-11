@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include font-size(16);
+  font-family: $font--primary;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  &--xlarge{
+    width: 90%;
+  }
+
+  &--large{
+    width:80%;
+  }
+
+  &--medium{
+    width:60%;
+  }
+
+  &--small{
+    width:40%;
+  }
+
+  &--align-right{
+    margin: 0px 0px 0px auto;
+  }
+
+  &--align-left{
+    margin: 0px auto 0px 0px;
+  }
+}
+
+.margin{
+  
+  &--right-xs{ 
+    margin-right: 0.5em;}
+  
+  &--xxs{
+    margin: 0.5em;
+  }
+
+  &--xs{
+    margin:1em;
+  }
+
+  &--s{
+    margin:2em;
+  }
+
+  &--m{
+    margin:3em;
+  }
+  &--lg{
+    margin:4em;
+  }
+  &--xl{
+    margin:6em;
+  }
+  &--xxl{
+    margin: 8em;
+  }
+}
+
+.padding{
+  
+  &--xxs{
+    margin: 0.5em;
+  }
+
+  &--xs{
+    margin:1em;
+  }
+
+  &--s{
+    margin:2em;
+  }
+
+  &--m{
+    margin:3em;
+  }
+
+  &--lg{
+    margin:4em;
+  }
+  &--xl{
+    margin:6em;
+  }
+  &--xxl{
+    margin: 8em;
+  }
+}
+
+.div-hide{
+  overflow:hidden;
+}
+.z-index1 {
+  position: relative;
+  z-index: 1;
+}
+
+.z-index2 {
+  position: relative;
+  z-index: 2;
+}
+
+
+:focus {
+    outline: 0;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+ol {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 2em;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.w{
+  max-width:100%;
+ &--inline-block{
+   display:inline-block;
+ }
+}

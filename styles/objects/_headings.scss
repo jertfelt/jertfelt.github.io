@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-secondary;
+  font-family: $font--heading;
   }
   h1 {
       @include font-size(50);
@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
           @include font-size(72);
       line-height: 72px;
       }
+      text-transform: uppercase;
   }
   
   h2 {
@@ -17,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
           @include font-size(64);
       line-height: 74px;
       }
+      text-transform: uppercase;
   }
   
   h3 {
@@ -40,3 +42,89 @@ h1, h2, h3, h4, h5, h6 {
       @include font-size(16);
   }
   
+
+.heading{
+    font-family: $font--primary;
+  
+    &--xlg{
+        @include font-size(50);
+        line-height: 55px;
+        @include breakpoint(small-max){
+            @include font-size(72);
+        line-height: 72px;
+        }
+    }
+    
+    &--lg {
+        @include font-size(40);
+      line-height: 48px;
+        @include breakpoint(small-max){
+            @include font-size(64);
+        line-height: 74px;
+        }
+    }
+    
+    &--mediumlg {
+        @include font-size(48);
+    }
+    
+    &--regular {
+        @include font-size(22);
+        line-height: 28px;
+        @include breakpoint(small-max) {
+          @include font-size(36);
+          line-height: 42px;
+        }
+    }
+    
+    &--medium {
+         @include font-size(24);
+    }
+    
+    &--small {
+        @include font-size(16);
+    }
+}
+
+.heading--alternative{
+        font-family: $font--alternative;
+       
+        &--xlg{
+            @include font-size(50);
+            line-height: 55px;
+            @include breakpoint(small-max){
+                @include font-size(72);
+            line-height: 72px;
+            }
+        }
+        
+        &--lg {
+            @include font-size(40);
+          line-height: 48px;
+            @include breakpoint(small-max){
+                @include font-size(64);
+            line-height: 74px;
+            }
+        }
+        
+        &--mediumlg {
+            @include font-size(48);
+        }
+        
+        &--regular {
+            @include font-size(22);
+            line-height: 28px;
+            @include breakpoint(small-max) {
+              @include font-size(36);
+              line-height: 42px;
+            }
+        }
+        
+        &--medium {
+             @include font-size(24);
+        }
+        
+        &--small {
+            @include font-size(16);
+        }
+    }
