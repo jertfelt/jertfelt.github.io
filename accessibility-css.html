@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility on the web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;0,900;1,200&family=Open+Sans:ital,wght@0,500;0,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Webbtillgänglighet – vad är det?</h1>
+  </header>
+  <main>
+    <section>
+      <img src="https://www.esri.com/arcgis-blog/wp-content/uploads/2020/07/building-web-accessibility-barriers-guidelines-standards_01.jpg" alt="Visuell representation av olika funktionsvariationer: kognitiv, visuell, hörsel, rörelse och tal." class="desktop">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpkJtJsgOtwfcYNhL3FC6By5YZ01VlULJzA&usqp=CAU" alt="En illustrerad bild med olika  webbläsare, symboler och ett öga som zoomar in, ett öra som lyssnar, en pratbubbla, en spela-knapp." class="not-desktop">
+      <article>
+        <h2>
+          En informationssida för framtida frontend-programmerare, av en framtida frontend-programmerare.
+        </h2>
+      <p>Idag är nästan hela västerländska samhället beroende av digitala medier, så som webbplatser och digitala tjänster. Därför är det oerhört viktigt att webbplatser ska kunna vara tillgängligt för alla - oavsett om du har t.ex. nedsatt hörsel, motorik eller syn. </p>
+      <h3>"Hur många av er har äldre föräldrar som har lite halvdålig syn och som ska göra något på nätet och misslyckas för att de dubbelklickat, klickat fel, eller för att texten är för liten? Min mamma bråkar med alla webbplatser rätt så mycket. Det är med henne i åtanke som jag vill tänka på tillgänglighet."</h3>
+      <p>Vad menar jag när jag säger tillgänglig? Jo: att den ska kunna nås och användas av alla, och att ha en funktionsvariation påverkar hur du som användare kan använda en hemsida. Det är en mänsklig rättighet att kunna använda hemsidor och appar, då det indirekt leder till att alla kan delta - och vara självständiga - och samhället blir mer inkluderande. Min fästman till exempel som är färgblind ska kunna använda och läsa en hemsida, precis som min digitalt analfabetiska mamma.
+      </p>
+      <h3>Du som frontend-programmerare har en viktig roll när det kommer till detta!</h3>
+      <p>
+      Det är i koden som man kan ta funktionsvariation i åtanke, och att man programmerar så att alla kan använda sig av webbläsaren eller appen. Tillgänglighet innebär därför att man gör webbplatser som har en rad saker i åtanke, allt för att inte diskriminera användare.<a href="https://www.w3.org/TR/WCAG20/"> Det finns principer (på engelska) som du kan läsa här.</a> Det ger också en bonus att ha en tillgänglig webbplats: nöjda användare. Samt: Google älskar tillgängliga webbplatser, webbplatsen blir alltså lättare att hitta! 
+      </p>
+      </article>
+      <article>
+        <div class="bildexempel">
+          <img src="https://webbriktlinjer.se/files/2017/06/resizeproblem.png" alt="Exempel på dålig webbtillgänglighet: Text som när den förstorats krockar på varandra. Text som försvinner i sin ram, bara halva texten syns. Svart text som hamnar på en liten bild, knappt synbar.">
+          <p>Bilden ovan visar ett exempel på dålig webbtillgänglighet: text som krockar när skärmar förstoras/förminskas, text som försvinner eller svart text mot mörk bakgrund. </p>
+          <h3>Några exempel på hur man skapar tillgänglig design:</h3>
+        </div>
+        <ol>
+          <li>Gör hemsidan möjlig för hjälpredor (som röststyrningar och skärmläsare).</li>
+          <li>Gör hemsidan lätt att navigera omkring i, ha klickbara ytor och gör kontrasten tydlig.</li>
+          <li>Ha konsekvent struktur, ha tydliga meddelanden. Så om en användare gör fel: låt den få veta hur den ska göra så det blir rätt igen.</li>
+          <li>Ha validerad kod (man kan validera sin kod<a href="https://validator.w3.org/">här!</a>)</li>
+          <li>Ha begriplig text. Ha typsnitt som är anpassad för ändamålet: sans-serif här är absolut bäst, men kan i långa brödtexter vara krånglig. Låt de typsnitt som är dekorativa förbli dekorativa - med möjlighet att byta till ett funktionellt & läsbart typsnitt.</li>
+        </ol>
+      </article>
+      <article>
+      <div>
+      <img src="images/point-finger-right.png" alt="En illustrerad hand som pekar åt höger, mot rubriken som kommer nu:">
+  <h3>Några heads-up för dig som programmerar:</h3></div>
+      <ul>
+        <li>Röststyrning och skärmläsare: innehåll på hemsidan läses upp, och användare kan använda sin röst för att ge kommandon.Märk upp innehållet på hemsidan tydligt - just så tex röstuppläsningen fungerar ordentligt.</li>
+        <li>Se till att texten går att förstora utan problem. Det ska gå att förstora texten till iallafall dubbelt så hög och bred utan att det blir krockar (alltså att texten hamnar på hög eller bakom en bild) Folk kan zooma in hela 200%! </li>
+        <li>Ha en bra kontrast mellan till exempel bakgrund och innehåll, så text blir läsbart oavsett ljusstyrka eller färgblindhet. Använd inte bara färg för att förmedla något!</li>
+        <li>Beskriv med text allting som inte är text, lägg in alt-texter i bilder så att bildens innehåll kan läsas upp, samma sak med illustrationer eller grafiska element som knappar.</li>
+        <li>Se till att man ska kunna navigera med tangentbord och ha klickbara ytor.</li>
+        <li>Nu kan den vaksamme besökaren påpeka: denna hemsida är inte helt tillgänglig! Det stämmer. Den är inte översatt till engelska. Än. Vi jobbar på detta.</li>
+      </ul>
+    </article>
+</section>
+  </main>
+  <footer>
+    <article>
+    <p>Läs mer om webbtillgänglighet här: <br><br>
+<a href="https://webbriktlinjer.se/principer/tillganglig/"> Webbriktlinjer.se</a> <br>
+<a href="https://www.visma.se/blogg/webbtillganglighet-vad-ar-det-och-varfor-ar-det-viktigt/"> Webbtillgänglighet – Vad är det och varför är det viktigt?</a><br>
+<a href="https://www.metamatrix.se/vad-vi-gor/optimering/tillganglighet-pa-webben/">Metamatrix- tillgänglighet på webben</a> <br><br>
+Den här hemsidan är programmerad av Tova Jertfelt 2021</p></article>
+  </footer>
+</body>
+</html>
