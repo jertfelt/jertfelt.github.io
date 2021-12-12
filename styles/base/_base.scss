@@ -122,7 +122,7 @@ body {
 ul {
   margin-top: 0px;
   margin-bottom: 1em;
-  padding-left: 2em;
+  padding:1rem;
 }
 
 ol {
@@ -140,4 +140,9 @@ img {
  &--inline-block{
    display:inline-block;
  }
+}
+
+//night or light-mode
+.lightmode{
+  display:none;
 }

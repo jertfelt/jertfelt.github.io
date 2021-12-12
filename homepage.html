@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="styles/style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Alice&family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <link rel="stylesheet" href="styles/styles.css">
 
   <title>Tova Jertfelt Portfolio</title>
@@ -18,30 +25,68 @@
 <body>
 
 <nav class="nav">
-    <!--kom ihåg flex-->
-<div class="container--xlarge">
+<div class="container--xlarge header">
 
-  <div class="flex-split">
-    <a class="nav-logo-container w--inline-block" href="/" aria-current="page">
-      <img src="styles/img/tova-jertfelt-logo2.png" loading="lazy" alt="logotype Tova Jertfelt" class="logotype--nav">
+  <div class="flex-split padding--xs">
+    <a class="nav-logo-container w--inline-block" href="homepage.html" aria-current="page">
+      <img src="styles/img/tova-jertfelt-logo.png" loading="lazy" alt="logotype Tova Jertfelt" class="logotype--nav">
     </a>
+  <button class="menu-toggle  button-menu mobile" id="menutoggle">
+    <span class="darkmode" aria-label="Mobile Navigation Trigger">
+      <!-- <img src="styles/img/x-mark-white.png" alt="close" class="close-mobile"> -->
+      <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" alt="burger-menu for mobile" class="default-mobile">
+    </span>
+    <!-- <span class="lightmode" aria-label="Mobile Navigation Trigger">
+      <img src="styles/img/x-mark-black.png" alt="close" class="close-mobile">
+      <img src="styles/img/pngkey-darkslateblue.png" alt="burger-menu for mobile" class="default-mobile">
+    </span> -->
+  </button>
+  <ul class="main-menu-mobile drop-down mobile" id="drop-down">
+    <li>
+      <a href="homepage.html" class="text--bold text--dark text--xs text text--center">
+        Hem
+      </a>
+    </li>
+    <li>
+      <a
+        href="cv.html"
+        class="text--bold text--dark text--xs text text--center">
+        CV
+      </a>
+    </li>
+    <li>
+      <a
+        href="cases.html"
+        class="text--bold text--dark text--xs text text--center">
+        Cases
+      </a>
+    </li>
+  </ul>
+</div>
+  <ul class="main-menu desktop">
+    <li>
+      <a href="homepage.html" class="text--bold text--dark text--xs text text--center">
+        Hem
+      </a>
+    </li>
+    <li>
+      <a
+        href="cv.html"
+        class="text--bold text--dark text--xs text text--center">
+        CV
+      </a>
+    </li>
+    <li>
+      <a
+        href="cases.html"
+        class="text--bold text--dark text--xs text text--center">
+        Cases
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>
 
-        <!--För mobil -->
-        <div class="burger-menu"> 
-          <div class="burger-menu-line"></div>
-          <div class="burger-menu-line"></div>
-          <div class="burger-menu-line"></div>
-        </div>
-        <!--för laptop och padda-->
-        <div class="nav-items">
-        <a href="/" aria-current="page" class="nav-item w--current">Start</a>
-        <a href="/about" class="nav-item">About me</a>
-        <a href="/cv" class="nav-item">Experiences</a>
-        <a href="/contact" class="nav-item">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
   <main>
   <div class="page-wrapper">
     <div class="wrapper-img-tova">
@@ -96,8 +141,9 @@
   <!-- slideshow med mina intressen -->
   </main>
   <footer>
+   
     <button id="changebutt" class="button">Change the background!</button>
   </footer>
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

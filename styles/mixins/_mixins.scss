@@ -3,6 +3,7 @@
   font-size: $size-value * 1px;
   font-size: $size-value / 16 * 1rem;
 }
+
 //Flex
 @mixin flexBox($direction, $align, $content) {
   display: flex;
@@ -10,6 +11,7 @@
   align-items: $align;
   justify-content: $content;
 }
+
 //Media queries
 $screen-xs: 600px;
 $screen-sm: 768px;
@@ -20,15 +22,15 @@ $screen-md-menu: 1279px;
 $screen-lg: 1290px;
 $screen-xl: 1450px;
 @mixin breakpoint($canvas) {
-  @if $canvas==xsmall-max {
+  @if $canvas==xsmall-min {
     @media only screen and (min-width: $screen-xs) {
       @content;
     }
-  } @else if $canvas==small-max {
+  } @else if $canvas==small-min {
     @media only screen and (min-width: $screen-sm) {
       @content;
     }
-  } @else if $canvas==small-max-m {
+  } @else if $canvas==small-max {
     @media only screen and (max-width: $screen-sm-max) {
       @content;
     }

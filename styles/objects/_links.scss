@@ -1,0 +1,9 @@
+li{
+  font-family: $font--heading;
+  @include font-size(18);
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
