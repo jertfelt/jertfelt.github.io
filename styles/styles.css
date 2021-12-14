@@ -300,6 +300,42 @@ ol {
   grid-column-gap: 16px;
 }
 
+.border-item--first {
+  width: 80%;
+  border-radius: 54% 46% 52% 48% / 28% 90% 0% 72%;
+}
+
+@media only screen and (max-width: 600px) {
+  .border-item--first {
+    border-radius: 15%;
+    width: 100%;
+  }
+}
+
+.border-item--second {
+  width: 80%;
+  border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .border-item--second {
+    border-radius: 15%;
+    width: 100%;
+  }
+}
+
+.border-item--third {
+  width: 80%;
+  border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .border-item--third {
+    border-radius: 15%;
+    width: 100%;
+  }
+}
+
 .w {
   max-width: 100%;
 }
@@ -747,6 +783,40 @@ h6 {
   text-decoration: none;
 }
 
+.text-button {
+  font-size: 1em;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-button-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-style-button {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-style-button {
+    font-size: 1em;
+  }
+}
+
+.text-style-button--absolute {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
 li {
   font-family: "Arya", Helvetica, sans-serif;
   font-size: 18px;
@@ -969,7 +1039,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .wrapper-img-hero {
-    bottom: 18%;
+    bottom: 30%;
     left: 0%;
     opacity: 0.8;
   }
@@ -1176,7 +1246,7 @@ body {
 .section-cases {
   margin-bottom: 3em;
   padding-left: 3em;
-  padding-right: 3em;
+  padding-right: 2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1190,26 +1260,100 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-column-gap: 3em;
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 600px) {
   .grid-wrapper-cases {
-    margin-top: 20px;
+    margin-top: 30px;
+    grid-row-gap: 2em;
   }
 }
 
 .case-item {
   padding: 2em;
-  text-align: center;
   position: relative;
   background-color: #bee5f5;
-}
-
-.wrapper-button-case-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+}
+
+.case-item h4 {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .case-item h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.case-item p {
+  margin-left: 100px;
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .case-item p {
+    margin-left: 30px;
+  }
+}
+
+.case-item:hover {
+  opacity: 0.3;
+}
+
+.wrapper-button-case-item {
   margin-top: 2em;
+}
+
+.background--palt {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/tova-atelje.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.6);
+}
+
+.background--quiz {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/quiz.jpg);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--recipes {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/html-css-kurs-ex-2.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--accesibility {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/publishing-priset-2.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--queue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/tova-poetry-slam.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
 }
 
 .footer {

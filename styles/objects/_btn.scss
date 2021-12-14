@@ -27,3 +27,32 @@
   width: 70px;
   text-decoration: none;
 }
+
+.text-button{
+  font-size: 1em;
+  text-decoration: none;
+  align-items:center;
+}
+
+.wrapper-button-text{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.text-style-button{
+  @include breakpoint (small-max){
+  font-size: 1em;}
+  font-weight:500;
+  font-family: $font--primary;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  &--absolute{
+    position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  } 
+}
+

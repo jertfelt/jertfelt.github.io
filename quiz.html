@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>The world's best quiz</title>
+</head>
+<body>
+<div class="navigation-top">
+    <button id="changebutt" class="buttonsnav">Change the background!</button>
+    <button id="yestryagain" class="buttonsnav">TRY AGAIN</button>
+</div>
+<div><h1 class="welcome">Welcome to the Disney quiz-bonanza!</h1><div class="disneyicon"><img class="testingskew" src="https://m.media-amazon.com/images/I/71KgYgPdSVL._AC_SX355_.jpg"/></div></div>
+<div id="quizbody">
+  <div>
+    <div id="quizHome">
+    </div>
+<div id="bonusquestions-div"> 
+<div> 
+  <h1>BONUS QUESTIONS</h1>
+<h2>They're EXTRA HARD! But not decisive!</h2>
+<h2>Pick one, or pick all! Leave your one-choice-only behind! Come and join the feat of fools! </h2>
+ <legend for="checkbox1"><p class ="question"><b>Bonus 1: Which ones of these are Disney villains?</b></p></legend></div>
+<br> <span id="question-villains"> <span id="bonusboxspan"><label for="checkboxJafar"class="answers1" ><img src="https://moan.imgix.net/2020/05/img_0370.jpg?auto=compress%2Cformat&fit=crop&h=350&ixlib=php-3.3.0&w=800&wpsize=fp_800_350" width="500"/><br>Jafar from Aladdin</label></span>
+<input type="checkbox" id="checkboxJafar" 
+name="Villains" class="answers2" value="a"/><br><br><span id="bonusboxspan">
+<label for="checkboxBruce" class="answers1"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F03%2Ffinding-nemo.jpg&q=85" width="500"/><br>Bruce from Finding Nemo</label><input type="checkbox" id="checkboxBruce" 
+name="Villains" class="answers2" value="b" /></span><br><br>
+<span id="bonusboxspan">
+<label for="checkboxHades" class="answers1"><img src="https://imgix.bustle.com/rehost/2016/9/13/682525ae-7508-489a-bd33-63f2960eb514.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress" width= "500"/><br>Hades from Hercules
+</label><input type="checkbox" id="checkboxHades" name="Villains" class="answers2" value="c" /></span>
+<br>
+<br>
+<br>
+<legend for="Movies"><p class ="question"><b> Bonus 2: Which ones of these great movies were released in the 80s??</b></p><br><img src="https://thevinylfactory.com/wp-content/uploads/2021/08/rabbit.jpg" id="roundimg" width="500"/></legend><br>
+<input type="checkbox" name="Movies" id="a" class="answers3" value="a"/>
+<label for="a" class="answers1">Tron</label><br>
+<input type="checkbox" name="Movies" id ="b" class="answers3" value="b" />
+<label for="b"class="answers1" >The Great Mouse Detective</label><br>
+<input type="checkbox" name="Movies" id="c" class="answers3" value="c" />
+<label for="c" class="answers1">Who framed Roger Rabbit</label><br>
+<input type="checkbox" name="Movies" id="d" class="answers3" value="d"/>
+<label for="d" class="answers1">Oliver & Company</label><br>
+<input type="checkbox" name="Movies" id="e" class="answers3" value="e" /><label for="e" class="answers1" >The Little Mermaid</label><br>
+<br><br><br>
+</div>
+<div id="result">
+  <style>
+    .parallax{
+  background-image: url("https://www.sockscap64.com/wp-content/uploads/2019/07/120518_f00d1e5f6abd4d6c9793.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    </style>
+    <div class="parallax"></div>
+    <div style="height:20px; ">
+  </div>
+  <br>
+<iframe src="https://open.spotify.com/embed/track/0ZEic4I5VKilpcfzKpCoSw?theme=0" width="50%" height="50" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+<span id="textkingoffools">
+    <p>Here it is, the moment you've been waiting for!
+    <br>
+    Here it is, you know exactly what's in store!<br>
+    Now's the time we laugh until our sides get sore!
+    <br></span>
+    <h1>
+    Now's the time we crown the King of Fools:</p></h1>
+    <button id="check"> Check my answers</button>
+<div id="reveal">
+</div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>

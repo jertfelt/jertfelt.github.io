@@ -151,6 +151,32 @@ ol {
   grid-column-gap: 16px;
 }
 
+.border-item{
+  
+  &--first{
+  @include breakpoint(xmall-max)
+  {border-radius: 15%;
+  width:100%;}
+  width:80%;
+  border-radius:54% 46% 52% 48% / 28% 90% 0% 72%;}
+
+  &--second{
+    @include breakpoint(xmall-max)
+    {border-radius: 15%;
+      width:100%;}
+    width:80%;
+   border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; 
+  }
+
+  &--third{
+    @include breakpoint(xmall-max)
+    {border-radius: 15%;
+    width:100%;}
+    width:80%;
+    border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
+  }
+}
+
 .w{
   max-width:100%;
 
@@ -206,8 +232,10 @@ position: relative;
 
 .drop--red{
   filter: drop-shadow(.5rem .5rem 1rem $color--red)
+  //se över för mobil! 
 }
 
 .drop--blue {
   filter: drop-shadow(0 6mm 4mm $color--primary--blue);
+  //se över för mobil! 
 }

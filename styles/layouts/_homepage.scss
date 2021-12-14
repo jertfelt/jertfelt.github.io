@@ -10,9 +10,10 @@ body{
   top:0%;
   bottom:28%;
   @include breakpoint(xmall-max){ 
-    bottom:18%;
+    bottom:30%;
     left:0%;
     opacity:0.8;
+    
   }
 img {
   position:relative;
@@ -144,28 +145,98 @@ img:hover{
 .section-cases{
   margin-bottom:3em;
   padding-left:3em;
-  padding-right:3em;
+  padding-right:2em;
   h2{
     @include breakpoint(xmall-max){margin-bottom:-10px;
     }
   }
 }
+
 .grid-wrapper-cases{
   grid-row-gap: 3em;
   grid-template-columns:1fr;
   grid-column-gap: 3em;
-  @include breakpoint(xmall-max){margin-top:20px;
+  margin-top:50px;
+  @include breakpoint(xmall-max){
+    margin-top:30px;
+    grid-row-gap: 2em;
   }
 }
 
 .case-item{
   padding:2em;
-  text-align:center;
   position:relative;
   background-color:$color--primary--light;
+  display: flex;
+  text-align:center;
+
+  h4{
+    margin-left:50px;
+    @include breakpoint (xmall-max){
+      margin:0;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }  
+
+  p{
+    margin-left:100px;
+    @include breakpoint (xmall-max){
+    margin-left:30px;
+    }
+    max-width:70%;
+  }
+  
+}
+  
+
+.case-item:hover{
+  opacity: 0.3;
 }
 
+
 .wrapper-button-case-item{
-  display:flex;
   margin-top:2em;
+}
+
+.background{
+  &--palt{
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/tova-atelje.png);
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .6);
+  }
+
+  &--quiz{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/quiz.jpg);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+
+  &--recipes{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/html-css-kurs-ex-2.png);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+
+  &--accesibility{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/publishing-priset-2.png);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+
+  &--queue{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/tova-poetry-slam.png);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
 }
