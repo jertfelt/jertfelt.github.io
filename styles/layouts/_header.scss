@@ -1,11 +1,28 @@
+header {
+  position:fixed;
+  top:0; 
+  width:100%;
+  z-index:100;
+  img {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .line{
+    @include breakpoint(xmall-max){ 
+      display:none;
+    }
+  }
+}
 .nav{
   background-color: transparent;
   opacity:1;
   transform: translate3d(0+x, 0%, 0px);
   text-align: right;
-  position: sticky;
-  top: 0;
   z-index: 100;
+  @include breakpoint(xmall-max){ 
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
 }
 
 .flex-split{
@@ -21,25 +38,21 @@
   transition-delay: 0s;
   img {
     border-radius:50%;
+    @include breakpoint(xmall-max){
+      width:40px;
+      margin-right:0px;
+    }
   }
+
 }
-// #mobile-view{
-//   @include flexBox(row, center, space-between);
-// }
+.logotype--nav:hover {
+  opacity: 0.8;
+  
+} 
 .mobile{
  @include breakpoint(small-min){
    display:none;
  }
-}
-
-.desktop{
-  @include breakpoint(small-max){
-    display:none;
-  }
-}
-
-.close-mobile{
-  display:none;
 }
 
 .main-menu-mobile{
@@ -77,3 +90,31 @@
   display:none;
 }
 
+.main-menu {
+  @include breakpoint (medium-min){
+    max-width:20%;
+  }
+  @include breakpoint (medium-max){
+    max-width:30%;
+    margin-left:1rem;
+  }
+
+  flex-basis:100%;
+  @include flexBox(row, flex-end, space-between);
+  a{
+  text-transform: uppercase;
+  @include breakpoint(small-max){
+    display:none;
+  }
+  @include breakpoint (medium-min){
+    margin-left:1rem;
+  }
+  }
+  a:hover{
+    color: $color--white;
+    text-transform: uppercase;
+  }
+  a.active {
+    font-size: 150%;}
+  
+}

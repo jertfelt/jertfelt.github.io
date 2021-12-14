@@ -22,7 +22,12 @@ $screen-md-menu: 1279px;
 $screen-lg: 1290px;
 $screen-xl: 1450px;
 @mixin breakpoint($canvas) {
-  @if $canvas==xsmall-min {
+  @if $canvas==xmall-max{
+    @media only screen and (max-width: $screen-xs){
+      @content;
+    }
+  }
+  @else if $canvas==xsmall-min {
     @media only screen and (min-width: $screen-xs) {
       @content;
     }
@@ -42,7 +47,13 @@ $screen-xl: 1450px;
     @media only screen and (max-width: $screen-md) {
       @content;
     }
-  } @else if $canvas==medium-max-menu {
+  } @else if $canvas==medium-min {
+    @media only screen and (min-width: $screen-md) {
+      @content;
+    }
+  }
+  
+  @else if $canvas==medium-max-menu {
     @media only screen and (max-width: $screen-md-menu) {
       @content;
     }

@@ -1,0 +1,18 @@
+.footer {
+    flex-shrink: 0;
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background-color:$color--black;
+   color: $color--primary--light;
+   @include flexBox(column,center,center);
+   a{
+     color: $color--primary--light;
+   }
+   a:hover{
+     color: $color--white;
+     font-size:120%;
+   }
+  }

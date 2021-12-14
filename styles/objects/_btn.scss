@@ -18,6 +18,10 @@
     width:80%;
     height:10px;
   }
+  @include breakpoint(xmall-max){
+    width:40px;
+    margin-right:0px;
+  }
 }
 .button-menu:hover {
   width: 70px;

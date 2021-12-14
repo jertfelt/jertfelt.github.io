@@ -65,20 +65,20 @@
     @include font-size(48);
   }
   &--s {
-    @include font-size(22);
-    line-height: 28px;
+    @include font-size(36);
+    line-height: 42px;
     @include breakpoint(small-max) {
-      @include font-size(36);
-      line-height: 42px;
+      @include font-size(22);
+      line-height: 28px;
     }
   }
 
   &--xs {
-    @include font-size(18);
-    line-height: 22px;
+    @include font-size(24);
+    line-height: 30px;
     @include breakpoint(small-max) {
-      @include font-size(24);
-      line-height: 30px;
+      @include font-size(18);
+      line-height: 22px;
     }
   }
   &--xxs {

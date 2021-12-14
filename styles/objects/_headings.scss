@@ -26,11 +26,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h4 {
-      @include font-size(22);
-      line-height: 28px;
+      @include font-size(36);
+      line-height: 42px;
       @include breakpoint(small-max) {
-        @include font-size(36);
-        line-height: 42px;
+        @include font-size(22);
+        line-height: 28px;
       }
   }
   
@@ -41,7 +41,31 @@ h1, h2, h3, h4, h5, h6 {
   h6 {
       @include font-size(16);
   }
+
+.light {
+    color:$color--primary--light;
+}
+
+
+.align-right{
+    text-align:right;
+}
   
+.heading-homepage{
+    font-family: 
+    $font--heading;
+        @include font-size(72);
+        line-height: 72px;
+    @include breakpoint(small-max){     
+    @include font-size(50);
+        line-height: 55px;
+        }
+    @include breakpoint(xmall-max){
+        @include font-size(40);
+        line-height: 32px;}
+     text-transform: uppercase;
+
+}
 
 .heading{
     font-family: $font--primary;
@@ -112,11 +136,11 @@ h1, h2, h3, h4, h5, h6 {
         }
         
         &--regular {
-            @include font-size(22);
-            line-height: 28px;
+            @include font-size(36);
+            line-height: 42px;
             @include breakpoint(small-max) {
-              @include font-size(36);
-              line-height: 42px;
+              @include font-size(22);
+              line-height: 20px;
             }
         }
         

@@ -13,7 +13,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Alice&family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -23,23 +23,41 @@
 
 </head>
 <body>
-
-<nav class="nav">
+  
+<header>
+ <nav class="nav">
 <div class="container--xlarge header">
 
   <div class="flex-split padding--xs">
     <a class="nav-logo-container w--inline-block" href="homepage.html" aria-current="page">
       <img src="styles/img/tova-jertfelt-logo.png" loading="lazy" alt="logotype Tova Jertfelt" class="logotype--nav">
     </a>
+    <ul class="main-menu">
+      <li>
+        <a href="homepage.html" class="text--bold text--bold text--light text--xs text text--center active">
+          Hem
+        </a>
+      </li>
+      <li>
+        <a
+          href="cv.html"
+          class="text--bold text--light text--xs text text--center">
+          CV
+        </a>
+      </li>
+      <li>
+        <a
+          href="cases.html"
+          class="text--bold text--light text--xs text text--center">
+          Cases
+        </a>
+      </li>
+    </ul>
   <button class="menu-toggle  button-menu mobile" id="menutoggle">
     <span class="darkmode" aria-label="Mobile Navigation Trigger">
-      <!-- <img src="styles/img/x-mark-white.png" alt="close" class="close-mobile"> -->
       <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" alt="burger-menu for mobile" class="default-mobile">
     </span>
-    <!-- <span class="lightmode" aria-label="Mobile Navigation Trigger">
-      <img src="styles/img/x-mark-black.png" alt="close" class="close-mobile">
-      <img src="styles/img/pngkey-darkslateblue.png" alt="burger-menu for mobile" class="default-mobile">
-    </span> -->
+
   </button>
   <ul class="main-menu-mobile drop-down mobile" id="drop-down">
     <li>
@@ -63,87 +81,132 @@
     </li>
   </ul>
 </div>
-  <ul class="main-menu desktop">
-    <li>
-      <a href="homepage.html" class="text--bold text--dark text--xs text text--center">
-        Hem
-      </a>
-    </li>
-    <li>
-      <a
-        href="cv.html"
-        class="text--bold text--dark text--xs text text--center">
-        CV
-      </a>
-    </li>
-    <li>
-      <a
-        href="cases.html"
-        class="text--bold text--dark text--xs text text--center">
-        Cases
-      </a>
-    </li>
-  </ul>
 </div>
-</nav>
-
-  <main>
-  <div class="page-wrapper">
-    <div class="wrapper-img-tova">
-        <img src="https://media-exp1.licdn.com/dms/image/C5603AQGe7kDY3TALWw/profile-displayphoto-shrink_800_800/0/1517499072758?e=1643241600&v=beta&t=xG368L45H59THbrmYhgBxWOl5aVe5Z1qNjOsNxgki_c" alt="Svartvit bild på Tova som tittar in i kameran" class="tova" loading="lazy"  sizes="(max-width: 480px) 100vw, (max-width:991px) 36vw, 24vw" srcset="https://media-exp1.licdn.com/dms/image/C5603AQGe7kDY3TALWw/profile-displayphoto-shrink_800_800/0/1517499072758?e=1643241600&v=beta&t=xG368L45H59THbrmYhgBxWOl5aVe5Z1qNjOsNxgki_c">
+ </nav>
+ <div class="line"></div>
+</header>
+<main>
+  
+<div class="page-wrapper">
+    <div class="wrapper-img-hero container--medium padding--lg z-index1 drop--blue">
+        <img src="styles/img/tova-linkedin-portratt.png" alt="Svartvit bild på Tova som tittar in i kameran" class="img-skew" 
+        loading="lazy"/>
     </div>
+ <section class="section-tova z-index2">
+  <div class="container-xlarge padding--s ">
+  <div class="div-hide margin-bottom-small ">
+    <h1 class=" heading-homepage light overflow ">Multidisciplinär</h1>
   </div>
-  <section class="section-tova">
-<div class="container-xlarge">
   <div class="div-hide margin-bottom-small">
-    <h1 class="heading">Multidisciplinär</h1>
-  </div>
-  <div class="div-hide margin-bottom-small">
-    <div class="heading-xl text-align-right">kreativ</div>
+    <div class="light heading-homepage align-right">& Kreativ</div>
   </div>
   <div class="div-hide">
-  <div class="heading-xl">frontendare</div>
+  <div class="light heading-homepage ">Frontendare 
   </div>
-  <a href="#contact" class="button-oval-icon-xlarge bg-blue">
-    <div class="div-relative div-hide">
-      <img src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd9df77c2423_icon-arrow-white.svg" alt="" id="buttonscroll" class="icon-2">
-    </div>
-  </a>
-</div>
-  </section>
-  <section id="whoamI" class="section-whoamI">
-    <div class="margin-top-medium w-row">
-    <div class="container-xlarge">
-      <div class="w-layout-grid grid-wrapper-whoamI">
-      <div id="w" class="div-hide padding-right-xxsmall">
-        <div class="heading-xl">DET HÄR</div>
-        <div class="spacer-mobile-0"></div>
-        <div class="spacer-mobile-0"></div>
-      <div id="w2" class="div-hide margin-left-small no-margin-mobile">
-          <div class="heading-xl text-align-right">ÄR JAG:</div>
-      </div>
-      </div>
-      <div class="margin-top-medium w-row">
-        <div class="col-whoamI-1 w-col1 w-col-4">
-          <p class="text-color-white">Mitt namn är Tova Jertfelt. Jag har en kandidatexamen från Konstfack i Grafisk Design & Illustration, och har sedan dess jobbat med bland annat webb, copy, kommunikation, som digital producent, som webb- & bildredaktör, fotograf, layoutare och som frilansande konstnär, illustratör och ibland animatör. Jag har till exempel formgivit grafiska profiler <i>(med UX-perspektiv)</i>, gjort logotyper, ritat serier & illustrerat nyheter i tidningar.</p>
-        </div>
-        <div class="w-col w-col-2"></div>
-        <div class="col-whoamI-2 w-col2 w-col-4">
-          <p class="text-color-white">
-            Listan på mina tidigare erfarenheter inom bl.a. design är lång. Trots kreativa, utmanande och roliga yrkesroller så fann jag mig själv sökandes. Till slut hittade jag hem: jag älskar programmering! Jag älskar att jag nu kan få kombinera mina tre styrkor: problemlösning, kreativitet, och osläckta nyfikenhet.
-            </p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- slideshow med mina intressen -->
+<section 
+id="whoamI" 
+class="section-whoamI">
+    <div class="container--xlarge padding--m">
+      <div class="w-layout-grid grid-wrapper-whoamI">
+        <div id="about-me" class="div-hide">
+          <h2 class="heading-homepage text--blue">OM MIG:</h2>
+        </div>
+      </div>
+
+      <div class="margin-top-medium w-row mobile--margin">
+        <div class="col-who-am-I-1 w--col1">
+          <p class="text--white text">Mitt namn är Tova Jertfelt. Jag har en kandidatexamen från Konstfack i Grafisk Design & Illustration, och har sedan dess jobbat med bland annat webb, copy, kommunikation, som digital producent, som webb- & bildredaktör, fotograf, skribent, layoutare och som frilansande grafisk formgivare, projektledare, konstnär, illustratör och ibland animatör. Jag har till exempel formgivit grafiska profiler (med UX-perspektiv), gjort logotyper, skapat mallar åt sociala medier, formgett årsrapporter, ritat serier & illustrerat nyheter i tidningar.</p>
+          <p class="text--white text"> Trots kreativa, utmanande och roliga yrkesroller så fann jag mig själv sökandes. Till slut hittade jag hem: jag älskar programmering! </p>
+        </div>
+
+        <div class="w--col1 w--col2"></div>
+        <div class="col-who-am-I-2 w-col2 w-col-4">
+            <h3 class=" 
+            heading--alternative heading--alternative--regular text--light text text--cursive text--bold">Jag älskar att jag nu kan få kombinera mina tre styrkor: problemlösning, kreativitet, osläckta nyfikenhet.</h3>
+        </div>
+
+        <div class="col-who-am-I-1 w--col1">
+          <p class="text--white text"> 
+            Sedan hösten 2021 går jag på Nackademins YH-utbildning för frontend-programmering. 
+            Studierna är fokuserade på javascript och webben, med kurser som går igenom CMS, javascript, HTML och CSS (samt tex SASS), grafikverktyg och att jobba i projekt. Jag själv gillar agila projekt, det är jag van med sedan tidigare i livet.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="section-key-figures">
+    <div class="container--xlarge">
+      <div class="line"></div>
+      <div class="cols-key-figures w-row">
+        <div class="col-key-figures-content w-col w-col6">
+          <div class="w-layout-grid grid-wrapper-key-figures">
+            <div>
+            <h4 class="text--light">9</h4>
+            <p class="text--white margin-top-xxsmall text--xs">
+            års erfarenhet av grafisk formgivning (främst digital) som frilansare och anställd
+            </p>
+            </div>
+            <div>
+            <h4 class="text--light">2018</h4>
+            <p class="text--white margin-top-xxsmall text--xs">
+             vinnare av Publishingpriset för longread-sajten "Omvärlden Berättar" (webbredaktör)
+            </p>
+            </div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+</section>
+<section class="section-cases">
+  <div class="container--xlarge">
+     <div class="div-hide">
+       <h2 class="text--light">Jag letar efter praktik</h2>
+     </div>
+     <div class="margin-top-medium w-row">
+        <div class="col-who-am-I-1 w--col1">
+        <p class="text--white text">Jag letar efter ett ställe, kan vara företag, byrå eller konsultbyrå, som har en givande atmosfär och bra samarbete, och som uppmuntrar till lärande. Jag tror att om man ska komma framåt i den här branschen så ligger mycket på att vilja lära sig mer, att kunna variera sig, öka sin förståelse, och att våga kombinera olika skills. Jag letar efter kollegor som är hjälpsamma mot varandra, prestigelösa, och som har tålamod. Jag vill samarbeta med andra, och vill kunna bolla lösningar med andra med mer erfarenhet än jag själv, samtidigt som jag hoppas på att på sikt kunna bidra med mina kunskaper till andra. Jag är inte intresserad av att vara den som ansvarar för kaffet på min praktikplats, utan jag vill bli tagen på allvar och få kunna bli utmanad, och kunna utvecklas så jag kan göra bra ifrån mig.</p>
+        </div>
+      </div>
+      <div class="div-hide">
+        <h2 class="text--light">CASES:</h2>
+      </div>
+      <div class="w-layout-grid grid-wrapper-cases">
+        <div class="w-dyn-list" role="list">
+          <div class="w-dyn-item" role="listitem">
+            <div class="case-item">
+              <div class="case-number">
+                <h4 class="text--font-black">Quiz i Javascript</h4>
+                <p class="text--font-black text margin-top--xxsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nam!</p>
+                <div class="wrapper-button-case-item">
+                  <!-- <a href="/expertises/intellectual-property" class="text-button w-inline-block"><div class="wrapper-button-text"><div class="text-style-button text-color-black">see more</div><div class="text-style-button-absolute text-color-black" style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); transform-style: preserve-3d;">see more</div></div><img src="https://uploads-ssl.webflow.com/6160407763f5cd74b27c2405/6160407763f5cd15737c241e_icon-arrow-black-diag.svg" loading="lazy" alt="" class="text-button-icon"></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+  
   </main>
-  <footer>
-   
-    <button id="changebutt" class="button">Change the background!</button>
+  <footer class="footer">
+    <adress>
+        <div class="line"></div>  
+      <br>
+      <a href="mailto:tovajertfelt.gmail.com">tovajertfelt@gmail.com </a>
+      <br/>
+  
+      <!-- <button id="changebutt" class="button">Change the background!</button> -->
+       <div class="line"></div>
+    </adress>
+    
   </footer>
   <script src="script.js"></script>
+</div>
 </body>
 </html>
