@@ -12,17 +12,22 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h2 {
-      @include font-size(40);
-    line-height: 48px;
+      @include font-size(64);
+    line-height: 74px;
       @include breakpoint(small-max){
-          @include font-size(64);
-      line-height: 74px;
+          @include font-size(40);
+      line-height: 48px;
       }
       text-transform: uppercase;
   }
   
   h3 {
-      @include font-size(48);
+    @include font-size(40);
+    line-height: 48px;
+      @include breakpoint(small-max){
+        @include font-size(32);
+    line-height: 33px;
+    }
   }
   
   h4 {
@@ -45,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 .light {
     color:$color--primary--light;
 }
-
 
 .align-right{
     text-align:right;
