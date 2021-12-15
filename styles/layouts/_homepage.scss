@@ -207,10 +207,6 @@ position: relative;
 }
 
 .homepage__slider{
-
-  h3:hover{
-    color: $color--primary--blue;
-  }
   padding:1rem;
   background-color: $color--primary--dark;
   margin-bottom:0;
@@ -221,18 +217,20 @@ position: relative;
   width:80%;
   line-height: 1.3em;}
     @include breakpoint( medium-tablet-max){
+
     h3{
       margin-top:0rem;
     }
-    background-color: $color--fontblack;
     padding:2rem;
     max-width:40%;
     margin-top:2rem;
     }
   .mySlides{
-    @include breakpoint( medium-tablet-max){
-    height:300px;
-  max-height:100%;}
+   height:260px;
+   @include breakpoint(small-max)
+   {max-height:400px;}
+  
+   }
    .slide__link{
      text-align:center;
      margin-top:1rem;
@@ -240,19 +238,18 @@ position: relative;
      margin-bottom:1em;
      &:hover{
        font-size:1.8em;
-       color: $color--primary--blue;}
+     }
    }
-
-  }
-
+  
 }
 
 .section-cases{
-  margin-bottom:3em;
+  margin-bottom:5em;
   padding-left:3em;
   padding-right:2em;
-  h2{
-    @include breakpoint(xmall-max){margin-bottom:-10px;
+  h3{
+    @include breakpoint(small-max){text-align:center;
+      margin-top:20px;
     }
   }
   
@@ -267,6 +264,10 @@ position: relative;
     margin-top:30px;
     grid-row-gap: 2em;
   }
+  @include breakpoint(small-max){
+    padding:2rem;
+    @include flexBox(column,center,center);
+}
 }
 
 .case-item{
@@ -275,13 +276,11 @@ position: relative;
   background-color:$color--primary--light;
   display: flex;
   text-align:center;
-
   h4{
-    margin-left:50px;
+    margin-left:150px;
     @include breakpoint (xmall-max){
-      margin:0;
+      margin:2rem;
       text-transform: uppercase;
-      font-weight: bold;
     }
   }  
 
@@ -289,16 +288,17 @@ position: relative;
     margin-left:100px;
     @include breakpoint (xmall-max){
     margin-left:30px;
+    line-height:1.8rem;
+    font-weight:bold;
     }
     max-width:70%;
   }
-  
 }
-  
 
 .case-item:hover{
   opacity: 0.3;
 }
+
 
 
 .wrapper-button-case-item{
@@ -311,7 +311,7 @@ position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/styles/img/palt-screenshot.png);
-  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .6);
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .8);
   }
 
   &--quiz{
@@ -344,6 +344,45 @@ position: relative;
     background-position: center;
     background-image: url(/styles/img/tova-poetry-slam.png);
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+}
+
+
+.col-content-contact{
+  background-color: $color--primary--dark;
+  width:100%;
+  margin-bottom:3rem;
+  padding:3rem;
+  padding-bottom:5em;
+  @include breakpoint(small-max){
+    padding:2rem;
+    @include flexBox(column,center,center);
+}
+  @include flexBox(column,flex-start,center);
+  position: relative;
+  z-index: 1;
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-4deg);
+    transform-origin: 0% 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
   }
 }
 

@@ -1,18 +1,50 @@
 .footer {
-    flex-shrink: 0;
-    position:fixed;
-   left:0px;
-   bottom:0px;
-   height:60px;
-   width:100%;
-   background-color:$color--black;
+  margin-top:7rem;
+  position: relative;
+  z-index: 1;
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-4deg);
+    transform-origin: 0% 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
+  }
+
+  @include flexBox(row,center,center);
+  @include breakpoint(medium-tablet-max){
+    @include flexBox(row,center,flex-end);
+    padding-right:3em;
+  }
+   background-color: $color--primary--dark;
+   width:100%;;
    color: $color--primary--light;
-   @include flexBox(column,center,center);
+
    a{
-     color: $color--primary--light;
+     text-transform: uppercase;;
+    color: $color--primary--light;
+    line-height:2em;
    }
    a:hover{
      color: $color--white;
      font-size:120%;
+     text-transform:lowercase;
    }
   }
+
+

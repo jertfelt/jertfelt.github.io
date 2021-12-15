@@ -110,6 +110,9 @@ margin-bottom: 2em;
   &--xxl{
     margin: 8em;
   }
+  &--right-xxsmall{
+    padding-right: 0.5em
+  }
 }
 
 .div-hide{
@@ -155,14 +158,14 @@ ol {
   
   &--first{
   @include breakpoint(xmall-max)
-  {border-radius: 15%;
+  {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
   width:100%;}
   width:80%;
   border-radius:54% 46% 52% 48% / 28% 90% 0% 72%;}
 
   &--second{
     @include breakpoint(xmall-max)
-    {border-radius: 15%;
+    {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
       width:100%;}
     width:80%;
    border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; 
@@ -170,7 +173,7 @@ ol {
 
   &--third{
     @include breakpoint(xmall-max)
-    {border-radius: 15%;
+    {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
     width:100%;}
     width:80%;
     border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
@@ -182,6 +185,12 @@ ol {
 
  &--inline-block{
    display:inline-block;
+ }
+
+ &--col{
+   position: relative;
+   float:left;
+   min-height:1px;
  }
 
  &--col1{
