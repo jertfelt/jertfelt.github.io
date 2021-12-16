@@ -1,0 +1,76 @@
+.main__cv{
+  background-color:$color--primary--light;
+  min-height:300vh;
+  max-height:900vh;
+  height:100%;
+  padding-bottom:8rem;
+}
+.CV-title{
+  padding-top:1rem;
+  @include flexBox(column,center,center);
+}
+
+.grid-wrapper-jobs{
+  padding-bottom:2em;
+  grid-row-gap: 3em;
+  grid-template-columns:1fr;
+  grid-column-gap: 3em;
+  margin-top:-50px;
+  
+  @include breakpoint (extra-large){
+    padding-bottom:5em;
+    }
+    @include breakpoint(xmall-max){
+    margin-top:30px;
+    grid-row-gap: 2em;
+    }
+    @include breakpoint(small-max){
+    padding:1rem;
+    }
+    @include breakpoint(small-min){
+    padding:3rem;
+    margin-left:3rem;
+    }
+
+  }
+
+
+.middle{
+  width:90%;
+  padding-bottom: 20px;
+  margin-top:1rem;
+  h3{
+    border-left: solid 0 $color--black;
+    transition: all 200ms ease-in;
+  }
+  a {
+    cursor: pointer;
+
+  }
+  .job{
+    background-color:$color--white;
+    padding:1rem;
+    margin-bottom:2rem;
+    width: 100%;
+    h3{
+      margin-right:3rem;
+      margin-bottom:1rem;
+    }
+    &:hover h3 {
+      border-left: solid 50px($color--primary--dark);
+      padding-left:1rem;
+      transition: all 100ms ease-in;
+    }
+    p {
+      margin: 6px 0;
+    }
+  &--blue{
+    background: $color--primary--blue;
+    padding:1rem;
+    margin-bottom:2rem;
+    width: 100%;
+
+  }
+  
+  }
+}

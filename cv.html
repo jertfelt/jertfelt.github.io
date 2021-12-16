@@ -1,92 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Document</title>
+
+  <link rel="icon" href="/styles/img/favicon.ico">
+  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/styles/img/tova-jertfelt-logo2.png" sizes="144x144">
+
+  <title>Tova Jertfelt Portfolio</title>
+
 </head>
-<body>
-  <header>
-    <nav class="nav">
-    <div class="container--xlarge header">
-    
-      <div class="flex-split padding--xs">
-        <a class="nav-logo-container w--inline-block" href="homepage.html" aria-current="page">
-          <img src="styles/img/tova-jertfelt-logo.png" loading="lazy" alt="logotype Tova Jertfelt" class="logotype--nav">
+<main>
+  
+<header>
+ <nav class="nav">
+  <div class="container--xlarge header">
+    <div class="flex-split padding--xs">
+        <a class="nav-logo-container w--inline-block" 
+          href="homepage.html"
+          aria-current="page">
+          <img src="styles/img/tova-jertfelt-logo.png" 
+            loading="lazy" 
+            alt="logotype Tova Jertfelt" 
+            class="logotype--nav"/>
         </a>
         <ul class="main-menu">
           <li>
-            <a href="homepage.html" class="text--bold text--bold text--light text--xs text text--center ">
-              Hem
+            <a href="homepage.html" 
+            class="text--bold text--bold text--light text--xs text text--center active">
+            Hem
             </a>
           </li>
           <li>
             <a
-              href="cv.html"
-              class="text--bold text--light text--xs text text--center active">
-              CV
+             href="cv.html"
+             class="text--bold text--light text--xs text text--center">
+            CV
             </a>
           </li>
           <li>
             <a
-              href="cases.html"
-              class="text--bold text--light text--xs text text--center">
-              Cases
+            href="cases.html"
+            class="text--bold text--light text--xs text text--center">
+            Cases
             </a>
           </li>
         </ul>
-      <button class="menu-toggle  button-menu mobile" id="menutoggle">
-        <span class="darkmode" aria-label="Mobile Navigation Trigger">
-          <!-- <img src="styles/img/x-mark-white.png" alt="close" class="close-mobile"> -->
-          <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" alt="burger-menu for mobile" class="default-mobile">
-        </span>
-    
-      </button>
-      <ul class="main-menu-mobile drop-down mobile" id="drop-down">
-        <li>
-          <a href="homepage.html" class="text--bold text--dark text--xs text text--center">
-            Hem
-          </a>
-        </li>
-        <li>
-          <a
-            href="cv.html"
-            class="text--bold text--dark text--xs text text--center">
-            CV
-          </a>
-        </li>
-        <li>
-          <a
-            href="cases.html"
-            class="text--bold text--dark text--xs text text--center">
-            Cases
-          </a>
-        </li>
-      </ul>
+  <button class="menu-toggle button-menu mobile" 
+          id="menutoggle">
+    <span class="darkmode">
+      <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" 
+            alt="burger-menu for mobile" 
+            class="default-mobile">
+    </span>
+
+  </button>
+  <ul class="main-menu-mobile drop-down mobile" 
+      id="drop-down">
+    <li>
+      <a href="homepage.html" 
+         class="text--bold text--dark text--xs text text--center">
+        Hem
+      </a>
+    </li>
+    <li>
+      <a
+        href="cv.html"
+        class="text--bold text--dark text--xs text text--center">
+        CV
+      </a>
+    </li>
+    <li>
+      <a
+        href="cases.html"
+        class="text--bold text--dark text--xs text text--center">
+        Cases
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+ </nav>
+ <div class="line"></div>
+</header>
+<main class="main__cv">
+<section class="CV-title padding--lg">
+  <div class="container--xlarge">
+    <div class="logo--and--title">
+      <h1 class="text--dark">CV</h1>
     </div>
+  </div>
+</section>
+
+<section class="cv">
+  <div class="container--large">
+  <div class="grid-wrapper-jobs w--col1">
+    <h2 class="text--dark">Jobb:</h2>
+      <div class="section middle wrapper-job w--col1">
+
+        <div class="job drop--blue">
+        <h3 class="text--dark">Frilans</h3>
+          <span class="text-xxs">Januari 2014 - Pågående</span>
+        <p class="text--xs text--bold text--cursive">Frilansande formgivare & illustratör</p>
+        <p class="text--xxs text--font-black">Jag har gjort allt från animationer till böcker, film, rapporter och grafiska profiler till förlag, organisationer, tidningar och privatpersoner.<br><a class="text--bold" href="https://www.tovajertfelt.com"> Se mer här.</a></p>
+        </div>
+
+
+        <div class="job drop--blue">
+          <h3 class="text--dark"> Amnesty Sverige</h3>
+            <span class="text-xxs">Januari 2019 - Juli 2021</span>
+          <p class="text--xs text--bold text--cursive">Digital producent</p>
+          <p class="text--xxs text--font-black">Jag var producent av bild, video och grafik åt kommunikationsavdelningen.
+         Jag gjorde till exempel den nya grafiska formen för sociala medier.</p>
+        </div>
+
+        <div class="job drop--blue">
+          <h3 class="text--dark">OmVärlden</h3>
+            <span class="text-xxs">Januari 2017 - Januari 2019</span>
+          <p class="text--xs text--bold text--cursive">Webbredaktör/Formgivare</p>
+          <p class="text--xxs text--font-black">Jag var art director, webbredaktör och formgivare. Ansvarig för wordpress, EpiCMS, formgivning och layout av <a class="text--bold"  href="https://omvarldenberattar.se">OmVärlden Berättar</a> samt <a class="text--bold"  href="https://omvarlden.se"> OmVärlden.se</a></p>
+        </div>
+
+        <div class="job drop--blue">
+          <h3 class="text--dark">Afrikagrupperna</h3>
+            <span class="text-xxs">Maj 2016 - Augusti 2017</span>
+          <p class="text--xs text--bold text--cursive">Kommunikationsansvarig (vikarie) samt praktikant</p>
+          <p class="text--xxs text--font-black">Under drygt ett års tid jobbade jag med Afrikagruppernas visuella kommunikation - specifikt deras kampanj om frö och maträttigheter.</p>
+        </div>
+      </div>
+      <!-- <h2 class="text--dark">Utbildning:</h2>
+      <div class="section middle wrapper-job w--col2 w--col">
+        <div class="job--blue drop--blue">
+          <h3 class="text--light">Nackademin</h3>
+            <span class="text-xxs text--white">2021- 2023</span>
+          <p class="text--xs text--bold text--cursive text--white">Frontend-utvecklare</p>
+          <p class="text--xxs text--white">YH-utbildning på två år där vi lär oss HTML, CSS, och massor av JavaScript. Samt CMS-system, grafikverktyg och att jobba i projekt.<a class="text--bold text--light" href="https://nackademin.se/utbildningar/frontend-utvecklare/"> Läs mer här!</a></p>
+        </div>
+        <div class="job--blue drop--blue">
+          <h3 class="text--light">Uppsala Universitet</h3>
+            <span class="text-xxs text--white">Vårterminen 2021</span>
+          <p class="text--xs text--bold text--cursive text--white">Frontend-utvecklare</p>
+          <p class="text--xxs text--white">YH-utbildning på två år där vi lär oss HTML, CSS, och massor av JavaScript. Samt CMS-system, grafikverktyg och att jobba i projekt.<a class="text--bold text--light" href="https://nackademin.se/utbildningar/frontend-utvecklare/"> Läs mer här!</a></p>
+        </div> -->
+      </div>
     </div>
-    </nav>
-    </header>
-CV Tova Jertfelt
-Amnesty Sverige Januari 2019 -
-Digital producent
-OmVärlden 2017-2019
-Webbredaktör/ AD/ Formgivare
-Afrikagrupperna 2016-2017
-Vikarie kommunikation
-Afrikagrupperna 2016
-Praktikant kommunikation
-Frilansande illustratör och formgivare 2014-
-UTBILDNING
-Konstfack 2013-2016
-Visuell kommunikation
-(Grafisk design & illustration)
-Konstnärlig kandidatexamen
+   </div>
+</div>
+</div>
+</section>
+
 
 linkedin 
 släng in tjejer kodar
 nackademin
+html css
+c# 
+squarespace
+wordpress 
+
+
+</main>
+<footer class="footer">
+  <div class="container--xlarge padding--s">
+    <h2>Hör av dig!</h2>
+      <ul>
+        <li>
+          <a href="mailto:tovajertfelt@gmail.com" >tovajertfelt@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tovajertfelt/">Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jertfelt">Github</a>
+        </li>
+      </ul>
+  </div>
+  <!--eventuellt byta bakgrundsfärger-->
+</footer>
+
 </body>
 </html>

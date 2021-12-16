@@ -1,8 +1,3 @@
-document.documentElement.classList.add('preparation');
-
-window.onload = function() {
-  document.documentElement.classList.remove('preparation');
-};
 
 //Menu button mobile
 let menuButton = document.getElementById("menutoggle");
@@ -18,7 +13,7 @@ else
 menuMobile.classList.add("drop-down");
 }
 
-
+//Slides with quotes
 let slideIndex = 0;
 carousel();
 
@@ -33,3 +28,5 @@ function carousel() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(carousel, 6000); 
 }
+
+//cv 
