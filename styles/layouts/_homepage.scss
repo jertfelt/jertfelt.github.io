@@ -9,11 +9,17 @@ body{
   right:0%;
   top:0%;
   bottom:28%;
-  @include breakpoint(xmall-max){ 
-    bottom:20%;
+  @include breakpoint(xmall-max){
     left:0%;
-    opacity:0.8;
+    bottom:15%;
   }
+  @include breakpoint(xsmall-min){
+    left:10%;
+    bottom:10%;
+  }
+  @include breakpoint(small-min){ 
+    bottom:0%;
+    left:15%;}
 img {
   position:relative;
   display:flex;
@@ -22,23 +28,37 @@ img {
   justify-content: center;
   flex-wrap:wrap;
   align-items:center;
-  border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
+  border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;  
 }
 }
+
 .section-tova{
-  @include breakpoint(xmall-max){ 
+  @include breakpoint(small-max){ 
     margin-top:5rem;
-  }
-  flex-wrap: wrap;
-  padding-top:1em;
-  min-height: 50vh;
-  width:100%;
-  margin-bottom:2em;
-  @include breakpoint(xmall-max){
     padding-top:0em;
     margin-bottom:0em;
   }
+  @include breakpoint(small-min){ 
+    margin-top:2rem;
+    margin-bottom:2em;
+  }
+  flex-wrap: wrap;
+  padding-top:5em;
+  min-height: 50vh;
+  width:100%;
+  margin-bottom:2em;
+
+  }
+  .first-header{
+    @include breakpoint(small-min){
+    margin-top:7rem;
+    z-index:10;
+  }
+  @include breakpoint(small-max){ 
+   font-size:2rem;
+  }
 }
+
 
 .section-whoamI{
   margin-bottom:1em;
@@ -68,7 +88,7 @@ img {
     text-align:justify;
     margin-bottom: 20px;
     font-size: 1.05em;
-    @include breakpoint(xmall-max){
+    @include breakpoint(small-max){
       font-size:1.3em;
       text-align:left;
       word-spacing: 10%;
@@ -141,10 +161,6 @@ img {
 }  
 }
 }
-// background-image: url(/styles/img/tova-atelje2.png);
-// background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
 
 .words-about-me{
   background-color: $color--primary--dark;
@@ -171,7 +187,7 @@ img {
     @include breakpoint(medium-tablet-max){
       margin-left:90px;
        }
-    @include breakpoint(small-max){
+    @include breakpoint(xmall-max){
       border-radius:0;
     }
   }
@@ -207,35 +223,31 @@ position: relative;
 }
 
 .homepage__slider{
-  padding:1rem;
   background-color: $color--primary--dark;
-  margin-bottom:0;
   width:100%;
-  margin-top:1rem;
-  margin-bottom:2rem;
-  @include breakpoint(small-max){ 
-  width:80%;
+  @include breakpoint(medium-max){ 
+  width:90%;
   line-height: 1.3em;}
-    @include breakpoint( medium-tablet-max){
-
-    h3{
-      margin-top:0rem;
-    }
+    @include breakpoint(medium-min){
     padding:2rem;
     max-width:40%;
-    margin-top:2rem;
     }
+      
   .mySlides{
-   height:260px;
+   max-height:260px;
+   margin-bottom:1rem;
    @include breakpoint(small-max)
-   {max-height:400px;}
-  
-   }
+    {
+      h3{
+      margin-bottom:20px;
+        }
+     
+     }
+  }
    .slide__link{
      text-align:center;
-     margin-top:1rem;
+     margin-top:0.8rem;
      text-transform: uppercase;
-     margin-bottom:1em;
      &:hover{
        font-size:1.8em;
      }
@@ -245,13 +257,7 @@ position: relative;
 
 .section-cases{
   margin-bottom:5em;
-  padding-left:3em;
-  padding-right:2em;
-  h3{
-    @include breakpoint(small-max){text-align:center;
-      margin-top:20px;
-    }
-  }
+  @include flexBox(column,center,center);
   
 }
 
@@ -260,13 +266,17 @@ position: relative;
   grid-template-columns:1fr;
   grid-column-gap: 3em;
   margin-top:50px;
+
   @include breakpoint(xmall-max){
     margin-top:30px;
     grid-row-gap: 2em;
   }
   @include breakpoint(small-max){
-    padding:2rem;
-    @include flexBox(column,center,center);
+    padding:1rem;
+    
+   @include breakpoint(small-min){
+    padding:3rem;
+   }
 }
 }
 
@@ -276,8 +286,9 @@ position: relative;
   background-color:$color--primary--light;
   display: flex;
   text-align:center;
+  @include flexBox(column,center,center);
   h4{
-    margin-left:150px;
+    color:$color--white;
     @include breakpoint (xmall-max){
       margin:2rem;
       text-transform: uppercase;
@@ -285,25 +296,31 @@ position: relative;
   }  
 
   p{
-    margin-left:100px;
+    color:$color--white;
     @include breakpoint (xmall-max){
-    margin-left:30px;
     line-height:1.8rem;
     font-weight:bold;
     }
-    max-width:70%;
+  
   }
+
 }
 
 .case-item:hover{
-  opacity: 0.3;
+  p{font-size:1.1em;}
+  padding-bottom:3em;
+  padding-top:3em;
+  width:90%;
+  margin-left:5%;
 }
-
-
 
 .wrapper-button-case-item{
   margin-top:2em;
+  p:hover{
+    color:$color--primary--light;
+  }
 }
+
 
 .background{
   &--palt{
@@ -347,42 +364,6 @@ position: relative;
   }
 }
 
-
-.col-content-contact{
-  background-color: $color--primary--dark;
-  width:100%;
-  margin-bottom:3rem;
-  padding:3rem;
-  padding-bottom:5em;
-  @include breakpoint(small-max){
-    padding:2rem;
-    @include flexBox(column,center,center);
+.background:hover{
+  opacity: 0.3;
 }
-  @include flexBox(column,flex-start,center);
-  position: relative;
-  z-index: 1;
-  &:before,
-  &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 75%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-  }
-
-  &:before {
-    top: 0;
-    transform: skewY(-4deg);
-    transform-origin: 0% 0;
-  }
-  
-  &:after {
-    bottom: 0;
-    transform: skewY(0deg);
-    transform-origin: 100%;
-  }
-}
-

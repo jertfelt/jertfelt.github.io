@@ -2,8 +2,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font--heading;
   }
   h1 {
-      @include font-size(50);
-      line-height: 55px;
+      @include font-size(64);
+      line-height: 74px;
       @include breakpoint(small-max){
           @include font-size(72);
       line-height: 72px;
@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h2 {
-      @include font-size(64);
-    line-height: 74px;
+      @include font-size(50); 
+    line-height: 55px;
       @include breakpoint(small-max){
           @include font-size(40);
       line-height: 48px;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 72px;
     @include breakpoint(small-max){     
     @include font-size(50);
-        line-height: 55px;
+        line-height: 46px;
         }
     @include breakpoint(xmall-max){
         @include font-size(40);

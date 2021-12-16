@@ -155,20 +155,22 @@ ol {
 }
 
 .border-item{
-  
+  width:100%;
   &--first{
-  @include breakpoint(xmall-max)
+  @include breakpoint(small-max)
   {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
-  width:100%;}
+  }
+  @include breakpoint(screen-sm){
   width:80%;
-  border-radius:54% 46% 52% 48% / 28% 90% 0% 72%;}
+  border-radius:54% 46% 52% 48% / 28% 90% 0% 72%;}}
 
   &--second{
-    @include breakpoint(xmall-max)
-    {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
-      width:100%;}
+    width:100%;
+    @include breakpoint(small-max)
+    {border-radius:36% 14% 52% 48% / 50% 52% 48% 60%;}
+    @include breakpoint(screen-sm){
     width:80%;
-   border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; 
+   border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; }
   }
 
   &--third{
@@ -177,6 +179,9 @@ ol {
     width:100%;}
     width:80%;
     border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
+    @include breakpoint(small-max){
+    width:100%;
+    }
   }
 }
 
@@ -223,9 +228,7 @@ position: relative;
 }
 }
 
-.overflow{
-  overflow: overflow-wrap;
-}
+
 
 .img-skew{
   width:80%;
@@ -246,4 +249,15 @@ position: relative;
   @include breakpoint(small-max){
     filter: drop-shadow(0 0mm 0mm $color--primary--blue);
   }
+}
+
+.divider{
+  height:100px;
+}
+
+.background--light{
+  width:100%;
+  background-color:  $color--primary--light;
+  margin-top:-50px;
+  padding-bottom:5rem;
 }
