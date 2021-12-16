@@ -74,11 +74,16 @@
   }
 
   &--xs {
-    @include font-size(18);
-    line-height: 24px;
+    @include font-size(20);
+    line-height: 28px;
+    @include breakpoint(small-max) {
+      font-size:1.3em;
+      word-spacing: 10%;
+      line-height:2rem;
+    }
   }
   &--xxs {
-    @include font-size(16);
+    @include font-size(18);
     line-height: 25px;
   }
 }

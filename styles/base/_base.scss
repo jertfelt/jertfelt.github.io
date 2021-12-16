@@ -76,7 +76,10 @@ body {
   }
 
   &-medium{
-  margin-top:3em;
+  margin-top:2em;
+  @include breakpoint(small-max){
+    margin-top:1em;
+  }
 }
 }
 
@@ -133,10 +136,14 @@ margin-bottom: 2em;
     outline: 0;
 }
 
-ul {
-  margin-top: 0px;
-  margin-bottom: 1em;
-  padding:1rem;
+.w-row{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+
+  @include breakpoint(medium-tablet){
+    flex-direction:column;
+  }
 }
 
 ol {
@@ -150,8 +157,9 @@ ol {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  align-items:center;
 }
 
 .border-item{
@@ -160,28 +168,27 @@ ol {
   @include breakpoint(small-max)
   {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
   }
-  @include breakpoint(screen-sm){
+  @include breakpoint(small-min){
   width:80%;
-  border-radius:54% 46% 52% 48% / 28% 90% 0% 72%;}}
+  border-radius:64% 96% 92% 48% / 40% 99% 0% 99%;}}
 
   &--second{
     width:100%;
     @include breakpoint(small-max)
     {border-radius:36% 14% 52% 48% / 50% 52% 48% 60%;}
-    @include breakpoint(screen-sm){
+    @include breakpoint(small-min){
     width:80%;
    border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; }
   }
 
   &--third{
-    @include breakpoint(xmall-max)
+    width:100%;
+    @include breakpoint(small-max)
     {border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
     width:100%;}
+    @include breakpoint(small-min){
     width:80%;
-    border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
-    @include breakpoint(small-max){
-    width:100%;
-    }
+    border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;}
   }
 }
 
@@ -202,22 +209,22 @@ ol {
   width: 100%;
   left: auto;
   right: auto;
+  @include breakpoint(medium-tablet-max){
+    position: relative;
+    float: left;
+    min-height:1px;
+    
+  }
 
-@include breakpoint(medium-tablet-max){
-  position: relative;
-  float: left;
-  min-height:1px;
-  width: 33.333%;
-}
 }
 &--col2{
   padding-left: 10px;
-padding-right: 10px;
-position: relative;
+  padding-right: 10px;
+  position: relative;
   float: left;
   min-height:1px;
 @include breakpoint(medium-tablet-max){
-  width:16.6667%;
+  width:30%;
 }
   
 }
@@ -227,8 +234,6 @@ position: relative;
   }
 }
 }
-
-
 
 .img-skew{
   width:80%;
@@ -251,13 +256,13 @@ position: relative;
   }
 }
 
-.divider{
-  height:100px;
-}
-
 .background--light{
   width:100%;
   background-color:  $color--primary--light;
-  margin-top:-50px;
-  padding-bottom:5rem;
+}
+
+.w-dyn-list{
+  @include breakpoint(small-min){
+  margin-left:6rem;
+  max-width:100%;}
 }

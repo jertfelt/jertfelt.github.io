@@ -45,6 +45,8 @@ header {
       width:40px;
       margin-right:0px;
     }
+    @include breakpoint (medium-tablet-max){
+      margin-left:3rem;}
   }
 
 }
@@ -94,24 +96,29 @@ header {
 }
 
 .main-menu {
-  @include breakpoint (medium-min){
+  align-self: center;
+  align-items:center;
+  @include breakpoint (medium-tablet-max){
     max-width:20%;
+    margin-top:1em;
+    margin-left:0;
   }
   @include breakpoint (medium-max){
     max-width:30%;
     margin-left:1rem;
   }
-
   flex-basis:100%;
-  @include flexBox(row, flex-end, space-between);
+  @include flexBox(row, center, space-between);
+  
   a{
   text-transform: uppercase;
   @include breakpoint(small-max){
     display:none;
   }
-  @include breakpoint (medium-min){
+  @include breakpoint (medium-tablet-max){
     margin-left:1rem;
   }
+  
   }
   a:hover{
     color: $color--white;

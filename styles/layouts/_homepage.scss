@@ -3,12 +3,14 @@ body{
 
 .wrapper-img-hero{
   @include flexBox(column, center, center);
+
   flex-wrap: wrap;
   position:absolute;
   left:15%;
   right:0%;
   top:0%;
   bottom:28%;
+
   @include breakpoint(xmall-max){
     left:0%;
     bottom:15%;
@@ -19,7 +21,9 @@ body{
   }
   @include breakpoint(small-min){ 
     bottom:0%;
-    left:15%;}
+    left:15%;
+  }
+ 
 img {
   position:relative;
   display:flex;
@@ -29,70 +33,79 @@ img {
   flex-wrap:wrap;
   align-items:center;
   border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;  
+   
 }
 }
 
 .section-tova{
   @include breakpoint(small-max){ 
     margin-top:5rem;
-    padding-top:0em;
+    padding:0;
     margin-bottom:0em;
   }
   @include breakpoint(small-min){ 
     margin-top:2rem;
     margin-bottom:2em;
   }
+
   flex-wrap: wrap;
   padding-top:5em;
   min-height: 50vh;
   width:100%;
   margin-bottom:2em;
+  
 
   }
   .first-header{
+    @include breakpoint(small-max){ 
+      font-size:2rem;
+      margin-top:2rem;
+      margin-left:2rem;
+     }
     @include breakpoint(small-min){
     margin-top:7rem;
     z-index:10;
-  }
-  @include breakpoint(small-max){ 
-   font-size:2rem;
-  }
+    padding-left:1rem;
+    }
+    @include breakpoint(medium-tablet-max){
+    margin-top:15rem;
+    }
 }
-
 
 .section-whoamI{
   margin-bottom:1em;
-}
-.grid-wrapper-whoamI{
-  grid-template-areas: ".";
+
+  @include breakpoint (extra-large){
+    padding-left:3rem;
+  }
 }
 
 #about-me{
   align-self: stretch;
   justify-self:start;
   margin: 0;
-  padding-top:3rem;
+  padding-top:9rem;
+
   @include breakpoint(xmall-max){
     padding-top:0em;
     margin-top:-50px;
   }
+
   @include breakpoint(medium-tablet-max){
     padding-top:1rem;
   margin-left:2em;}
 }
 
 .col-who-am-I-1{
-  padding-right:0em;
+  
+  @include breakpoint(small-min){
+    padding-right:2em;
+    padding-left:1em;
+  }
   p{
-    line-height: 1.3rem;
-    text-align:justify;
-    margin-bottom: 20px;
-    font-size: 1.05em;
     @include breakpoint(small-max){
-      font-size:1.3em;
       text-align:left;
-      word-spacing: 10%;
-      line-height:2rem;
+      margin-bottom:1rem;
      }
   }
   @include breakpoint(xmall-max){
@@ -100,33 +113,32 @@ img {
 
   }
 }
-.mobile--margin{
-  @include breakpoint(xmall-max){
-    margin-top:-30px;
-   }
-}
+
 .col-who-am-I-2{
-  margin-top: 3em;
+    @include breakpoint(medium-tablet){
+    margin-top: 1em;
+    }
   padding-right:0px;
   margin-bottom:1em;
-  @include breakpoint(small-max){
+    @include breakpoint(small-max){
     padding-left: 0em;
-  }
-  @include breakpoint(xmall-max){
+    }
+    @include breakpoint(xmall-max){
     margin-top:2em;
-   }
+    }
   h3{
     text-align:left;
-    margin-bottom: 0px;
+    margin-bottom: 1rem;
     line-height:1.2em;
-  }
+    }
 }
+
 .section-key-figures{
   margin-bottom:5em;
   padding-left:3rem;
-  @include breakpoint(xmall-max){
+    @include breakpoint(xmall-max){
     margin-top:-5%;
-}
+    }
 }
 
 .line{
@@ -135,31 +147,51 @@ img {
 }
 
 .cols-key-figures{
+ 
   display:flex;
   margin-top:3em;
   margin-bottom:3em;
+
   @include breakpoint(xmall-max){
     margin-top:0em;
-  margin-bottom:0em;
-  @include flexBox(column,center,center)
+    margin-bottom:0em;
+    @include flexBox(column,flex-start,center)
+  }
+  @include breakpoint (extra-large){
+    padding-left:3rem;
+  }
+
+  .margin-top-correction{
+    margin-top:-220px;
   }
 }
 .col-key-figures-content{
   padding-top:1em;
   padding-right:0px;
   padding-left:0px;
-  @include breakpoint(xmall-max){width:100%;};
-  @include breakpoint(small-min){width:50%;}
+
+  @include breakpoint(xmall-max){
+    width:100%;
+  };
+  @include breakpoint(small-min){
+    width:50%;
+  }
 }
 
 .grid-wrapper-key-figures{
   grid-column-gap: 2.5em;
-  grid-row-gap: 5em;
-  @include breakpoint(small-max){
-:nth-of-type(3){
-  margin-top:-190px;
-}  
-}
+    @include breakpoint(small-min){
+    grid-column-gap: 8em;
+    :nth-of-type(3){
+      margin-top:-250px;
+      }  
+    }
+  grid-row-gap: 3em;
+    @include breakpoint(small-max){
+      :nth-of-type(3){
+        margin-top:-250px;
+        }  
+    }
 }
 
 .words-about-me{
@@ -167,34 +199,27 @@ img {
   width:100%;
   margin-bottom:3rem;
   padding:3rem;
-
   @include breakpoint(small-max){
     padding:1rem;
     margin-top:-30px;
+    height:760px;
+    
   h2{
     text-align:center;
+    }
   }
-}
+  @include breakpoint(
+    small-min){
+      padding:2rem;
+      height:500px;
+    }
+  
 .words-about-me__row {
   @include flexBox(column-reverse, center, center);
   @include breakpoint(medium-tablet-max){  
     @include flexBox(row, center, space-between);
 }}
 
-.words-about-me__img{
-  img {
-    margin-top:10px;
-    @include breakpoint(medium-tablet-max){
-      margin-left:90px;
-       }
-    @include breakpoint(xmall-max){
-      border-radius:0;
-    }
-  }
-    &:hover{
-    opacity:0.7;
-     }
-}
 position: relative;
   z-index: 1;
   &:before,
@@ -220,79 +245,120 @@ position: relative;
     transform: skewY(0deg);
     transform-origin: 100%;
   }
+
+  .words-about-me__img{
+    img {
+      margin-top:10px;
+      @include breakpoint(small-min){
+        margin-left:90px;
+         }
+      @include breakpoint(xmall-max){
+        border-radius:0;
+      }
+    }
+      &:hover{
+      opacity:0.7;
+       }
+  }
+  
 }
 
 .homepage__slider{
   background-color: $color--primary--dark;
   width:100%;
-  @include breakpoint(medium-max){ 
+  @include breakpoint(small-min){ 
   width:90%;
-  line-height: 1.3em;}
-    @include breakpoint(medium-min){
+  line-height: 1.3em;
+  }@include breakpoint     (medium-tablet-max){
+    margin-top:-50px;
+  }@include breakpoint(medium-min){
     padding:2rem;
     max-width:40%;
-    }
+  }
       
   .mySlides{
-   max-height:260px;
+    max-height:260px; 
    margin-bottom:1rem;
-   @include breakpoint(small-max)
-    {
+   @include breakpoint    (small-max)
+      {
       h3{
       margin-bottom:20px;
         }
-     
-     }
+      }
   }
-   .slide__link{
+  .slide__link{
      text-align:center;
      margin-top:0.8rem;
      text-transform: uppercase;
-     &:hover{
+    
+    &:hover{
        font-size:1.8em;
-     }
-   }
+    }
+  }
   
 }
 
 .section-cases{
   margin-bottom:5em;
   @include flexBox(column,center,center);
-  
+  margin-top:-50px;
+  padding-bottom:7rem;
+  margin-bottom:-10px;
+  h2{
+    @include breakpoint (extra-large){
+      padding-left:3rem;
+    }
+  }
+}
+
+.praktik{
+  @include breakpoint (extra-large){
+    padding-left:3rem;
+    width:80%;
+  }  
+}
+
+.wrapper-cases{
+  @include breakpoint(small-min){
+ padding:2rem;}
 }
 
 .grid-wrapper-cases{
+  padding-bottom:2em;
   grid-row-gap: 3em;
   grid-template-columns:1fr;
   grid-column-gap: 3em;
   margin-top:50px;
 
-  @include breakpoint(xmall-max){
+    @include breakpoint (extra-large){
+    padding-bottom:5em;
+    }
+    @include breakpoint(xmall-max){
     margin-top:30px;
     grid-row-gap: 2em;
-  }
-  @include breakpoint(small-max){
+    }
+    @include breakpoint(small-max){
     padding:1rem;
-    
-   @include breakpoint(small-min){
+    }
+    @include breakpoint(small-min){
     padding:3rem;
-   }
-}
+    margin-left:3rem;
+    }
 }
 
 .case-item{
   padding:2em;
   position:relative;
-  background-color:$color--primary--light;
+  background-color:$color--primary--dark;
   display: flex;
   text-align:center;
-  @include flexBox(column,center,center);
+    @include flexBox(column,center,center);
   h4{
-    color:$color--white;
-    @include breakpoint (xmall-max){
-      margin:2rem;
-      text-transform: uppercase;
-    }
+      color:$color--white;
+        @include breakpoint (xmall-max){
+         margin:2rem;
+         text-transform: uppercase;
+        }
   }  
 
   p{
@@ -301,9 +367,7 @@ position: relative;
     line-height:1.8rem;
     font-weight:bold;
     }
-  
   }
-
 }
 
 .case-item:hover{
@@ -311,7 +375,7 @@ position: relative;
   padding-bottom:3em;
   padding-top:3em;
   width:90%;
-  margin-left:5%;
+  cursor: pointer;
 }
 
 .wrapper-button-case-item{
@@ -324,7 +388,7 @@ position: relative;
 
 .background{
   &--palt{
-    background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/styles/img/palt-screenshot.png);
@@ -362,8 +426,4 @@ position: relative;
     background-image: url(/styles/img/tova-poetry-slam.png);
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
   }
-}
-
-.background:hover{
-  opacity: 0.3;
 }

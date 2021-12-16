@@ -39,6 +39,10 @@ $screen-xl: 1450px;
     @media only screen and (max-width: $screen-sm-max) {
       @content;
     }
+  }  @else if $canvas==medium-tablet {
+      @media only screen and (max-width: $screen-md-tablet) {
+        @content; 
+    }
   } @else if $canvas==medium-tablet-max {
     @media only screen and (min-width: $screen-md-tablet) {
       @content;
