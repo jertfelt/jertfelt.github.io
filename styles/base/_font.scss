@@ -86,6 +86,12 @@
     @include font-size(18);
     line-height: 25px;
   }
+  &--width70{
+    width:90%;
+    @include breakpoint(medium-min){
+      width:70%;
+    }
+  }
 }
 .text-align-right{
   text-align:right;

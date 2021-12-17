@@ -213,7 +213,6 @@ ol {
     position: relative;
     float: left;
     min-height:1px;
-    
   }
 
 }
@@ -231,6 +230,12 @@ ol {
 &--col6{
   @include breakpoint(medium-tablet-max){
     width:50%;
+  }
+}
+
+&--col5{
+  @include breakpoint(medium-tablet-max){
+    width: 66%;
   }
 }
 }
@@ -265,4 +270,18 @@ ol {
   @include breakpoint(small-min){
   margin-left:6rem;
   max-width:100%;}
+}
+
+centered--flex{
+  @include flexBox(column,center,center);
+}
+
+.grid--3{
+  @include breakpoint(medium-tablet-max){ display: grid;
+    grid-template-columns: 33% 33% 33%;}
+
+  .left-column,.center-column, .right-column {
+    margin: 5px;
+    padding: 30px;  
+  }
 }

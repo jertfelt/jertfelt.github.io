@@ -12,12 +12,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h2 {
-      @include font-size(50); 
-    line-height: 55px;
-      @include breakpoint(small-max){
+      
+    @include font-size(50); 
+            line-height: 55px;
+      
+    @include breakpoint(small-max){
           @include font-size(40);
-      line-height: 48px;
+            line-height: 48px;
       }
+
       text-transform: uppercase;
   }
   
@@ -156,3 +159,27 @@ h1, h2, h3, h4, h5, h6 {
             @include font-size(16);
         }
     }
+
+.heading__animated{
+    
+    &--black:hover {
+    border-left: solid 100px($color--black);
+    color: $color--black;
+    padding-left:10px;
+    transition: all 100ms ease-in;
+    }
+
+    &--light:hover {
+    border-left: solid 100px($color--primary--light);
+    color: $color--primary--light;
+    padding-left:10px;
+    transition: all 100ms ease-in;
+    }
+    
+    &--white:hover {
+    border-left: solid 100px($color--white);
+    color: $color--white;
+    padding-left:10px;
+    transition: all 100ms ease-in;
+    }
+}

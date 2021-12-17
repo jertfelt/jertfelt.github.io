@@ -56,7 +56,6 @@ $screen-xl: 1450px;
       @content;
     }
   }
-  
   @else if $canvas==medium-max-menu {
     @media only screen and (max-width: $screen-md-menu) {
       @content;
@@ -65,8 +64,8 @@ $screen-xl: 1450px;
     @media only screen and (max-width: $screen-lg) {
       @content;
     }
-  } @else if $canvas==extra-large {
-    @media only screen and (min-width: $screen-lg) {
+  } 
+  @else if $canvas==extra-large {  @media only screen and (min-width: $screen-lg) {
       @content;
     }
   }

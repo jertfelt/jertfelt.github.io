@@ -1,76 +1,214 @@
 .main__cv{
-  background-color:$color--primary--light;
-  min-height:300vh;
-  max-height:900vh;
+  background-color:$color--black;
   height:100%;
   padding-bottom:8rem;
 }
 .CV-title{
-  padding-top:1rem;
+  padding-top:3rem;
+  margin-top:5rem;
   @include flexBox(column,center,center);
+  background-color:$color--primary--light;
 }
 
 .grid-wrapper-jobs{
-  padding-bottom:2em;
-  grid-row-gap: 3em;
-  grid-template-columns:1fr;
-  grid-column-gap: 3em;
-  margin-top:-50px;
-  
-  @include breakpoint (extra-large){
-    padding-bottom:5em;
-    }
-    @include breakpoint(xmall-max){
-    margin-top:30px;
-    grid-row-gap: 2em;
-    }
-    @include breakpoint(small-max){
-    padding:1rem;
-    }
+  grid-column-gap: 1em;
     @include breakpoint(small-min){
-    padding:3rem;
-    margin-left:3rem;
+      grid-column-gap: 8em;
     }
-
+  grid-row-gap: 1em;
   }
 
-
-.middle{
-  width:90%;
-  padding-bottom: 20px;
-  margin-top:1rem;
+.container--cv{
+ padding-left:3rem;
+ padding-right:4rem;
+ padding-bottom:3rem;
+ 
   h3{
     border-left: solid 0 $color--black;
     transition: all 200ms ease-in;
   }
   a {
     cursor: pointer;
-
   }
+  a:hover  { 
+    color: $color--primary--blue;
+    font-size:1.1em;
+    }
+
   .job{
+    height:350px;
+    width:350px;
     background-color:$color--white;
     padding:1rem;
     margin-bottom:2rem;
-    width: 100%;
+   
     h3{
       margin-right:3rem;
       margin-bottom:1rem;
     }
-    &:hover h3 {
-      border-left: solid 50px($color--primary--dark);
-      padding-left:1rem;
-      transition: all 100ms ease-in;
-    }
     p {
       margin: 6px 0;
     }
-  &--blue{
-    background: $color--primary--blue;
-    padding:1rem;
-    margin-bottom:2rem;
-    width: 100%;
+    &__nobox{
+      height:350px;
+      width:350px;
+      padding:1rem;
+      margin-bottom:1rem;
+      h3{
+        margin-right:3rem;
+        margin-bottom:1rem;
+      }
+      p {
+        margin: 6px 0;
+      }
+      &:hover{
+        transition: all 100ms ease-in;
+        background-color: $color--black;
+        filter: drop-shadow(0 6mm 4mm $color--primary--blue);
+        @include breakpoint(small-max){
+          filter: drop-shadow(0 0mm 0mm $color--primary--blue);
+        }
+        border-radius:45% 55% 52% 48% / 50% 25% 75% 50%
+      }
+    }
 
+    &:hover{
+    transition: all 100ms ease-in;
+    margin-top: -30px;
+  } 
   }
+  }
+
+
+.cv{
+  &__flex{
+    @include flexBox(column,center,center);
+  }
+
+  &__jobb{
+    background-color:$color--primary--light;
+    padding-bottom:2rem;
+     @include breakpoint(extra-large){
+    padding-bottom:3rem;}
+    @include flexBox(column,center,center);
+    
+  }  
+  &__education{
+  background-color:$color--primary--dark;
+  position: relative;
+  z-index: 1;
+  padding-bottom:2rem;
+    &:before,
+    &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    }
+
+    &:before {
+    top: 0;
+    transform: skewY(-2deg);
+    transform-origin: -100% 0;
+    }
   
+    &:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
+    }
+  }
+  &__skills{
+    padding-top:1rem;
+    background-color:$color--black;
+    padding-bottom:3rem;
+    img{
+      @include breakpoint(medium-tablet){
+      display:none;
+      }
+      @include breakpoint (medium-tablet-max){
+      display:block;
+      max-width:50%;
+      position:relative;
+      top: 200px;
+      z-index:4;
+      right:180px;
+      margin-top:-180px;
+     }
+     
+  }
+}
+}
+
+.container--skill{
+  position: relative;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 15px;
+
+  .skill-item-title{
+    padding-bottom: 5px;
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .skill-list{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+    .text--progress{
+      @include flexBox(row,center,space-between);
+      }
+  }
+
+  .skill-progress{
+    position:relative;
+    height: 25px;
+    overflow:hidden;
+    margin-bottom:20px;
+    background-color: $color--primary--dark;
+    opacity: 0.9;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  }
+
+  .sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    }
+
+  .progress-bar{   
+    &--blue{
+      background: $color--primary--blue;
+      opacity: 0.7;
+      height:100%;
+      line-height:20px;
+    }
+
+    &--light{
+      background: $color--primary--light;
+      opacity: 0.7;
+      height:100%;
+      line-height:20px;
+    }
+  }
+
+ }
+
+
+.line-content{
+  @include breakpoint(medium-tablet-max){
+    margin-left:-15px;
   }
 }
