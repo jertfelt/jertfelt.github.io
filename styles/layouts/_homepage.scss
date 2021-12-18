@@ -1,4 +1,4 @@
-body{
+.main__homepage{
   background-color: $color--black;}
 
 .wrapper-img-hero{
@@ -199,19 +199,20 @@ img {
   width:100%;
   margin-bottom:3rem;
   padding:3rem;
+  padding-bottom:3rem;
+  display:flex;
+  flex-grow:0;
+  flex-shrink:0;
   @include breakpoint(small-max){
-    padding:1rem;
     margin-top:-30px;
-    height:760px;
-    
-  h2{
+    h2{
     text-align:center;
     }
   }
   @include breakpoint(
     small-min){
       padding:2rem;
-      height:500px;
+      padding-bottom:3rem;
     }
   
 .words-about-me__row {
@@ -300,15 +301,13 @@ position: relative;
 
 .section-cases{
   margin-bottom:5em;
+  padding-bottom:8em;
   @include flexBox(column,center,center);
   margin-top:-50px;
   padding-bottom:7rem;
   margin-bottom:-10px;
-  h2{
-    @include breakpoint (extra-large){
-      padding-left:3rem;
-    }
-  }
+  width:100%;
+  background-image: linear-gradient( $color--primary--light, $color--primary--dark);
 }
 
 .praktik{
@@ -318,73 +317,57 @@ position: relative;
   }  
 }
 
-// .wrapper-cases{
-//   @include breakpoint(small-min){
-//  padding:2rem;}
-// }
-
-// .grid-wrapper-cases{
-//   padding-bottom:2em;
-//   grid-row-gap: 3em;
-//   grid-template-columns:1fr;
-//   grid-column-gap: 3em;
-//   margin-top:50px;
-
-//     @include breakpoint (extra-large){
-//     padding-bottom:5em;
-//     }
-//     @include breakpoint(xmall-max){
-//     margin-top:30px;
-//     grid-row-gap: 2em;
-//     }
-//     @include breakpoint(small-max){
-//     padding:1rem;
-//     }
-//     @include breakpoint(small-min){
-//     padding:3rem;
-//     margin-left:3rem;
-//     }
-// }
 
 .case-item{
+  max-width:400px;
+  height:400px;
   padding:2em;
+  @include breakpoint (small-min){
+    padding-bottom:3em;
+    margin-bottom:2rem;
+  }
+  width:100%;
   position:relative;
   background-color:$color--primary--dark;
   display: flex;
   text-align:center;
     @include flexBox(column,center,center);
   h4{
-      color:$color--white;
+    margin:1rem;
         @include breakpoint (xmall-max){
-         margin:2rem;
          text-transform: uppercase;
         }
   }  
 
   p{
-    color:$color--white;
     @include breakpoint (xmall-max){
-    line-height:1.8rem;
     font-weight:bold;
     }
   }
 }
 
 .case-item:hover{
-  p{font-size:1.1em;}
-  padding-bottom:3em;
-  padding-top:3em;
-  width:90%;
+  margin-bottom:10px;
+  transform: rotate(-8deg);
+  transition: all 100ms ease-in;
   cursor: pointer;
+  box-shadow: inset 0px 0px 400px 110px $color--fontblack;
+ 
 }
 
 .wrapper-button-case-item{
-  margin-top:2em;
+  margin-top:1em;
   p:hover{
     color:$color--primary--light;
+    font-size: 150%;;
   }
 }
 
+.wrapper-cases{
+  
+  margin-top:6rem;
+  margin-bottom:6rem;
+}
 
 .background{
   &--palt{
@@ -425,5 +408,14 @@ position: relative;
     background-position: center;
     background-image: url(/styles/img/tova-poetry-slam.png);
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+
+  &--cases{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/illustration.jpg);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+    
   }
 }

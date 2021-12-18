@@ -100,7 +100,6 @@ header {
   align-items:center;
   @include breakpoint (medium-tablet-max){
     max-width:20%;
-    margin-top:1em;
     margin-left:0;
   }
   @include breakpoint (medium-max){
@@ -112,19 +111,24 @@ header {
   
   a{
   text-transform: uppercase;
-  @include breakpoint(small-max){
+    @include breakpoint(small-max){
     display:none;
-  }
-  @include breakpoint (medium-tablet-max){
+    }
+    @include breakpoint (medium-tablet-max){
     margin-left:1rem;
+    }
   }
-  
-  }
+
   a:hover{
-    color: $color--white;
-    text-transform: uppercase;
+    font-size: 150%; 
   }
-  a.active {
-    font-size: 150%;}
   
+  a.active {
+    color: $color--white;
+    font-size: 130%;}
+  
+  .active:hover{
+      font-size: 180%;
+      
+  }
 }

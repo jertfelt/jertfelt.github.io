@@ -50,6 +50,10 @@
     text-align: left;
   }
 
+  &--justified{
+    text-align: justify;
+  }
+
   &--xl {
     @include font-size(72);
   }
@@ -85,6 +89,11 @@
   &--xxs {
     @include font-size(18);
     line-height: 25px;
+    @include breakpoint(small-max) {
+      font-size:1.3em;
+      word-spacing: 10%;
+      line-height:2rem;
+    }
   }
   &--width70{
     width:90%;
@@ -96,3 +105,4 @@
 .text-align-right{
   text-align:right;
 }
+

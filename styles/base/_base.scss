@@ -228,8 +228,10 @@ ol {
   
 }
 &--col6{
+ 
   @include breakpoint(medium-tablet-max){
     width:50%;
+
   }
 }
 
@@ -263,13 +265,14 @@ ol {
 
 .background--light{
   width:100%;
-  background-color:  $color--primary--light;
+  background-image: linear-gradient( $color--primary--light, $color--primary--dark);
 }
 
 .w-dyn-list{
   @include breakpoint(small-min){
   margin-left:6rem;
   max-width:100%;}
+  padding-bottom:1rem;
 }
 
 centered--flex{
@@ -278,7 +281,12 @@ centered--flex{
 
 .grid--3{
   @include breakpoint(medium-tablet-max){ display: grid;
-    grid-template-columns: 33% 33% 33%;}
+    grid-template-columns: 33% 33% 33%;
+  }
+  row-gap:4em;
+  @include breakpoint(medium-tablet){
+    row-gap:8em;
+  }
 
   .left-column,.center-column, .right-column {
     margin: 5px;
