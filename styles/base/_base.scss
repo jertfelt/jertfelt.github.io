@@ -38,6 +38,13 @@ body {
   &--align-left{
     margin: 0px auto 0px 0px;
   }
+
+  &__flex{
+  @include flexBox(column,center,center);
+    &--row{
+    @include flexBox(row,center,center);
+  }
+}
 }
 
 .margin{
@@ -283,6 +290,7 @@ centered--flex{
   @include breakpoint(medium-tablet-max){ display: grid;
     grid-template-columns: 33% 33% 33%;
   }
+  column-gap: 2em;;
   row-gap:4em;
   @include breakpoint(medium-tablet){
     row-gap:8em;
@@ -293,3 +301,4 @@ centered--flex{
     padding: 30px;  
   }
 }
+

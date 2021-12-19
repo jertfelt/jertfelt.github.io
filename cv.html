@@ -27,7 +27,7 @@
   <title>Tova Jertfelt Portfolio</title>
 
 </head>
-
+<body id="cv">
 <header>
  <nav class="nav">
   <div class="container--xlarge header">
@@ -100,8 +100,7 @@
  <div class="line"></div>
 </header>
 
-<main>
-<div class="main__cv">
+<main class="main__cv">
 
   <section class="cv__title">
     <div class="container--xlarge">
@@ -161,7 +160,7 @@
     </div> 
   </section>
 
-  <section class="cv__education cv__flex">
+  <section class="cv__education container__flex--row">
     <div class="container--xlarge">
       <h2 class="text--white padding--xs heading__animated--light">
       Utbildning:</h2>
@@ -174,8 +173,33 @@
               <p class="text--xs text--bold text--cursive text--white">
                Frontend-utvecklare
               </p>
-              <p class="text--xxs text--white">YH-utbildning på två år där vi lär oss HTML, CSS, och massor av JavaScript. Samt CMS-system, grafikverktyg och att jobba i projekt.<a class="text--bold text--light" href="https://nackademin.se/utbildningar/frontend-utvecklare/"> Läs mer här!</a></p>
+              <p class="text--xxs text--white">YH-utbildning på två år där vi lär oss HTML, CSS, och massor av JavaScript. Samt CMS-system, grafikverktyg och att jobba i projekt.</p>
+               <p class="cv__link text--xxs">
+                  <a class="text--bold text--light" href="https://nackademin.se/utbildningar/frontend-utvecklare/"> Läs mer här!
+                  </a>
+                </p>
+                <button id="openBetyg" class="button--small-round button--light">Betyg</button>
+                <div id="betyg" class="betyg container__flex--row">
+                  <div id="closeBetyg" class="betyg--close">&times;</div>
+                  <div class="betyg--content">
+                    <p class="text--xxs text--bold">Frontend-utveckling, introduktion och projektmetodik
+                    </p>
+                    <p class="text--xxs ">VG</p>
+                    <br>
+                    <p class=" text--cursive  text--xxs text--bold">JavaScript 1</p>
+                    <p class="text--xxs ">VG</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class="text--xs">Pågående:</p>
+                    <p class="text--xxs">Affärsmannaskap</p>
+                    <p class="text--xxs">HTML & CSS</p>
+                    <p class="text--xxs">Grafikverktyg</p>
+                    
+                  </div>
+                </div>
             </article>
+           
             <article class="job__nobox"> 
               <h3 class="text--light">Uppsala Universitet</h3> 
               <span class="text-xxs text--white">Vårterminen 2021</span>
@@ -219,9 +243,9 @@
  
           <div class="grid--3 text--white text--xs container--skill">
             <div class="left-column">
-              <h3 class="skill-item-title text--light">
-                Yrkeskunskaper
-                </h3>
+              <h4 class="skill-item-title text--light">
+                Yrkeskunskap
+                </h4>
                 <ul class="skill-list">
                   
                   <li>
@@ -324,9 +348,9 @@
             </div>
             <div class="center-column">
      
-              <h3 class="skill-item-title text--light">
+              <h4 class="skill-item-title text--light">
                 Kodning
-                </h3>
+                </h4>
                 <ul class="skill-list">
                   
                   <li>
@@ -381,9 +405,9 @@
             </div>
             <div class="right-column">          
               <ul>
-                <h3 class="skill-item-title text--light">
+                <h4 class="skill-item-title text--light">
                 Programvara
-                </h3>
+                </h4>
                 <ul class="skill-list">
                   
                   <li>
@@ -465,6 +489,22 @@
                       </div>
                     </div>
                   </li>
+
+                  <li>
+                    <div class="text--progress">
+                      <span>After Effects
+                      </span>
+                      <span>60%
+                      </span>
+                    </div>
+                    <div class="skill-progress">
+                      <div class="progress-bar--dark" role="progressbar"
+                      data-percent="60%"
+                      style="width: 60%">
+                        <span class="sr-only">60%</span>
+                      </div>
+                    </div>
+                  </li>
   
                   <li>
                     <div class="text--progress">
@@ -474,7 +514,7 @@
                       </span>
                     </div>
                     <div class="skill-progress">
-                      <div class="progress-bar--dark" role="progressbar"
+                      <div class="progress-bar--blue" role="progressbar"
                       data-percent="70%"
                       style="width: 70%">
                         <span class="sr-only">70%</span>
@@ -505,7 +545,9 @@
       </div>
    <img src="/styles/img/tova-poetry-slam.png" alt="Tova står med en mikrofon i ena handen, telefon i den andra och spänner ögonen i publiken." title="Tova uppträder med dikten JAG ÄLSKAR DIG på poetry slam 2019" class="drop--blue border-item--third">
   </section>
+
 </main>
+
 <footer class="footer">
   <div class="container--xlarge padding--s">
     <h2>Hör av dig!</h2>
@@ -525,6 +567,23 @@
   </div>
   <!--eventuellt byta bakgrundsfärger-->
 </footer>
+<script src="script.js"></script>
+<script>
+  let modal = document.getElementById("betyg");
+  let buttModal = document.getElementById("openBetyg");
+  let closeModal = document.getElementById("closeBetyg");
+
+  buttModal.addEventListener("click",showBetyg);
+
+  function showBetyg(){
+    modal.style.display ="block";
+  }
+
+  closeModal.addEventListener("click", closeBetyg);
+
+  function closeBetyg(){
+    modal.style.display ="none"};
+</script>
 
 </body>
 </html>
