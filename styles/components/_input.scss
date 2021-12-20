@@ -1,0 +1,12 @@
+.circle{
+  &--percent{
+  position:relative;
+  z-index:2;
+    top:-230px;
+  left:70px;
+  }
+  &--percent--value{
+    line-height: 225px;
+  }
+
+}

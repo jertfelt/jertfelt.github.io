@@ -1043,35 +1043,6 @@ a {
   text-decoration: none;
 }
 
-.betyg {
-  display: none;
-  position: fixed;
-  z-index: 3;
-  width: 300px;
-  height: 400px;
-  overflow: auto;
-  background-color: #bee5f5;
-}
-
-.betyg--content {
-  margin: 15% auto;
-  padding: 10px;
-  width: 80%;
-}
-
-.betyg--close {
-  color: #282828;
-  float: right;
-  font-size: 28px;
-  padding-right: 2rem;
-  padding-top: 1rem;
-}
-
-.betyg--close:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -1273,6 +1244,41 @@ header img {
   background-color: #282828;
   height: 100%;
   padding-bottom: 8rem;
+}
+
+.cases__all {
+  padding: 3rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .cases__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.cases__article h2 i.fa {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.cases__article .fa-minus::before {
+  content: "\f068";
+}
+
+.cases__article .fa-plus::before {
+  content: "\f067";
 }
 
 .main__cv {
@@ -2321,5 +2327,45 @@ header img {
   color: #f4f4f4;
   font-size: 120%;
   text-transform: lowercase;
+}
+
+.circle--percent {
+  position: relative;
+  z-index: 2;
+  top: -230px;
+  left: 70px;
+}
+
+.circle--percent--value {
+  line-height: 225px;
+}
+
+.betyg {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+  background-color: #bee5f5;
+}
+
+.betyg--content {
+  margin: 15% auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.betyg--close {
+  color: #282828;
+  float: right;
+  font-size: 28px;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.betyg--close:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
