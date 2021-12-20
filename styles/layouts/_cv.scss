@@ -57,25 +57,26 @@
       width:350px;
       padding:2rem;
       }
+
       padding-left:3rem;
       padding-right:3rem;
-      
       margin-bottom:2rem;
-      h3{
+
+        h3{
         margin-right:3rem;
         margin-bottom:1rem;
       }
-      span{
+        span{
         line-height: 1.8em;;
       }
-      p {
+        p {
         margin: 6px 0;
         width:80%;
-        @include breakpoint(medium-tablet-max){ 
+          @include breakpoint(medium-tablet-max){ 
           width:100%;
-        }
+          }
       }
-      &:hover{
+        &:hover{
         transition: all 100ms ease-in;
         background-color: $color--black;
         filter: drop-shadow(0 6mm 4mm $color--primary--blue);

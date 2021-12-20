@@ -1,25 +1,71 @@
 .main__cases{background-color:$color--black;
 height:100%;
-padding-bottom:8rem;} 
+padding-bottom:8rem;
+hr {width:100%;
+height:4px;
+background-color:$color--white;}
+hr:hover{
+  width:120%;
+
+}
+} 
 
 .cases{
+ 
+
   &__all{
   padding: 3rem;
+  @include flexBox(column,center,space-between);
+ img {
+   margin-bottom:3rem;
+   margin-top:2rem;
+ }
+ img:hover{
+  transition: all 100ms ease-in;
+  transform: rotate(-8deg);
+  border-radius:45% 55% 52% 48% / 50% 25% 35% 10%;
+ }
+  
   }
+  
   &__article{
-    @include breakpoint(medium-tablet-max){
-      @include flexBox(row,center,space-between);
+    p {
+      @include breakpoint(medium-tablet){
+
+      }
     }
 
-    h2 i.fa{
-      display:inline-block;
-      margin-left:10px;
+    button {
+      @include breakpoint(medium-tablet){
+       margin:1rem;
+       padding-right:1rem;
+      }
     }
-    .fa-minus::before{
-      content: "\f068";
+    button:hover{
+      background-color: $color--white;
+      text-transform: lowercase;
+      border-radius: 4%;
+      cursor: pointer;
+      
     }
-    .fa-plus::before{
-      content: "\f067";
+    
+    &--column{
+      @include breakpoint(medium-tablet-max){
+        @include flexBox(column,center,center);
+        img{
+          margin-bottom: 3rem;
+        }
+      }
+     
     }
-  }
+    &--content{
+      @include breakpoint(medium-tablet-max){
+        @include flexBox(row,flex-start,space-between);
+        p {padding-left:3rem;}
+        button {margin-left:3rem;
+        margin-top:3rem;}
+      }
+    }
+    }
+   
 }
