@@ -285,18 +285,27 @@ ol {
   padding-bottom:1rem;
 }
 
+.w-dyn-item{
+  @include breakpoint(medium-max-menu){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+}
 centered--flex{
   @include flexBox(column,center,center);
 }
 
 .grid--3{
-  @include breakpoint(medium-tablet-max){ display: grid;
+  @include breakpoint(medium-min-menu){ display: grid;
     grid-template-columns: 33% 33% 33%;
   }
   column-gap: 2em;;
   row-gap:4em;
-  @include breakpoint(medium-tablet){
-    row-gap:8em;
+  @include breakpoint(medium-max-menu){
+   row-gap: 8em;
+    
   }
 
   .left-column,.center-column, .right-column {

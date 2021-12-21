@@ -540,6 +540,22 @@ ol {
   }
 }
 
+@media only screen and (max-width: 1279px) {
+  .w-dyn-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 centered--flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,7 +578,7 @@ centered--flex {
   row-gap: 4em;
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 1279px) {
   .grid--3 {
     display: -ms-grid;
     display: grid;
@@ -571,7 +587,7 @@ centered--flex {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1279px) {
   .grid--3 {
     row-gap: 8em;
   }
@@ -2365,6 +2381,7 @@ header img {
 }
 
 .wrapper-cases {
+  padding-right: 5rem;
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
@@ -2453,7 +2470,13 @@ header img {
   position: relative;
   z-index: 2;
   top: -230px;
-  left: 70px;
+  left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .circle--percent {
+    left: 70px;
+  }
 }
 
 .circle--percent--value {

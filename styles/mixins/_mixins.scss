@@ -60,6 +60,12 @@ $screen-xl: 1450px;
     @media only screen and (max-width: $screen-md-menu) {
       @content;
     }
+  }
+    @else if $canvas==medium-min-menu {
+      @media only screen and (min-width: $screen-md-menu) {
+        @content;
+      }
+  
   } @else if $canvas==large-max {
     @media only screen and (max-width: $screen-lg) {
       @content;
