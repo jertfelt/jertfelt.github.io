@@ -218,6 +218,22 @@ body {
           justify-content: center;
 }
 
+.container__flex--rowreverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .margin--right-xs {
   margin-right: 0.5em;
 }
@@ -1032,6 +1048,60 @@ h6 {
   background-color: #bee5f5;
 }
 
+.background--palt {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/palt-screenshot.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
+}
+
+.background--quiz {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/quiz.jpg);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--recipes {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/html-css-kurs-ex-2.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--accesibility {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/publishing-priset-2.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--queue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/tova-poetry-slam.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--cases {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/illustration.jpg);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
 li {
   font-family: "Arya", Helvetica, sans-serif;
   font-size: 18px;
@@ -1294,12 +1364,34 @@ header img {
   margin-top: 2rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .cases__all img {
+    margin-left: 3rem;
+  }
+}
+
 .cases__all img:hover {
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
   border-radius: 45% 55% 52% 48% / 50% 25% 35% 10%;
+}
+
+.cases__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1333,7 +1425,8 @@ header img {
             justify-content: center;
   }
   .cases__article--column img {
-    margin-bottom: 3rem;
+    max-width: 100%;
+    min-width: 300px;
   }
 }
 
@@ -1346,9 +1439,9 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2276,60 +2369,6 @@ header img {
   margin-bottom: 6rem;
 }
 
-.background--palt {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/palt-screenshot.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
-}
-
-.background--quiz {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/quiz.jpg);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--recipes {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/html-css-kurs-ex-2.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--accesibility {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/publishing-priset-2.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--queue {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/tova-poetry-slam.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--cases {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/illustration.jpg);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
 .footer {
   margin-top: -7rem;
   position: relative;
@@ -2440,7 +2479,7 @@ header img {
 .betyg--close {
   color: #282828;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   padding-right: 2rem;
   padding-top: 1rem;
 }
@@ -2448,5 +2487,30 @@ header img {
 .betyg--close:hover {
   text-decoration: none;
   cursor: pointer;
+  font-size: 2em;
+}
+
+#did-you-know {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#did-you-know button {
+  border-radius: 56% 14% 52% 48% / 50% 52% 48% 50%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
 }
 /*# sourceMappingURL=styles.css.map */

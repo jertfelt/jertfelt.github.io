@@ -16,14 +16,27 @@
   &--close{
     color:$color--black;
     float:right;
-    font-size:28px;
+    font-size:30px;
     padding-right:2rem;
     padding-top:1rem;
   }
   &--close:hover{
     text-decoration: none;
     cursor:pointer;
+    font-size:2em;
   }
   
   }
+
+  //modal cases
   
+#did-you-know{
+  @include flexBox(column,center,center);
+  button{
+    border-radius:56% 14% 52% 48% / 50% 52% 48% 50%;
+    padding:12px;
+    border:none;
+    cursor: pointer;
+    background-color: $color--fontblack;
+  }
+}

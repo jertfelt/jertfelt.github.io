@@ -109,70 +109,193 @@
        Under min studietid på Nackademin så gör vi flera projekt. Dessa går att titta på här, tillsammans med framtida egna projekt. Då dessa är gjorda under olika faser av utbildningen och i min inlärningskurva så är de av olika kvalité: programmering är tack och lov en lärande process och det är det som gör det så härligt!
       </p>
     </div>
+    <div id="did-you-know">
+      <button id="openDidYouKnow"  class="button--small-round text--xxs  text--light">Visste du?
+    </button>
+  </div>
+  <div id="didyouknowContainer" class="betyg container__flex--row margin-top--xxsmall">
+    <div id="closeDidYouKnow" class="betyg--close">&times;</div>
+    <div class="betyg--content did-you-know--hidden text--xxs">
+    <p>Den här hemsidan är kodad av Tova Jertfelt och är ett egeninitierat projekt där jag testar olika lösningar i HTML, CSS och JS. Sidan är ett work in progress och kommer att förbättras, uppdateras och eventuellt förändras. </p>
+  </div>
+  </div>
   </section>
-  <section class="cases__all">
+
+  <section class="cases__all ">
     <hr>
+    <article class="cases__article container__flex">
+      <div class="cases__article--content  container--large padding--m container__flex"> 
+        <div class="cases__article--column">
+        <h2 class="text--light">Disney quiz </h2> 
+        <a href="quiz.html"><img src="styles/img/quiz.jpg" alt="Bild från filmen 'Who framed Rober Rabbit?'" class="drop--blue border-item--third"
+        title="Gå till quizzet" aria-label="Link to page"></a>
+      </div>
+      <div class="cases__article">
+        <a href="quiz.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a>
+      <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttens och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.
+      </p><br>
+      <div class="container__flex--row">
+      <a href="https://github.com/jertfelt/quiz-javascript-course/blob/master/instructions-swedish">
+        <button 
+        id="openKrav--1" class="text--center text--xxs text--dark button--light button--small-round">
+          Se kraven
+        </button>
+      </a>
+      <a href="https://github.com/jertfelt/quiz-javascript-course">
+        <button class="text--dark  text--xxs text--center  button--light button--small-round ">
+          Github 
+        </button>
+      </a>
+    </div>
+      
+      </div>
+      </div>
+    </article>
+    <hr>
+    <!--gör row-reverse på denna i desktop-->
     <article class="cases__article ">
+      <div class="cases__article--content  container--large padding--m"> 
+        <div class="cases__article--column">
+        <h2 class="text--light">
+        PALT: Grupparbete </h2> 
+        <a href="https://jertsfelt.github.io/PALT/"><img src="styles/img/palt-screenshot.png" 
+        alt="Printscreen från PALT: visar tre rosa ikoner" class="drop--blue border-item--third" 
+        title="Gå till sidan" aria-label="Link to page">
+        </a>
+        </div>
+
+      <div class="cases__article">
+        <a href="https://jertsfelt.github.io/PALT/.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a><br>
+        <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> 
+          Beskrivning: Vår uppgift var att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val. Webbplatsen ska bestå av minst följande fyra undersidor - Startsida, Om oss, Cases och Kontakt.
+        Vi började med att ta fram en mockup på webbplatsen som vi förhöll oss till när vi kodade. 
+        </p>
+        <br><!--knappar: eventuellt gör om till avsnitt, efter quiz-->
+        <div class="container__flex--row">
+        <a href="https://github.com/jertfelt/PALT/blob/main/instruktioner.txt">
+          <button  class="text--center text--xxs  button--light button--small-round text--dark">
+          Se kraven
+          </button>
+        </a>
+        <a href="https://github.com/jertfelt/PALT">
+          <button class="text--dark text--xxs text--center  button--light button--small-round ">
+          Github 
+          </button>
+        </a>
+        </div>
+        </div>
+      </div>
+      </article>
+    <hr>
+    <article class="cases__article">
       <div class="cases__article--content  container--large padding--m"> 
         
         <div class="cases__article--column">
-        <h2 class="text--light">Disney quiz </h2> 
-        <a href="quiz.html"><img src="styles/img/quiz.jpg" alt="" class="drop--blue border-item--third "></a>
-        
-      </div>
+        <h2 class="text--light">
+        Kösystemet</h2> 
+        <a href="queue-system.html"><img src="styles/img/palt-screenshot.png" 
+        alt="Visar kösystemets interface" class="drop--blue border-item--third" 
+        title="Gå till sidan" aria-label="Link to page">
+        </a>
+        </div>
+
       <div class="cases__article">
-    
-      <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttens och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.
-      </p><br>
-      <a href="https://github.com/jertfelt/quiz-javascript-course/blob/master/instructions-swedish">
-        <button id="openKrav--1" class="text--center text--xxs  button--light button--small-round">
+        <a href="queue-system.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a><br>
+        <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> 
+          Beskrivning: Din uppgift är att ansvara för ett kösystem för incheckning av bagage på Arlanda flygplats. Skapa ett verktyg som hjälper dig visualisera och hålla reda på kön. 
+        </p>
+        <br>
+        <div class="container__flex--row">
+        <a href="https://github.com/jertfelt/queue-assignment-nackademin/blob/master/.txt">
+          <button  class="text--center text--xxs  button--light button--small-round text--dark">
           Se kraven
-        </button>
-      </a>
-      <a href="https://github.com/jertfelt/quiz-javascript-course">
-        <button class="text--xxs text--center  button--light button--small-round ">
+          </button>
+        </a>
+        <a href="https://github.com/jertfelt/queue-assignment-nackademin">
+          <button class="text--dark text--xxs text--center  button--light button--small-round ">
           Github 
-        </button>
-      </a>
-     
-      
+          </button>
+        </a>
+        </div>
+        </div>
       </div>
-      </div>
-    </article>
-    <hr>
-    <!--gör row-reverse på denna-->
-    <article class="cases__article">
-      <div class="cases__article--content  container--large padding--m"> <div class="cases__article--column">
-        <h2 class="text--light">PALT </h2> 
-        <a href="https://jertsfelt.github.io/PALT/"><img src="styles/img/quiz.jpg" alt="" class="drop--blue border-item--third "></a>
-      </div>
-      <div class="cases__article">
-        <a href="quiz.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a><br>
-      <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttens och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.
-      </p><br>
-      <a href="https://github.com/jertfelt/quiz-javascript-course/blob/master/instructions-swedish">
-        <button id="openKrav--1" class="text--center text--xxs  button--light button--small-round text--dark">
-          Se kraven
-        </button>
-      </a>
-      <a href="https://github.com/jertfelt/quiz-javascript-course">
-        <button class="text--dark text--xxs text--center  button--light button--small-round ">
-          Github 
-        </button>
-      </a>
-   
-      
-      </div>
-      </div>
-    </article>
-    <hr>
+      </article>
+      <hr>
+      <article class="cases__article">
+        <div class="cases__article--content  container--large padding--m"> 
+          
+          <div class="cases__article--column">
+          <h2 class="text--light">
+          Tre recept</h2> 
+          <a href="recipes.html"><img src="styles/img/html-css-kurs-ex-2.png" 
+          alt="Printscreen från hemsidan, visar en bild på en maträtt och layoutat hemsida." class="drop--blue border-item--third" 
+          title="Gå till sidan" aria-label="Link to page">
+          </a>
+          </div>
+  
+        <div class="cases__article">
+          <a href="recipes.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a><br>
+          <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> 
+            Beskrivning: Din uppgift är att skapa en receptsida innehållandes tre recept på för olika maträtter. Använd minst två olika typsnitt på sidan.
+            Använd minst två bakgrundsfärger/bakgrundsbilder. Sidan ska använda sig utav semantiska HTML-taggar.
+          </p>
+          <br>
+          <div class="container__flex--row">
+          <a href="https://github.com/jertfelt/css-recipe-nackademin/blob/master/instruktioner.txt">
+            <button  class="text--center text--xxs  button--light button--small-round text--dark">
+            Se kraven
+            </button>
+          </a>
+          <a href="https://github.com/jertfelt/css-recipe-nackademin">
+            <button class="text--dark text--xxs text--center  button--light button--small-round ">
+            Github 
+            </button>
+          </a>
+          </div>
+          </div>
+        </div>
+        </article>
+        <hr>
+        <article class="cases__article">
+          <div class="cases__article--content  container--large padding--m"> 
+            
+            <div class="cases__article--column">
+            <h2 class="text--light">
+            Tillgänglighet</h2> 
+            <a href="accessibility.html"><img src="styles/img/html-css-kurs-ex-2.png" 
+            alt="Printscreen från tillgänglighets-sidan. Visar en hemsida." class="drop--blue border-item--third" 
+            title="Gå till sidan" aria-label="Link to page">
+            </a>
+            </div>
     
+          <div class="cases__article">
+            <a href="accessibility.html" class="text--xxs text--light text--bold">Klicka här för att se projektet!</a><br>
+            <p class="text--white text--xs text--width70 margin-top--xxsmall text--justified"> 
+              Beskrivning:  Din uppgift är att skapa en informationssida om tillgänglighet. Använd er utav bilder, text och/eller illustrationer för att uppnå detta. Hemsidan ska också vara tillgänglig och testad för detta.
+            </p>
+            <br>
+            <div class="container__flex--row">
+            <a href="https://github.com/jertfelt/accessibility-css/blob/main/instructions.txt">
+              <button  class="text--center text--xxs  button--light button--small-round text--dark">
+              Se kraven
+              </button>
+            </a>
+            <a href="https://github.com/jertfelt/accessibility-css">
+              <button class="text--dark text--xxs text--center  button--light button--small-round ">
+              Github 
+              </button>
+            </a>
+            </div>
+            </div>
+          </div>
+          </article>
   </section>
 
 </main>   
 
 <footer class="footer">
       <div class="container--xlarge padding--s">
+
         <h2>Hör av dig!</h2>
           <ul>
             <li>
@@ -192,7 +315,25 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  //modal
+  
+  let modalDYK = document.getElementById("didyouknowContainer");
+  let openDYK = document.getElementById("openDidYouKnow");
+  let closeDYK = document.getElementById("closeDidYouKnow");
 
+  openDYK.addEventListener("click",showBetyg);
+
+  function showBetyg(){
+    modalDYK.style.display ="block";
+  }
+
+  closeDYK.addEventListener("click", closeBetyg);
+
+  function closeBetyg(){
+    modalDYK.style.display ="none"};
+</script>
+</script>
 
 </body>
 </html>

@@ -11,14 +11,15 @@ hr:hover{
 } 
 
 .cases{
- 
-
   &__all{
   padding: 3rem;
   @include flexBox(column,center,space-between);
+
  img {
    margin-bottom:3rem;
    margin-top:2rem;
+   @include breakpoint(small-min){
+      margin-left:3rem;};
  }
  img:hover{
   transition: all 100ms ease-in;
@@ -29,12 +30,7 @@ hr:hover{
   }
   
   &__article{
-    p {
-      @include breakpoint(medium-tablet){
-
-      }
-    }
-
+    @include flexBox(column,center,center);
     button {
       @include breakpoint(medium-tablet){
        margin:1rem;
@@ -50,17 +46,19 @@ hr:hover{
     }
     
     &--column{
+      
       @include breakpoint(medium-tablet-max){
         @include flexBox(column,center,center);
         img{
-          margin-bottom: 3rem;
+          max-width:100%;
+          min-width:300px;
         }
       }
      
     }
     &--content{
       @include breakpoint(medium-tablet-max){
-        @include flexBox(row,flex-start,space-between);
+        @include flexBox(row,center,space-between);
         p {padding-left:3rem;}
         button {margin-left:3rem;
         margin-top:3rem;}
@@ -69,3 +67,4 @@ hr:hover{
     }
    
 }
+
