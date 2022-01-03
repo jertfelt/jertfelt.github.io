@@ -1,165 +1,137 @@
-// body {
-//   background-color: thistle;
-//   text-align: center;
-//   flex: auto;
-// }
+.quiz__page {
+background-color: thistle;
+color:$color--fontblack;
+}
 
-// .original{
-// color: black;
-// }
+.quiz__main{
+  @include breakpoint (small-max){
+    @include flexBox(column,center,center);
+  }
+  text-align:center;
+}
 
-// .newfontcolor {
-//   color:  whitesmoke;
-// }
+.quiz{
+  &__reveal{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height:2rem;
+    @include flexBox(column,center,center);
+  }
+  &__original{
+    color: black;}
 
-// .navigation-top {
-// text-align: right;
-// position: sticky;
-// top: 0;
-// z-index: 100;
-// }
+  &__footer{
+    @include flexBox(row,center,space-between);
+    @include breakpoint(xmall-max){
+      @include flexBox(column,center,space-between);
+    }
+    background-color: $color--black;
+    color: $color--white;
+    padding:2rem;
+    p{
+      margin-top:1rem;
+      line-height: 1.8em;
+      width:70%;
+      a{
+        color:$color--primary--light;
+        font-weight: 900;
+      }
+    }
+    button{
+      background-color: $color--primary--light;
+      border:none;
+      text-transform: uppercase;
+      font-size:1rem;
+      padding:0.5rem;
+      font-weight:bold;
+    }
+  } 
+}
 
-// #yestryagain{
-//   background-color: rgb(255, 174, 0);
-//   height: 3em;
-//   font-weight: bolder;
-//   border-radius: 12px;
-//   padding: 10px;
-// }
-
-// #changebutt{
-//   background-color: rgb(152, 93, 170);
-//   height: 3em;
-//   color:honeydew;
-//   font-weight: bolder;
-//   border-radius: 12px;
-//   padding: 10px;
-// }
 
 
-// .question {
-//   width: 500px;;
-//   margin: 0 auto;
-//   padding: 0.2em;
-//   font-weight: 900;
-//   font-size:24px;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.welcome{
+  margin-top:200px;
+  margin-bottom:2rem;
+  &__disney-img{
+    
+    margin:1rem;
+    border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;  
+  }
+  @include breakpoint (small-max){
+    margin-top:60px;}
+}
+
+.question {
+  @include breakpoint (small-max){
+    @include flexBox(column,center,center)
+  }
+  padding:1rem;
+margin: 0 auto;
+font-size:24px;
+line-height:1.8rem;
+font-weight: bold;
+}
  
-// }
-// .answers1 {
-//   padding:0.2em;
-//   margin: 0 auto;
-//   margin-top: 0.5%;
-//   font-size:20px;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-//   font-weight: bold;
-// }
+.answers1 {
+ padding:1rem;
+ font-size:20px;
+ line-height: 2rem;
+ font-family: $font--primary;
+  input{ 
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: $color--white;
+    margin-left:6px;
+    margin-right:6px;
+    line-height: 3rem; 
+ }
+}
 
-// .answers3 {
-//   padding:0.2em;
-//   margin-top: 0.5%;
-//   font-size:20px;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// }
+.answers2{
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
 
 
-// .images {
-//   width: 50%;
-// }
+.images {
+ width: 70%;
+ border-radius: 50%;
+}
 
-// #check {
-//   padding:20px;
-//    background-color: #04AA6D;
-//   color: white;
-//   text-align: center;
-//   display: inline-block;
-//   font-size:16px;
-//   margin: 4px 2px;
-//   border-radius: 12px;
-//   font-weight: 900;
-// }
+.bonusquestions{
+  &__style{
+    padding:1rem;
+  }
+}
+.video{ 
+  padding-bottom: 20px;
+}
 
-// .h2 {
-//   font-family: Arial, Helvetica, sans-serif;
-// }
+.verygoodsir {
+ background-image: linear-gradient(rgb(159, 207, 149), rgb(10, 184, 82));
+filter: drop-shadow(10px 10px 4px rgb(17, 107, 9));
+}
 
-// .verygoodsir {
-//   width: 600px;
-//   background-image: linear-gradient(rgb(159, 207, 149), rgb(10, 184, 82));
-//   font-size: 2rem;
-//   padding: 50px;
-//   margin: 0 auto;
-//   text-align: center;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-//   border-radius: 100px;
-//   filter: drop-shadow(10px 10px 4px rgb(17, 107, 9));
-// }
-// .halfright {
-// width: 600px;
-// background-image: linear-gradient(rgb(247, 166, 101), orange);
-// font-size: 2rem;
-// padding: 50px;
-// margin: 0 auto;
-// text-align: center;
-// font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// border-radius: 100px;
-// filter: drop-shadow(10px 10px 4px rgb(255, 123, 0));
-// }
-// .ImLosingToARug {
-//   width: 600px;
-//     background-image: linear-gradient(rgb(240, 199, 124), yellow);
-// font-size: 2rem;
-// padding: 50px;
-// margin: 0 auto;
-// text-align: center;
-// font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// border-radius: 100px;
-// filter: drop-shadow(10px 10px 4px rgb(255, 238, 0));
-// }
+.halfright {
+  color: $color--white;
+background-image: linear-gradient(rgb(255, 115, 0), orange);
+}
 
-// .youAreASadStrangeLittleManAndYouHaveMyPity{
-//   width: 600px;
-//     background-image: linear-gradient(rgb(240, 132, 124), rgb(255, 0, 0));
-// font-size: 2rem;
-// padding: 50px;
-// margin: 0 auto;
-// text-align: center;
-// font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// border-radius: 100px;
-// filter: drop-shadow(10px 10px 4px rgb(255, 0, 0));
-// }
+.ImLosingToARug {
+ background-image: linear-gradient(rgb(240, 199, 124), yellow);
+}
 
-// .welcome {
-//   font-size: 4rem;
-//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// }
+.youAreASadStrangeLittleManAndYouHaveMyPity{
+color:$color--white;
+padding:2rem;
+line-height:3rem;
+background-image: linear-gradient(rgb(49, 3, 0), rgb(255, 0, 0));
+}
 
-// .disneyicon {
-//   background:rgb(240, 199, 124);
-//   width: 300px;
-//   height: 300px;
-//   margin: 0 auto;
-//   border-radius: 50%;
-//   display: grid;
-//   place-items: center;
-//   margin-bottom: 30px;
-// }
 
-// .testingskew {
-//   right: 50%;
-//   transform: skew(0,5deg);
-//   width: 300px;
-// }
 
-// #textkingoffools{
-// font-size: 2em;
-// font-weight: bolder;
-// }
-
-// #question-villains {
-//   display: inline-block;
-// }
-
-// #roundimg {
-//   border-radius: 80%
-// } 

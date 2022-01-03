@@ -1,79 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>The world's best quiz</title>
-</head>
-<body>
-<div class="navigation-top">
-    <button id="changebutt" class="buttonsnav">Change the background!</button>
-    <button id="yestryagain" class="buttonsnav">TRY AGAIN</button>
-</div>
-<div><h1 class="welcome">Welcome to the Disney quiz-bonanza!</h1><div class="disneyicon"><img class="testingskew" src="https://m.media-amazon.com/images/I/71KgYgPdSVL._AC_SX355_.jpg"/></div></div>
-<div id="quizbody">
-  <div>
-    <div id="quizHome">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link type="text/css" href="styles/style.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles/styles.css">
+  
+    <link rel="icon" href="/styles/img/favicon.ico">
+    <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/styles/img/tova-jertfelt-logo2.png" sizes="144x144">
+  
+    <title>Tova Jertfelt Portfolio</title>
+  
+  </head>
+<body id="quiz__page" class="quiz__page">
+  <header>
+    <nav class="nav">
+      <div class="container--xlarge header">
+        <div class="flex-split padding--xs">
+            <a class="nav-logo-container w--inline-block" 
+              href="homepage.html"
+              aria-current="page">
+              <img src="styles/img/tova-jertfelt-logo.png" 
+                loading="lazy" 
+                alt="logotype Tova Jertfelt" 
+                class="logotype--nav"/>
+            </a>
+            <ul class="main-menu">
+              <li>
+                <a href="homepage.html" 
+                class="text--bold text--bold text--light text--xs text text--center ">
+                Hem
+                </a>
+              </li>
+              <li>
+                <a
+                 href="cv.html"
+                 class="text--bold text--light text--xs text text--center ">
+                CV
+                </a>
+              </li>
+              <li>
+                <a
+                href="cases.html"
+                class="text--bold text--light text--xs text text--center active">
+                Cases
+                </a>
+              </li>
+            </ul>
+      <button class="menu-toggle button-menu mobile" 
+              id="menutoggle">
+        <span class="darkmode">
+          <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" 
+                alt="burger-menu for mobile" 
+                class="default-mobile">
+        </span>
+    
+      </button>
+      <ul class="main-menu-mobile drop-down mobile" 
+          id="drop-down">
+        <li>
+          <a href="homepage.html" 
+             class="text--bold text--dark text--xs text text--center">
+            Hem
+          </a>
+        </li>
+        <li>
+          <a
+            href="cv.html"
+            class="text--bold text--dark text--xs text text--center">
+            CV
+          </a>
+        </li>
+        <li>
+          <a
+            href="cases.html"
+            class="text--bold text--dark text--xs text text--center">
+            Cases
+          </a>
+        </li>
+      </ul>
     </div>
-<div id="bonusquestions-div"> 
-<div> 
-  <h1>BONUS QUESTIONS</h1>
-<h2>They're EXTRA HARD! But not decisive!</h2>
-<h2>Pick one, or pick all! Leave your one-choice-only behind! Come and join the feat of fools! </h2>
- <legend for="checkbox1"><p class ="question"><b>Bonus 1: Which ones of these are Disney villains?</b></p></legend></div>
-<br> <span id="question-villains"> <span id="bonusboxspan"><label for="checkboxJafar"class="answers1" ><img src="https://moan.imgix.net/2020/05/img_0370.jpg?auto=compress%2Cformat&fit=crop&h=350&ixlib=php-3.3.0&w=800&wpsize=fp_800_350" width="500"/><br>Jafar from Aladdin</label></span>
-<input type="checkbox" id="checkboxJafar" 
-name="Villains" class="answers2" value="a"/><br><br><span id="bonusboxspan">
-<label for="checkboxBruce" class="answers1"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F03%2Ffinding-nemo.jpg&q=85" width="500"/><br>Bruce from Finding Nemo</label><input type="checkbox" id="checkboxBruce" 
-name="Villains" class="answers2" value="b" /></span><br><br>
-<span id="bonusboxspan">
-<label for="checkboxHades" class="answers1"><img src="https://imgix.bustle.com/rehost/2016/9/13/682525ae-7508-489a-bd33-63f2960eb514.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress" width= "500"/><br>Hades from Hercules
-</label><input type="checkbox" id="checkboxHades" name="Villains" class="answers2" value="c" /></span>
-<br>
-<br>
-<br>
-<legend for="Movies"><p class ="question"><b> Bonus 2: Which ones of these great movies were released in the 80s??</b></p><br><img src="https://thevinylfactory.com/wp-content/uploads/2021/08/rabbit.jpg" id="roundimg" width="500"/></legend><br>
-<input type="checkbox" name="Movies" id="a" class="answers3" value="a"/>
-<label for="a" class="answers1">Tron</label><br>
-<input type="checkbox" name="Movies" id ="b" class="answers3" value="b" />
-<label for="b"class="answers1" >The Great Mouse Detective</label><br>
-<input type="checkbox" name="Movies" id="c" class="answers3" value="c" />
-<label for="c" class="answers1">Who framed Roger Rabbit</label><br>
-<input type="checkbox" name="Movies" id="d" class="answers3" value="d"/>
-<label for="d" class="answers1">Oliver & Company</label><br>
-<input type="checkbox" name="Movies" id="e" class="answers3" value="e" /><label for="e" class="answers1" >The Little Mermaid</label><br>
-<br><br><br>
-</div>
-<div id="result">
-  <style>
-    .parallax{
-  background-image: url("https://www.sockscap64.com/wp-content/uploads/2019/07/120518_f00d1e5f6abd4d6c9793.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    }
-    </style>
-    <div class="parallax"></div>
-    <div style="height:20px; ">
+    </div>
+     </nav>
+     <div class="line"></div>
+     <button id="changebutt" class="buttonsnav">Change the background!</button>
+</header>
+
+<main class="quiz__main">
+  <div  class="welcome">
+    <h1 class="welcome">Welcome to the
+      <br> 
+      <img class="welcome__disney-img drop--blue" src="styles/img/disneycastle.jpg"/>
+      <br> Disney bonanza!</h1>
   </div>
-  <br>
-<iframe src="https://open.spotify.com/embed/track/0ZEic4I5VKilpcfzKpCoSw?theme=0" width="50%" height="50" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-<span id="textkingoffools">
-    <p>Here it is, the moment you've been waiting for!
+
+  <div id="quizbody">
+    <div>
+      <div id="quizHome">
+    </div>
+
+    <div id="bonusquestions__div"> 
+    <div class="bonusquestions__style"> 
+      <h2>BONUS QUESTIONS</h2>
+      <h3>They're EXTRA HARD! But not decisive!</h3>
+      <h4>Pick one, or pick all! Leave your one-choice-only behind! Come and join the feat of fools! </h4><br>
+      <legend for="checkbox1"><p class ="question">Which ones of these are Disney villains?</p>
+      </legend>
+    </div>
+    <br> 
+    <div id="question-villains"> 
+      <span class="bonusboxspan">
+        <label for="checkboxJafar" class="answers1" >
+          <img src="https://i.gifer.com/4nzr.gif" 
+          alt="Jafar from the Aladdin, with a turban and a black beard, talking and looking away" 
+          height = "300"
+          class="images hoverimages" 
+          title="Jafar from Aladdin"/>
+          <br>Jafar from Aladdin
+        </label>
+        <input type="checkbox" 
+        id="checkboxJafar" 
+        name="Villains" class="answers2" value="a"/>
+      <br>
+      <br>
+      </span>
+   
+      <span class="bonusboxspan">
+      <label for="checkboxBruce" class="answers1">
+        <img src="https://i.gifer.com/EX1.gif" height="300"
+        alt="A shark is approaching a clown fish and a doryfish, smiling, showing all his teeth. This is a scene from Finding Nemo."
+        title="Bruce from Finding Nemo"
+        class="images"/>
+        <br>Bruce from Finding Nemo
+      </label>
+      <input type="checkbox" 
+      id="checkboxBruce" 
+      name="Villains" 
+      class="answers2" 
+      value="b" />
+      <br>
+      <br>
+    </span>
+  
+    <span class="bonusboxspan">
+      <label for="checkboxHades" class="answers1">
+        <img src="https://c.tenor.com/aV3CPTJGSbYAAAAC/hades-hercules.gif"
+        alt="A man with dark clothes, ugly teeth, yellow eyes and blue flaming hair is looking wildly about. This is Hades, from the movie Hercules."
+        title ="Hades from Hercules"
+        class="images"
+        height="300" 
+        />
+        <br>Hades from Hercules
+      </label>
+      <input type="checkbox" 
+      id="checkboxHades" 
+      name="Villains" 
+      class="answers2" 
+      value="c" />
+    </span>
     <br>
-    Here it is, you know exactly what's in store!<br>
-    Now's the time we laugh until our sides get sore!
-    <br></span>
-    <h1>
-    Now's the time we crown the King of Fools:</p></h1>
-    <button id="check"> Check my answers</button>
-<div id="reveal">
+    <br>
+    <br>
+    <legend for="Movies"> 
+      <img src="https://thevinylfactory.com/wp-content/uploads/2021/08/rabbit.jpg"
+      title="Who framed Roger Rabbit?"
+      alt="A live action actor stands in front of his car, surrounded by the cartoon figure Roger Rabbit and his girlfriend sitting in the car"
+      class="bonusquestions__style" 
+      width="500"/>
+      <p class ="question">Which ones of these great movies were released in the 80s?
+      </p>
+    </legend>
+    <input type="checkbox" 
+    name="Movies" 
+    id="a" 
+    class="answers2" 
+    value="a"/>
+    <label for="a" 
+    class="answers1"> 
+      Tron
+    </label>
+    <br>
+    <input type="checkbox" 
+    name="Movies" 
+    id ="b" 
+    class="answers2" 
+    value="b" />
+    <label for="b"
+    class="answers1">
+    The Great Mouse Detective</label>
+    <br>
+    <input type="checkbox"  
+    name="Movies" 
+    id="c" 
+    class="answers2" 
+    value="c" />
+    <label for="c" 
+    class="answers1">
+    Who framed Roger Rabbit</label>
+    <br>
+    <input type="checkbox" 
+    name="Movies" 
+    id="d" 
+    class="answers2" 
+    value="d"/>
+    <label for="d" 
+    class="answers1">
+      Oliver & Company
+    </label>
+    <br>
+    <input type="checkbox" 
+    name="Movies" 
+    id="e" 
+    class="answers2" 
+    value="e" />
+    <label for="e" 
+    class="answers1">
+    The Little Mermaid
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
+
+<div id="result" class="quiz__result">
+  <div class="video">
+  <iframe width="100%" 
+  height="400px" 
+  src="https://www.youtube.com/embed/ZuVeky5U3Ak" title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
+  </div>
+    <h4>
+      Now's the time we crown the King of Fools:</h4>
+  <button id="check" class="quiz__check">Check my answers</button>
+  <div id="reveal" class="quiz__reveal">
+  </div>
 </div>
-  <script src="main.js"></script>
+</main>
+
+<footer class="quiz__footer">
+  <button id="yestryagain">TRY AGAIN</button>
+  <p>This page is a subpage of Tova Jertfelt and has been edited to fit into the portfolio. To watch the original student assignment at Github, <a href="https://github.com/jertfelt/quiz-javascript-course">click here!</a> </p>
+</footer>
+
+<script src="quiz.js"></script>
 </body>
 </html>

@@ -3,15 +3,16 @@ let changingButton = document.getElementById("changebutt");
 let retryButton = document.getElementById("yestryagain");
 
 //* Changing background colors (with a little help from my friend CSS)
+
 changingButton.addEventListener("click", () => {
 if (document.body.style.backgroundColor === "thistle")
   {
-    document.body.style.backgroundColor = "#031229";
-document.querySelector('body').className ='newfontcolor';
+    document.body.style.backgroundColor = "#282828";
+    document.body.style.color = "#f4f4f4";
 }
   else {
 document.body.style.backgroundColor = "thistle";
-document.querySelector('body').className = 'original';
+document.body.style.color = "#282828";
 }})
 
 //* A button for "retry", which will refresh the page entirely
@@ -46,8 +47,8 @@ const quizQuestions = [
   {
     question : "How goes the dishonor rant that Mushu performs in Mulan?",
     answers : {
-      a: "Dishonor on your whole family! Make a note of this: dishonor on you, dishonor on your cow",
-      b: "Dishonor on your whole ancestry line and all of your descendants",
+      a: "Dishonor on your whole family! Make a note of this: dishonor on you, dishonor on your cow!",
+      b: "Dishonor on your whole ancestry line and all of your descendants and their associates",
       c: "Dishonor!! DISHONOR!! DIS-HONOOOOOR!"
     },
     correct : "a"
@@ -234,24 +235,44 @@ function showResult(){
   console.log(totalCorr);
 
   if (totalCorr >=7.5) {
-    resulttext.innerHTML =`<b>Well done sir!<br> You got more than 75% right answers! Yay for you!</b><br><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGAyZ5S1-bhNN1utlwTp-OlmT-AOeetrVcw&usqp=CAU" width="500px"/>`
+    resulttext.innerHTML =`<b>Well done sir!<br> You got more than 75% right answers! Yay for you!</b><br><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGAyZ5S1-bhNN1utlwTp-OlmT-AOeetrVcw&usqp=CAU" width="500px"/> alt="Kronk is happy and saying mission accomplished" title="Kronk being satisfied with your work`
     resulttext.classList.add("verygoodsir");
   }
   else if (totalCorr >=5 && totalCorr<7.5){
-    resulttext.innerHTML =`You got more than 50% right, but not all. Almost there!<br> <img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeab08094b6__700.jpg" width="500px"/>`
+    resulttext.innerHTML =`You got more than 50% right, but not all. Almost there!<br><br> <img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeab08094b6__700.jpg" alt="Mushuu being angry at Mulan" title="Mushuu from Mulan insulting her (and you)" width="500px"/>`
     resulttext.classList.add("halfright");
    
   }else if (totalCorr >0 && totalCorr<5){ 
     let imagelosingToaRug = document.createElement("img");
     imagelosingToaRug.setAttribute('src','https://www.boredpanda.com/blog/wp-content/uploads/2019/05/5-5cdea2eba6efb__700.jpg');
+    imagelosingToaRug.setAttribute("alt","Cusco being a prick");
+    imagelosingToaRug.setAttribute("title","Cusco insulting some ladies");
     imagelosingToaRug.style.width="500px";
     resultbox.appendChild(imagelosingToaRug)
-    resulttext.innerHTML ="You got only " + totalCorr + " right answers. With the greatest possible respect, maybe you should try again?"
+    resulttext.innerHTML ="You got only " + totalCorr + " right answers. With the greatest possible respect, maybe you should try again? <br> <br>"
     resultbox.classList.add("ImLosingToARug");
     
   } else {
-    resulttext.innerHTML =`You got 0 right answers.<br> You poor fool, maybe try again?<br> <i> Hint: the last question is a tricky one indeed<br><br></i> <img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeb831c9db2__700.jpg " width="500px"/>`
+    resulttext.innerHTML =`You got 0 right answers.<br> You poor fool, maybe try again?<br><img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeb831c9db2__700.jpg" width="500px"
+    alt="Scar sitting on a cliff, saying' I'm surrounded by idiots'"
+    title="Scar is evil"
+    />`
     resulttext.classList.add("youAreASadStrangeLittleManAndYouHaveMyPity");
   }
 };
  
+
+//Menu button mobile
+let menuButton = document.getElementById("menutoggle");
+let menuMobile = document.querySelector("#drop-down");
+
+menuButton.addEventListener("click", dropdown);
+
+function dropdown(){
+ if (menuMobile.classList.contains("drop-down"))
+ {menuMobile.classList.remove("drop-down");
+}
+else 
+menuMobile.classList.add("drop-down");
+}
+
