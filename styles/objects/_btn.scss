@@ -146,5 +146,11 @@
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom:1rem;
+  cursor: pointer;
+  &:hover{
+    background-color: $color--primary--light;
+    color:$color--fontblack;
   }
+  }
+  
   

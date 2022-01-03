@@ -1142,6 +1142,12 @@ h6 {
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.quiz__check:hover {
+  background-color: #bee5f5;
+  color: #000;
 }
 
 li {
@@ -1913,6 +1919,7 @@ header img {
 }
 
 .quiz__footer {
+  font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1927,7 +1934,6 @@ header img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #282828;
-  color: #f4f4f4;
   padding: 2rem;
 }
 
@@ -1951,22 +1957,25 @@ header img {
 
 .quiz__footer p {
   margin-top: 1rem;
-  line-height: 1.8em;
-  width: 70%;
 }
 
-.quiz__footer p a {
-  color: #bee5f5;
-  font-weight: 900;
+.quiz__footer p a:hover {
+  color: thistle;
 }
 
 .quiz__footer button {
+  border-radius: 12px;
   background-color: #bee5f5;
   border: none;
   text-transform: uppercase;
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz__footer button:hover {
+  background-color: thistle;
 }
 
 .welcome {
