@@ -4,20 +4,27 @@ color:$color--fontblack;
 }
 
 .quiz__main{
-  @include breakpoint (small-max){
-    @include flexBox(column,center,center);
-  }
+  @include flexBox(column,center,center);
   text-align:center;
+  
+  #quizHome{
+    padding:3rem;
+    padding-top:0rem;
+  }
 }
 
 .quiz{
   &__reveal{
-    font-size: 2rem;
+   
     padding: 1rem;
     margin: 0 auto;
     text-align: center;
-    line-height:2rem;
+    filter: drop-shadow(0 2mm 4mm $color--black);
     @include flexBox(column,center,center);
+    width:400px;
+    img{
+      border-radius: 19px;
+    }
   }
   &__original{
     color: black;}
@@ -55,7 +62,7 @@ color:$color--fontblack;
 
 
 .welcome{
-  margin-top:200px;
+  margin-top:100px;
   margin-bottom:2rem;
   &__disney-img{
     
@@ -101,38 +108,66 @@ font-weight: bold;
 
 
 .images {
- width: 70%;
+  width:300px;
  border-radius: 50%;
 }
 
 .bonusquestions{
   &__style{
-    padding:1rem;
+    padding:4rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+  .bonusboxspan input{
+    padding-top:1rem;
+}
+
+&__questions{
+  padding-right:4rem;
+  padding-left:4rem;
+}
+
+&__row{
+  @include breakpoint(medium-tablet-max){
+    @include flexBox(row,center,space-between);
   }
 }
+
+}
+
+
 .video{ 
   padding-bottom: 20px;
 }
 
 .verygoodsir {
- background-image: linear-gradient(rgb(159, 207, 149), rgb(10, 184, 82));
-filter: drop-shadow(10px 10px 4px rgb(17, 107, 9));
+  padding:2rem;
+  line-height:3rem;
+  background-color: greenyellow;
+  border-radius: 19px;
+  
 }
 
 .halfright {
-  color: $color--white;
-background-image: linear-gradient(rgb(255, 115, 0), orange);
+  padding:2rem;
+  line-height:3rem;
+  background-color: yellow;
+  border-radius: 19px;
 }
 
 .ImLosingToARug {
- background-image: linear-gradient(rgb(240, 199, 124), yellow);
+  padding:2rem;
+  line-height:3rem;
+  background-color: lightsalmon;
+  border-radius: 19px;
 }
 
 .youAreASadStrangeLittleManAndYouHaveMyPity{
-color:$color--white;
+  background-color: lightpink;
+  border-radius: 19px;
 padding:2rem;
 line-height:3rem;
-background-image: linear-gradient(rgb(49, 3, 0), rgb(255, 0, 0));
+
 }
 
 

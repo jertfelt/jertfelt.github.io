@@ -1872,33 +1872,6 @@ header img {
 }
 
 .quiz__main {
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .quiz__main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.quiz__reveal {
-  font-size: 2rem;
-  padding: 1rem;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1912,6 +1885,38 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+
+.quiz__main #quizHome {
+  padding: 3rem;
+  padding-top: 0rem;
+}
+
+.quiz__reveal {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-filter: drop-shadow(0 2mm 4mm #282828);
+          filter: drop-shadow(0 2mm 4mm #282828);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+}
+
+.quiz__reveal img {
+  border-radius: 19px;
 }
 
 .quiz__original {
@@ -1979,7 +1984,7 @@ header img {
 }
 
 .welcome {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 2rem;
 }
 
@@ -2044,12 +2049,41 @@ header img {
 }
 
 .images {
-  width: 70%;
+  width: 300px;
   border-radius: 50%;
 }
 
 .bonusquestions__style {
-  padding: 1rem;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonusquestions .bonusboxspan input {
+  padding-top: 1rem;
+}
+
+.bonusquestions__questions {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .bonusquestions__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .video {
@@ -2057,29 +2091,31 @@ header img {
 }
 
 .verygoodsir {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9fcf95), to(#0ab852));
-  background-image: linear-gradient(#9fcf95, #0ab852);
-  -webkit-filter: drop-shadow(10px 10px 4px #116b09);
-          filter: drop-shadow(10px 10px 4px #116b09);
+  padding: 2rem;
+  line-height: 3rem;
+  background-color: greenyellow;
+  border-radius: 19px;
 }
 
 .halfright {
-  color: #f4f4f4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff7300), to(orange));
-  background-image: linear-gradient(#ff7300, orange);
+  padding: 2rem;
+  line-height: 3rem;
+  background-color: yellow;
+  border-radius: 19px;
 }
 
 .ImLosingToARug {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0c77c), to(yellow));
-  background-image: linear-gradient(#f0c77c, yellow);
+  padding: 2rem;
+  line-height: 3rem;
+  background-color: lightsalmon;
+  border-radius: 19px;
 }
 
 .youAreASadStrangeLittleManAndYouHaveMyPity {
-  color: #f4f4f4;
+  background-color: lightpink;
+  border-radius: 19px;
   padding: 2rem;
   line-height: 3rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#310300), to(red));
-  background-image: linear-gradient(#310300, red);
 }
 
 .main__homepage {

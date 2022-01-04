@@ -235,11 +235,11 @@ function showResult(){
   console.log(totalCorr);
 
   if (totalCorr >=7.5) {
-    resulttext.innerHTML =`<b>Well done sir!<br> You got more than 75% right answers! Yay for you!</b><br><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGAyZ5S1-bhNN1utlwTp-OlmT-AOeetrVcw&usqp=CAU" width="500px"/> alt="Kronk is happy and saying mission accomplished" title="Kronk being satisfied with your work`
+    resulttext.innerHTML =`<b>Well done sir!<br> You got more than 75% right answers! Yay for you!</b><br><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGAyZ5S1-bhNN1utlwTp-OlmT-AOeetrVcw&usqp=CAU" width="300px"/> alt="Kronk is happy and saying mission accomplished" title="Kronk being satisfied with your work`
     resulttext.classList.add("verygoodsir");
   }
   else if (totalCorr >=5 && totalCorr<7.5){
-    resulttext.innerHTML =`You got more than 50% right, but not all. Almost there!<br><br> <img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeab08094b6__700.jpg" alt="Mushuu being angry at Mulan" title="Mushuu from Mulan insulting her (and you)" width="500px"/>`
+    resulttext.innerHTML =`You got more than 50% right, but not all. Almost there!<br><br> <img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeab08094b6__700.jpg" alt="Mushuu being angry at Mulan" title="Mushuu from Mulan insulting her (and you)" width="300px"/>`
     resulttext.classList.add("halfright");
    
   }else if (totalCorr >0 && totalCorr<5){ 
@@ -247,13 +247,14 @@ function showResult(){
     imagelosingToaRug.setAttribute('src','https://www.boredpanda.com/blog/wp-content/uploads/2019/05/5-5cdea2eba6efb__700.jpg');
     imagelosingToaRug.setAttribute("alt","Cusco being a prick");
     imagelosingToaRug.setAttribute("title","Cusco insulting some ladies");
-    imagelosingToaRug.style.width="500px";
+    imagelosingToaRug.style.width="300px";
     resultbox.appendChild(imagelosingToaRug)
     resulttext.innerHTML ="You got only " + totalCorr + " right answers. With the greatest possible respect, maybe you should try again? <br> <br>"
     resultbox.classList.add("ImLosingToARug");
     
   } else {
-    resulttext.innerHTML =`You got 0 right answers.<br> You poor fool, maybe try again?<br><img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeb831c9db2__700.jpg" width="500px"
+    
+    resulttext.innerHTML =`You got 0 right answers.You poor fool, maybe try again?<br><img src="https://www.boredpanda.com/blog/wp-content/uploads/2019/05/disney-movies-insults-comebacks-5cdeb831c9db2__700.jpg" width="300px"
     alt="Scar sitting on a cliff, saying' I'm surrounded by idiots'"
     title="Scar is evil"
     />`

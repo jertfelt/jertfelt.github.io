@@ -105,7 +105,7 @@
   <div  class="welcome">
     <h1 class="welcome">Welcome to the
       <br> 
-      <img class="welcome__disney-img drop--blue" src="styles/img/disneycastle.jpg"/>
+      <img class="welcome__disney-img drop--blue" src="styles/img/disneycastle.jpg" alt="A picture of the Disney castle"/>
       <br> Disney bonanza!</h1>
   </div>
 
@@ -119,17 +119,18 @@
       <h2>BONUS QUESTIONS</h2>
       <h3>They're EXTRA HARD! But not decisive!</h3>
       <h4>Pick one, or pick all! Leave your one-choice-only behind! Come and join the feat of fools! </h4><br>
-      <legend for="checkbox1"><p class ="question">Which ones of these are Disney villains?</p>
-      </legend>
     </div>
+    
+     <p class ="bonusquestions__questions text--xs text--bold heading--alternative--medium">Which ones of these are Disney villains?</p>
+     
     <br> 
-    <div id="question-villains"> 
+    <div class="bonusquestions__row"> 
       <span class="bonusboxspan">
         <label for="checkboxJafar" class="answers1" >
           <img src="https://i.gifer.com/4nzr.gif" 
           alt="Jafar from the Aladdin, with a turban and a black beard, talking and looking away" 
           height = "300"
-          class="images hoverimages" 
+          class="images " 
           title="Jafar from Aladdin"/>
           <br>Jafar from Aladdin
         </label>
@@ -155,9 +156,9 @@
       value="b" />
       <br>
       <br>
-    </span>
+      </span>
   
-    <span class="bonusboxspan">
+      <span class="bonusboxspan">
       <label for="checkboxHades" class="answers1">
         <img src="https://c.tenor.com/aV3CPTJGSbYAAAAC/hades-hercules.gif"
         alt="A man with dark clothes, ugly teeth, yellow eyes and blue flaming hair is looking wildly about. This is Hades, from the movie Hercules."
@@ -172,19 +173,22 @@
       name="Villains" 
       class="answers2" 
       value="c" />
-    </span>
-    <br>
-    <br>
-    <br>
-    <legend for="Movies"> 
+      </span>
+
+      <br>
+      <br>
+      <br>
+    </div>
+  
+  
       <img src="https://thevinylfactory.com/wp-content/uploads/2021/08/rabbit.jpg"
       title="Who framed Roger Rabbit?"
       alt="A live action actor stands in front of his car, surrounded by the cartoon figure Roger Rabbit and his girlfriend sitting in the car"
       class="bonusquestions__style" 
       width="500"/>
-      <p class ="question">Which ones of these great movies were released in the 80s?
+      <p class="bonusquestions__questions text--xs text--bold heading--alternative--medium">Which ones of these great movies were released in the 80s?
       </p>
-    </legend>
+   
     <input type="checkbox" 
     name="Movies" 
     id="a" 
@@ -232,32 +236,36 @@
     class="answers1">
     The Little Mermaid
     </label>
+  
     <br>
     <br>
     <br>
     <br>
+    
 </div>
 
 <div id="result" class="quiz__result">
   <div class="video">
-  <iframe width="100%" 
-  height="400px" 
+  <iframe width="400" 
+  height="400" 
   src="https://www.youtube.com/embed/ZuVeky5U3Ak" title="YouTube video player" 
-  frameborder="0" 
+  style="border:0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
   allowfullscreen></iframe>
   </div>
     <h4>
       Now's the time we crown the King of Fools:</h4>
   <button id="check" class="quiz__check">Check my answers</button>
-  <div id="reveal" class="quiz__reveal">
+  <div id="reveal" class="quiz__reveal heading--alternative--medium text--bold">
   </div>
 </div>
+</div>
+  </div>
 </main>
 
 <footer class="quiz__footer">
   <button id="yestryagain">TRY AGAIN</button>
-  <p class="text--white text--xs text--width70">This page is a subpage of <a href="homepage.html" class="text--light text--bold">Tova Jertfelt</a> and has been edited to fit into the portfolio.<br> To watch the original student assignment at Github, <a href="https://github.com/jertfelt/quiz-javascript-course" class="text--light text--bold">click here!</a> </p>
+  <p class="text--white text--xs text--width70">This page is a subpage of <a href="homepage.html" class="text--light text--bold">Tova Jertfelt</a> and has been edited to fit into the portfolio.<br> To watch the original student assignment at Github, <a href="https://github.com/jertfelt/quiz-javascript-course" class="text--light text--bold ">click here!</a> </p>
 </footer>
 
 <script src="quiz.js"></script>
