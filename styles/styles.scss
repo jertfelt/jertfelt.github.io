@@ -2,7 +2,6 @@
 // --------------------
 @import 'variables/colors';
 @import 'variables/typography';
-@import 'variables/border';
 
 // Libraries and helpers
 // ---------------------
@@ -28,11 +27,11 @@
 // Layouts
 // --------------------
 @import "layouts/header";
-@import "layouts/accessibility";
+
 @import "layouts/cases";
 @import "layouts/cv";
 @import "layouts/quiz";
-@import "layouts/recipes";
+
 @import "layouts/homepage";
 @import "layouts/footer";
 @import "layouts/queue";
