@@ -24,7 +24,7 @@
   }
 }
 .button-menu:hover {
-  width: 70px;
+  width: 30px;
   text-decoration: none;
 }
 
@@ -38,7 +38,6 @@
   position: relative;
   overflow: hidden;
 }
-
 
 .text-style-button{
   @include breakpoint (small-max){
