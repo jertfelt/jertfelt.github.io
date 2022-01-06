@@ -1,0 +1,54 @@
+.queue{
+  &__main{
+    background-color: $color--black;
+    margin-top:50px;
+    padding:2rem;
+    margin-bottom:3rem;
+    color:$color--white;
+    font-family: $font--primary;
+    flex-wrap: flex;
+    line-height: 1.8rem;
+  }
+  &__content{
+    padding:2rem;
+    @include flexBox(column,center,center);
+    @include breakpoint(xmall-max){
+      padding:0rem;
+    }
+  }
+  &__container{
+    @include flexBox(column,center,center);
+    margin:3rem;
+    padding:1rem;
+    background-color:$color--fontblack;
+    h3{
+      margin-top:2rem;
+    }
+    @include breakpoint(xmall-max){
+      padding:1rem;
+    }
+  }
+  &__form{
+    width:300px;
+    input{
+     margin-top:1rem;
+     width:100%;
+     padding:3px;
+    }
+    div{
+      width:100%;
+      @include flexBox(row,center,center);
+    }
+    .fasttrack {
+      background-color: coral;
+    }
+  }
+}
+.checkedin{
+  margin-top:3rem;
+  margin-bottom: 1rem;
+  background-color: rgb(106, 206, 131);
+  padding:8px;
+  border-style: none;
+  border-radius: 12px;;
+}

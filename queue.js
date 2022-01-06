@@ -1,13 +1,13 @@
 //*Queue system:
 
-//dagens datum:
+//today's date
 let divToday = document.querySelector("#todaysDate");
 let dagensDatum = document.createElement("p");
 let todayDate= new Date().toLocaleDateString();
 dagensDatum.innerText = "Dagens datum: "+ todayDate;
 divToday.appendChild(dagensDatum);
 
-//appending osv:
+//queue 
 let userInput = document.querySelector("#queue");
 let sendNames = document.querySelector("#addPerson");
 let fastTracking = document.querySelector("#fastTrackPerson");
@@ -18,17 +18,15 @@ let queueList = document.createElement("ol");
 let messageWol = document.createElement("p");
 visibleQ.appendChild(queueList);
 visibleQ.appendChild(messageWol);
-
-//bonusdiv:
 let checkedInCustomers = document.querySelector("#happyCustomers");
 let checkoutparagraph = document.createElement("p");
   checkedInCustomers.appendChild(checkoutparagraph);
 
-//meddelandet:
-messageWol.innerText = "There’s currently no people standing in line" 
+
+messageWol.innerText = "Inga personer står i kön" 
 messageWol.style.color="coral";
 
-//knapp 1:
+//button 1
 sendNames.addEventListener("click", () =>{
 if (userInput.value ===""){
   alert ("Du måste fylla i fältet")
@@ -39,10 +37,11 @@ else {
   let nameList = document.createElement("li");
 messageWol.innerText ="";
 
-// for loop som pushar ut namnet, går antagligen att göra med forEach också, jag vet, men är mer bekväm med for just nu
 for (i =0; i <nameArray.length; i++){ 
-nameList.innerText = newName;
+nameList.innerText = newName.toUpperCase();
 queueList.appendChild(nameList)
+nameList.style.textAlign ="center";
+
 };
 }
 })
@@ -53,20 +52,21 @@ fastTracking.addEventListener("click", () =>{
   let newFirst = document.createElement("li");
   let firstName = userInput.value;
   messageWol.innerText ="";
-  //bekräftelseknapp:
+ 
   let reply = confirm("Placerar " + firstName + " först i kön. Gå vidare?")
   if (reply ==true) {
-    //själva funktionen: 
+  
     nameArray.unshift(firstName) 
     queueList.prepend(newFirst);
-    newFirst.innerText = userInput.value + "(Fast Tracked)"
+    newFirst.innerText = userInput.value.toUpperCase() + " (Fast Tracked)"
     newFirst.style.color ="coral";
+    newFirst.style.textAlign = "center";
     }  }  )
 
-//checka in-knapp:
+//checking in
 takeAwayFirst.addEventListener("click", () =>{ 
 
-//byter färg när man klickar:
+//change color with js:
   if (takeAwayFirst.style.color === "coral")
   {
     takeAwayFirst.style.color="black";
@@ -77,15 +77,15 @@ takeAwayFirst.addEventListener("click", () =>{
     takeAwayFirst.style.color="coral";
     takeAwayFirst.style.backgroundColor="black";
 
-    //timer så den byter tillbaka efter några mikrosekunder:
+    //timer:
     setTimeout(function(){
       takeAwayFirst.style.color="black";
     takeAwayFirst.style.backgroundColor="rgb(106, 206, 131)";
     takeAwayFirst.innerText= "CHECKA IN";}, 0005)} 
 
-//om inga människor i kön:
+//if no line:
 if (nameArray.length <=0) {
-  alert("There are no people in line to check in!")
+  alert("Inga personer att checka in!")
 }
 else {
   let checkOutName = nameArray[0];
@@ -95,16 +95,27 @@ else {
   queueList.removeChild(queueList.childNodes[0]);
    alert ("Incheckad!");
 
-  //och så ta tillbaka meddelandet om det är tomt i listan igen:
+  
   if (queueList.childElementCount ===0)
-  {messageWol.innerText ="There’s currently no people standing in line"}
+  {messageWol.innerText ="Just nu är det 0 personer i kön"}
 
-  //antal nöjda kunder:
+  //happy customers:
   count++;
   checkoutparagraph.innerText = count + " antal incheckade idag!";
-  checkoutparagraph.style.backgroundColor ="black";
+}
+}})
 
+//Menu button mobile
+let menuButton = document.getElementById("menutoggle");
+let menuMobile = document.querySelector("#drop-down");
 
+menuButton.addEventListener("click", dropdown);
+
+function dropdown(){
+ if (menuMobile.classList.contains("drop-down"))
+ {menuMobile.classList.remove("drop-down");
+}
+else 
+menuMobile.classList.add("drop-down");
 }
 
-}})

@@ -314,3 +314,25 @@ centered--flex{
   }
 }
 
+.allcases__endtext{
+  @include flexBox(column,center,center);
+  margin-bottom:8rem;
+  padding:1rem;
+    p{
+      margin-top:1rem;
+      a:hover{
+        color:$color--fontblack;
+      }
+    }
+    button{
+      border-radius: 12px;
+      background-color: $color--primary--light;
+      border:none;
+      text-transform: uppercase;
+      font-size:1rem;
+      padding:1rem;
+      font-weight:bold;
+      cursor: pointer;
+    }
+ 
+  }

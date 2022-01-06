@@ -6,7 +6,7 @@ color:$color--fontblack;
 .quiz__main{
   @include flexBox(column,center,center);
   text-align:center;
-  
+
   #quizHome{
     padding:3rem;
     padding-top:0rem;
@@ -15,9 +15,9 @@ color:$color--fontblack;
 
 .quiz{
   &__reveal{
-   
     padding: 1rem;
     margin: 0 auto;
+    padding-bottom:9rem;
     text-align: center;
     filter: drop-shadow(0 2mm 4mm $color--black);
     @include flexBox(column,center,center);
@@ -29,45 +29,14 @@ color:$color--fontblack;
   &__original{
     color: black;}
 
-  &__footer{
-    font-family: $font--primary;
-    @include flexBox(row,center,space-between);
-    @include breakpoint(xmall-max){
-      @include flexBox(column,center,space-between);
-    }
-    background-color: $color--black;
-    padding:2rem;
-    p{
-      margin-top:1rem;
-      a:hover{
-        color:thistle;
-      }
-    }
-    button{
-      border-radius: 12px;
-      background-color: $color--primary--light;
-      border:none;
-      text-transform: uppercase;
-      font-size:1rem;
-      padding:1rem;
-      font-weight:bold;
-      cursor: pointer;
-    }
-    button:hover{
-      background-color: thistle;
-    }
-  } 
 }
-
-
 
 .welcome{
   margin-top:100px;
   margin-bottom:2rem;
   &__disney-img{
-    
     margin:1rem;
-    border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;  
+    border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
   }
   @include breakpoint (small-max){
     margin-top:60px;}
@@ -78,28 +47,27 @@ color:$color--fontblack;
     @include flexBox(column,center,center)
   }
   padding:1rem;
-margin: 0 auto;
-font-size:24px;
-line-height:1.8rem;
-font-weight: bold;
+  margin: 0 auto;
+  font-size:24px;
+  line-height:1.8rem;
+  font-weight: bold;
 }
- 
+
 .answers1 {
  padding:1rem;
  font-size:20px;
  line-height: 2rem;
  font-family: $font--primary;
-  input{ 
+  input{
     cursor: pointer;
     height: 20px;
     width: 20px;
     background-color: $color--white;
     margin-left:6px;
     margin-right:6px;
-    line-height: 3rem; 
+    line-height: 3rem;
  }
 }
-
 .answers2{
   cursor: pointer;
   height: 20px;
@@ -132,11 +100,9 @@ font-weight: bold;
     @include flexBox(row,center,space-between);
   }
 }
-
 }
 
-
-.video{ 
+.video{
   padding-bottom: 20px;
 }
 
@@ -145,7 +111,6 @@ font-weight: bold;
   line-height:3rem;
   background-color: greenyellow;
   border-radius: 19px;
-  
 }
 
 .halfright {
@@ -165,9 +130,8 @@ font-weight: bold;
 .youAreASadStrangeLittleManAndYouHaveMyPity{
   background-color: lightpink;
   border-radius: 19px;
-padding:2rem;
-line-height:3rem;
-
+  padding:2rem;
+  line-height:3rem;
 }
 
 
