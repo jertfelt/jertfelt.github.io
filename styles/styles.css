@@ -612,8 +612,9 @@ centered--flex {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   padding: 1rem;
+  width: 60%;
 }
 
 .allcases__endtext p {

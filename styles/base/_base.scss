@@ -316,8 +316,9 @@ centered--flex{
 
 .allcases__endtext{
   @include flexBox(column,center,center);
-  margin-bottom:8rem;
+  margin-bottom:10rem;
   padding:1rem;
+  width:60%;
     p{
       margin-top:1rem;
       a:hover{
