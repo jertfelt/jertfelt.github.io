@@ -186,10 +186,8 @@
 }
 
 .container--skill{
-  position: relative;
+@include flexBox(column,center,center);
   min-height: 1px;
-  padding-left: 5px;
-  padding-right: 15px;
   
   .skill-item-title{
     padding-bottom: 1rem;
