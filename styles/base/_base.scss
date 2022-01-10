@@ -298,7 +298,7 @@ centered--flex{
 }
 
 .grid--3{
-  @include breakpoint(medium-min-menu){ display: grid;
+  @include breakpoint(medium-min-menu){display: grid;
     grid-template-columns: 33% 33% 33%;
   }
   column-gap: 2em;;

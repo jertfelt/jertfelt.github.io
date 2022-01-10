@@ -664,14 +664,6 @@ centered--flex {
   color: darkslateblue;
 }
 
-.text--pink-light {
-  color: #d5b3e6;
-}
-
-.text--pink-dark {
-  color: #e982d8;
-}
-
 .text--bold {
   font-weight: bold;
 }
@@ -1733,6 +1725,11 @@ header img {
           justify-content: center;
 }
 
+.cv__jobb h2 {
+  margin-top: 6rem;
+  margin-left: 1rem;
+}
+
 @media only screen and (min-width: 1290px) {
   .cv__jobb {
     padding-bottom: 3rem;
@@ -1754,8 +1751,6 @@ header img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 10rem;
-    margin-left: -3rem;
   }
 }
 
@@ -1763,7 +1758,7 @@ header img {
   background-color: darkslateblue;
   position: relative;
   z-index: 1;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .cv__education:before, .cv__education:after {
@@ -1794,9 +1789,55 @@ header img {
 }
 
 .cv__skills {
-  padding-top: 1rem;
   background-color: #282828;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 1290px) {
+  .cv__skills {
+    padding-bottom: 3rem;
+  }
+}
+
+.cv__skills h2 {
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .cv__skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5rem;
+  }
+  .cv__skills div {
+    padding-left: 5rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -1815,6 +1856,13 @@ header img {
     right: -100px;
     margin-top: -180px;
   }
+}
+
+.cv__nackademinprogress {
+  background-color: #282828;
+  border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .container--skill {

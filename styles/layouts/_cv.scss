@@ -124,20 +124,22 @@
 
   &__jobb{
     padding-bottom:4rem;
+    h2{
+      margin-top:6rem;
+      margin-left:1rem;
+    }
      @include breakpoint(extra-large){
     padding-bottom:3rem;}
     @include flexBox(column,center,center);
     @include breakpoint(medium-tablet-max){
       @include flexBox(row,center,center);
-      padding-right:10rem;
-      margin-left:-3rem;
     }
   }  
   &__education{
   background-color:$color--primary--dark;
   position: relative;
   z-index: 1;
-  padding-bottom:2rem;
+  padding-bottom:3rem;
  
     &:before,
     &:after {
@@ -164,9 +166,24 @@
     }
   }
   &__skills{
-    padding-top:1rem;
     background-color:$color--black;
-    padding-bottom:3rem;
+    padding-bottom:4rem;
+    @include breakpoint(extra-large){
+   padding-bottom:3rem;}
+   @include flexBox(column,center,center);
+   padding-left:2rem;
+ h2{
+   margin-bottom:1rem;
+   margin-top:6rem;
+ }
+   @include breakpoint(medium-tablet-max){
+     @include flexBox(row,center,center);
+     padding-left:5rem;
+     div{
+      padding-left:5rem;
+     }
+   }
+  
     img{
       @include breakpoint(medium-tablet){
       display:none;
@@ -182,6 +199,13 @@
      }
      
   }
+}
+&__nackademinprogress{
+  background-color: $color--black;
+  border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
+  margin-bottom:2rem;
+  padding:1rem;
+  
 }
 }
 
