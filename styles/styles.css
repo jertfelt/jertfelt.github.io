@@ -525,8 +525,8 @@ ol {
 
 .background--light {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bee5f5), to(darkslateblue));
-  background-image: linear-gradient(#bee5f5, darkslateblue);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bee5f5), to(#483d8b));
+  background-image: linear-gradient(#bee5f5, #483d8b);
 }
 
 .w-dyn-list {
@@ -661,7 +661,7 @@ centered--flex {
 }
 
 .text--dark {
-  color: darkslateblue;
+  color: #483d8b;
 }
 
 .text--bold {
@@ -1301,7 +1301,7 @@ header img {
 
 .main-menu-mobile {
   background-color: #f4f4f4;
-  color: darkslateblue;
+  color: #483d8b;
   width: 100%;
   display: block;
   position: absolute;
@@ -1686,7 +1686,57 @@ header img {
   }
   .container--cv .job:hover a {
     line-height: 1.8em;
-    color: darkslateblue;
+    color: #483d8b;
+  }
+}
+
+.container--cv .job__skills {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 991px) {
+  .container--cv .job__skills {
+    height: 350px;
+    width: 350px;
+    padding: 2rem;
+  }
+}
+
+.container--cv .job__skills h3 {
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container--cv .job__skills span {
+  line-height: 1.8em;
+}
+
+.container--cv .job__skills p {
+  margin: 6px 0;
+  width: 80%;
+}
+
+@media only screen and (min-width: 991px) {
+  .container--cv .job__skills p {
+    width: 100%;
+  }
+}
+
+.container--cv .job__skills:hover {
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  background-color: #282828;
+  -webkit-filter: drop-shadow(0 6mm 4mm #344ce6);
+          filter: drop-shadow(0 6mm 4mm #344ce6);
+  border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container--cv .job__skills:hover {
+    -webkit-filter: drop-shadow(0 0mm 0mm #344ce6);
+            filter: drop-shadow(0 0mm 0mm #344ce6);
   }
 }
 
@@ -1755,7 +1805,7 @@ header img {
 }
 
 .cv__education {
-  background-color: darkslateblue;
+  background-color: #483d8b;
   position: relative;
   z-index: 1;
   padding-bottom: 3rem;
@@ -1789,7 +1839,6 @@ header img {
 }
 
 .cv__skills {
-  background-color: #282828;
   padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1804,18 +1853,17 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2rem;
+}
+
+.cv__skills h2 {
+  margin-top: 6rem;
+  margin-left: 1rem;
 }
 
 @media only screen and (min-width: 1290px) {
   .cv__skills {
     padding-bottom: 3rem;
   }
-}
-
-.cv__skills h2 {
-  margin-bottom: 1rem;
-  margin-top: 6rem;
 }
 
 @media only screen and (min-width: 991px) {
@@ -1833,39 +1881,10 @@ header img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 5rem;
-  }
-  .cv__skills div {
-    padding-left: 5rem;
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .cv__skills img {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 991px) {
-  .cv__skills img {
-    display: block;
-    max-width: 50%;
-    position: relative;
-    top: 200px;
-    z-index: 4;
-    right: -100px;
-    margin-top: -180px;
-  }
-}
-
-.cv__nackademinprogress {
-  background-color: #282828;
-  border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.container--skill {
+.container--circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1876,90 +1895,18 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 1px;
-}
-
-.container--skill .skill-item-title {
-  padding-bottom: 1rem;
-}
-
-.container--skill .skill-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container--skill .skill-list .text--progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 25px;
+  padding-bottom: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .container--skill .skill-list .text--progress {
-    font-size: 1.3em;
-    word-spacing: 10%;
-    line-height: 2rem;
-  }
+.container--circle h3 {
+  margin-top: 1rem;
 }
 
-.container--skill .skill-progress {
-  position: relative;
-  height: 25px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background-color: #bee5f5;
-  opacity: 0.9;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.container--skill .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.container--skill .progress-bar--blue {
-  background: #344ce6;
-  opacity: 0.9;
-  height: 100%;
-  line-height: 20px;
-}
-
-.container--skill .progress-bar--dark {
-  background: darkslateblue;
-  height: 100%;
-  opacity: 0.9;
-  line-height: 20px;
-}
-
-@media only screen and (min-width: 991px) {
-  .line-content {
-    margin-left: -15px;
-  }
+.container--circle canvas {
+  margin: 0 auto;
 }
 
 .quiz__page {
@@ -2443,7 +2390,7 @@ header img {
 }
 
 .words-about-me {
-  background-color: darkslateblue;
+  background-color: #483d8b;
   width: 100%;
   margin-bottom: 3rem;
   padding: 3rem;
@@ -2558,7 +2505,7 @@ header img {
 }
 
 .homepage__slider {
-  background-color: darkslateblue;
+  background-color: #483d8b;
   width: 100%;
 }
 
@@ -2623,8 +2570,8 @@ header img {
   padding-bottom: 7rem;
   margin-bottom: -10px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bee5f5), to(darkslateblue));
-  background-image: linear-gradient(#bee5f5, darkslateblue);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bee5f5), to(#483d8b));
+  background-image: linear-gradient(#bee5f5, #483d8b);
 }
 
 @media only screen and (min-width: 1290px) {
@@ -2640,7 +2587,7 @@ header img {
   padding: 2em;
   width: 100%;
   position: relative;
-  background-color: darkslateblue;
+  background-color: #483d8b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2724,7 +2671,7 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: darkslateblue;
+  background-color: #483d8b;
   width: 100%;
   color: #bee5f5;
 }
@@ -2889,23 +2836,6 @@ header img {
   padding: 8px;
   border-style: none;
   border-radius: 12px;
-}
-
-.circle--percent {
-  position: relative;
-  z-index: 2;
-  top: -230px;
-  left: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  .circle--percent {
-    left: 70px;
-  }
-}
-
-.circle--percent--value {
-  line-height: 225px;
 }
 
 .betyg {

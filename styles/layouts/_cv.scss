@@ -86,6 +86,7 @@
         border-radius:45% 55% 52% 48% / 50% 25% 75% 50%
     }
     }
+    
 
     &:hover{
       @include breakpoint(medium-tablet-max){ 
@@ -110,9 +111,45 @@
       line-height: 1.8em;
       color: $color--primary--dark;
     }
-  }  }
+  }  
+}
+&__skills{
+  @include breakpoint(medium-tablet-max){ 
+  height:350px;
+  width:350px;
+  padding:2rem;
   }
+
+  padding-left:3rem;
+  padding-right:3rem;
+  margin-bottom:2rem;
+
+    h3{
+    margin-right:3rem;
+    margin-bottom:1rem;
   }
+    span{
+    line-height: 1.8em;;
+  }
+    p {
+    margin: 6px 0;
+    width:80%;
+      @include breakpoint(medium-tablet-max){ 
+      width:100%;
+      }
+  }
+    &:hover{
+    transition: all 100ms ease-in;
+    background-color: $color--black;
+    filter: drop-shadow(0 6mm 4mm $color--primary--blue);
+    @include breakpoint(small-max){
+      filter: drop-shadow(0 0mm 0mm $color--primary--blue);
+    }
+    border-radius:45% 55% 52% 48% / 50% 25% 75% 50%
+}
+}
+  }
+}
 
 
 .cv{
@@ -165,119 +202,33 @@
     transform-origin: 100%;
     }
   }
+
   &__skills{
-    background-color:$color--black;
     padding-bottom:4rem;
-    @include breakpoint(extra-large){
-   padding-bottom:3rem;}
-   @include flexBox(column,center,center);
-   padding-left:2rem;
- h2{
-   margin-bottom:1rem;
-   margin-top:6rem;
- }
-   @include breakpoint(medium-tablet-max){
-     @include flexBox(row,center,center);
-     padding-left:5rem;
-     div{
-      padding-left:5rem;
-     }
-   }
-  
-    img{
-      @include breakpoint(medium-tablet){
-      display:none;
-      }
-      @include breakpoint (medium-tablet-max){
-      display:block;
-      max-width:50%;
-      position:relative;
-      top: 200px;
-      z-index:4;
-      right:-100px;
-      margin-top:-180px;
-     }
-     
-  }
-}
-&__nackademinprogress{
-  background-color: $color--black;
-  border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;
-  margin-bottom:2rem;
-  padding:1rem;
-  
-}
+    h2{
+      margin-top:6rem;
+      margin-left:1rem;
+    }
+     @include breakpoint(extra-large){
+    padding-bottom:3rem;}
+    @include flexBox(column,center,center);
+    @include breakpoint(medium-tablet-max){
+      @include flexBox(row,center,center);
+    }
+  }  
+
+
 }
 
-.container--skill{
-@include flexBox(column,center,center);
-  min-height: 1px;
-  
-  .skill-item-title{
-    padding-bottom: 1rem;
+
+.container--circle{
+  @include flexBox(column,center,space-between);
+  padding-bottom:3rem;
+  h3{
+    margin-top:1rem;
+ 
   }
-
-  .skill-list{
-    list-style: none;
-    margin:0;
-    padding:0;
-
-    .text--progress{
-      @include flexBox(row,center,space-between);
-      @include font-size(18);
-      line-height: 25px;
-      @include breakpoint(small-max) {
-        font-size:1.3em;
-        word-spacing: 10%;
-        line-height:2rem;
-      }
-    }
-  }
-
-  .skill-progress{
-    position:relative;
-    height: 25px;
-    overflow:hidden;
-    margin-bottom:20px;
-    background-color: $color--primary--light;
-    opacity: 0.9;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-  }
-
-  .sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-    }
-
-  .progress-bar{   
-    &--blue{
-      background: $color--primary--blue;
-      opacity: 0.9;
-      height:100%;
-      line-height:20px;
-    }
-
-    &--dark{
-      background: $color--primary--dark;
-      height:100%;
-      opacity: 0.9;
-      line-height:20px;
-    }
-  }
-
-
- }
-
-.line-content{
-  @include breakpoint(medium-tablet-max){
-    margin-left:-15px;
+  canvas {
+   margin:0 auto;
   }
 }
-
