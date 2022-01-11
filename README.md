@@ -1,6 +1,8 @@
 Eget projekt: Hemsida med projekt (egna och skolarbeten) i portfolioformat. Utvecklad 2021-2022. 
 Består av tre huvudsidor: homepage, cv och cases. Under cases samlar jag de olika projekten, samtliga finns även här på github.
 
+Jag har jobbat med grid, mobile first och med lite olika lokala javascript-lösningar.
+
 Hemsidan kommer publiceras löpande.
 ![image](https://user-images.githubusercontent.com/30622818/148959493-603d881a-3f92-4188-9550-277752f7e455.png)
 
