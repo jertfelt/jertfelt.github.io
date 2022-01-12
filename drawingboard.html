@@ -103,10 +103,26 @@
     <div class="line"></div>
    </header>
 
-  <main>
-  <div class="allcases__endtext">
-    <p class="text--white text--xs text--width70">Den här sidan är kodad av <a href="homepage.html" class="text--light text--bold">Tova Jertfelt</a> och har kodats för att passa in i portföljen. För att se ursprungliga koden, spana in Github <a href="https://github.com/jertfelt/quiz-javascript-course" class="text--light text--bold ">här!</a> </p>
+  <main class="drawingboard__main">
+    <div class="drawingboard__intro">
+      <h1 class="text--center text--white">Rita en bild</h1>
+      <p class="text--center text--xs text--white text--bold">Var med och bidra i mitt spontana galleri! Rita en bild och <a href="mailto:tovajertfelt@gmail.com"
+      target="_blank" 
+      class="text--light"> 
+      maila den till mig!</p></a>
   </div>
+    <canvas id="drawingboard"></canvas>
+    <div class="drawingboard__nav"> 
+      
+        <div class="color" data-clr="#000"></div>
+        <div class="color" data-clr="#344ce6"></div>
+        <div class="color" data-clr="rgb(204, 91, 91)"></div>
+        <div class="color" data-clr="#483d8b"></div>
+        <div class="color" data-clr="#d8bfd8"></div>
+        <button class="clear text--bold">Rensa</button>
+        <button class="save text--bold">Spara</button>
+       
+    </div>
 
 </main>
 <footer class="footer">
@@ -116,15 +132,18 @@
     <h2>Hör av dig!</h2>
       <ul>
         <li>
-          <a href="mailto:tovajertfelt@gmail.com" >tovajertfelt@gmail.com
+          <a href="mailto:tovajertfelt@gmail.com"
+          target="_blank" >tovajertfelt@gmail.com
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/tovajertfelt/">Linkedin
+          <a href="https://www.linkedin.com/in/tovajertfelt/"
+          target="_blank">Linkedin
           </a>
         </li>
         <li>
-          <a href="https://github.com/jertfelt">Github</a>
+          <a href="https://github.com/jertfelt"
+          target="_blank">Github</a>
         </li>
       </ul>
   </div>
@@ -132,7 +151,65 @@
 </footer>
 <script src="script.js"></script>
 <script>
-  
+let canvas = document.getElementById("drawingboard");
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
+let toolDrawing = canvas.getContext("2d")
+
+let prevMouseX = null
+let prevMouseY = null
+
+toolDrawing.lineWidth = 5
+
+let draw = false
+
+let clearAllBtn = document.querySelector(".clear");
+
+clearAllBtn.addEventListener("click", () => {
+    toolDrawing.clearRect(0, 0, canvas.width, canvas.height)
+})
+
+let saveButt = document.querySelector(".save");
+
+saveButt.addEventListener("click", () => {
+  let info = canvas.toDataURL("imag/png");
+  let a = document.createElement("a");
+  a.href = info;
+  a.download = "bild-till-tova.png";
+  a.click();
+})
+
+let colors = document.querySelectorAll(".color")
+colors = Array.from(colors)
+colors.forEach(color => {
+    color.addEventListener("click", () => {
+        toolDrawing.strokeStyle = color.dataset.clr
+    })
+})
+
+window.addEventListener("mousedown", (e) => draw = true)
+window.addEventListener("mouseup", (e) => draw = false)
+
+window.addEventListener("mousemove", (e) => {
+    if(prevMouseX == null || prevMouseY == null || !draw){
+      prevMouseX = e.clientX;
+      prevMouseY = e.clientY;
+        return
+    }
+    
+    let currentMouseX = e.clientX;
+    let currentMouseY = e.clientY;
+
+    toolDrawing.beginPath();
+    toolDrawing.moveTo(prevMouseX, prevMouseY);
+    toolDrawing.lineTo(currentMouseX, currentMouseY);
+    toolDrawing.stroke()
+
+    prevMouseX = currentMouseX;
+    prevMouseY = currentMouseY;
+})
+
 </script>
 </body>
 </html>

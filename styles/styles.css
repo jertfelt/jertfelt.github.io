@@ -1391,6 +1391,99 @@ header img {
   font-size: 180%;
 }
 
+.drawingboard__main {
+  height: 1800px;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.drawingboard__intro {
+  background-color: #282828;
+  margin-top: 5rem;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+.drawingboard__nav {
+  position: fixed;
+  top: 240px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.color {
+  margin: 0.2rem;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.color:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.color:nth-child(1) {
+  background-color: #000;
+}
+
+.color:nth-child(2) {
+  background-color: #344ce6;
+}
+
+.color:nth-child(3) {
+  background-color: #cc5b5b;
+}
+
+.color:nth-child(4) {
+  background-color: #483d8b;
+}
+
+.color:nth-child(5) {
+  background-color: #d8bfd8;
+}
+
+button {
+  margin: 0.2rem;
+  border: none;
+  outline: none;
+  padding: .6em 1em;
+  border-radius: 19px;
+  background-color: #000;
+  color: #fff;
+}
+
+.save {
+  background-color: #344ce6;
+}
+
+.width {
+  background-color: #483d8b;
+}
+
 .main__cases {
   background-color: #282828;
   height: 100%;
