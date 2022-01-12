@@ -148,11 +148,8 @@ img {
 
 .cols-key-figures{
   display:flex;
-  margin-top:3em;
-  margin-bottom:3em;
-
   p{
-    line-height:2em;
+    line-height:1.8em;
   }
 
   @include breakpoint(xmall-max){
@@ -164,9 +161,9 @@ img {
     padding-left:3rem;
   }
 
-  .margin-top-correction{
-    margin-top:-220px;
-  }
+  // .margin-top-correction{
+  //   margin-top:-300px;
+  // }
 }
 .col-key-figures-content{
   padding-top:1em;
@@ -185,16 +182,9 @@ img {
   grid-column-gap: 2.5em;
     @include breakpoint(small-min){
     grid-column-gap: 8em;
-    :nth-of-type(3){
-      margin-top:-250px;
-      }  
     }
-  grid-row-gap: 3em;
-    @include breakpoint(small-max){
-      :nth-of-type(3){
-        margin-top:-250px;
-        }  
-    }
+  grid-row-gap: 1em;
+  
 }
 
 .words-about-me{
