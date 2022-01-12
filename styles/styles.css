@@ -984,14 +984,6 @@ h6 {
   font-size: 1rem;
 }
 
-.heading__animated--black:hover {
-  border-left: solid 100px #282828;
-  color: #282828;
-  padding-left: 10px;
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-}
-
 .heading__animated--light:hover {
   border-left: solid 100px #bee5f5;
   color: #bee5f5;
@@ -1554,12 +1546,6 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1586,7 +1572,7 @@ header img {
 
 @media only screen and (min-width: 991px) {
   .container--cv .job {
-    height: 450px;
+    max-height: 500px;
     width: 350px;
     padding: 2rem;
   }
@@ -1663,7 +1649,7 @@ header img {
   .container--cv .job:hover {
     -webkit-transition: all 300ms ease-in;
     transition: all 300ms ease-in;
-    margin-top: -30px;
+    margin-left: -30px;
     background: #bee5f5;
   }
   .container--cv .job:hover h3 {
@@ -1693,7 +1679,7 @@ header img {
 
 @media only screen and (min-width: 991px) {
   .container--cv .job__skills {
-    height: 350px;
+    height: 400px;
     width: 350px;
     padding: 2rem;
   }
@@ -1719,20 +1705,36 @@ header img {
   }
 }
 
-.container--cv .job__skills:hover {
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  background-color: #282828;
-  -webkit-filter: drop-shadow(0 6mm 4mm #344ce6);
-          filter: drop-shadow(0 6mm 4mm #344ce6);
-  border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
+.container--cv .job__skills li {
+  font-size: 20px;
+  line-height: 1.8rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .container--cv .job__skills:hover {
-    -webkit-filter: drop-shadow(0 0mm 0mm #344ce6);
-            filter: drop-shadow(0 0mm 0mm #344ce6);
-  }
+.container--cv .job__skills ul {
+  padding: 0.4rem;
+  padding-left: 0;
+}
+
+.container--cv .job__skills:hover {
+  -webkit-transition: all 600ms ease-in;
+  transition: all 600ms ease-in;
+}
+
+.container--cv .job__skills:hover ul {
+  color: #bee5f5;
+}
+
+.container--cv .job__skills:hover li {
+  font-size: 22px;
+}
+
+.container--cv .job__skills:hover p {
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.container--cv .job__skills:hover h3 {
+  color: #bee5f5;
 }
 
 .cv__title {
@@ -1777,7 +1779,7 @@ header img {
 
 @media only screen and (min-width: 1290px) {
   .cv__jobb {
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
   }
 }
 

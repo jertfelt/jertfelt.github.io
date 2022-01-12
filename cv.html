@@ -115,6 +115,7 @@
     <div class="container--large">
       <h2 class="text--light heading__animated--white">
       Jobb:</h2>
+      <br>
       <div class="cols-key-figures w-row">
         <div class="col-key-figures-content w-col w--col6">
           <div class="w-layout-grid grid-wrapper-jobs container--cv">
@@ -122,8 +123,11 @@
                 <span class="text-xxs text--white text--cursive">Januari 2014 - Pågående</span>
                 <h3 class="text--white text--bold">Frilans</h3>
                 <p class="text--xs text--bold text--light">Frilansande formgivare & illustratör</p>
-                <p class="text--xs text--white ">Jag har gjort allt från animationer till böcker, film, rapporter och grafiska profiler till förlag, organisationer, tidningar och privatpersoner.</p><p class="cv__link text--xxs">
-                  <a class="text--bold text--light" href="https://www.tovajertfelt.com"> Se mer här.</a></p>
+                <p class="text--xs text--white ">Jag har gjort allt från animationer till böcker, film, rapporter och grafiska profiler till förlag, organisationer, tidningar och privatpersoner.</p>
+                <p class="cv__link text--xxs">
+                  <a class="text--bold text--light"
+                  target="_blank" 
+                  href="https://www.tovajertfelt.com"> Se mer här.</a></p>
             </article>
 
 
@@ -144,7 +148,10 @@
                   Webbredaktör & Formgivare</p>
                 <p class="text--xs text--white">
                 Jag var art director, webbredaktör och formgivare. Ibland även fotograf, illustratör och krönikör. Ansvarig för bl.a. wordpress-publicering, SEO, Episerver, samt formgivning och layout av de olika sidorna:</p>
-                <a class="text--bold text--light text--xxs"  href="https://omvarldenberattar.se">OmVärlden Berättar</a><br> <a class="text--xxs text--bold text--light"  href="https://omvarlden.se"> OmVärlden.se</a>
+                 <a target="_blank"
+                 class="text--xxs text--bold text--light"  
+                href="https://omvarlden.se"> 
+                OmVärlden.se</a>
             </article>
 
             <article class="job">
@@ -162,11 +169,13 @@
 
   <section class="cv__education container__flex--row">
     <div class="container--xlarge">
+      
       <h2 class="text--white padding--xs heading__animated--light">
       Utbildning:</h2>
       <div class="cols-key-figures w-row">
         <div class="col-key-figures-content w-col w--col6">
           <div class="w-layout-grid grid-wrapper-jobs container--cv">
+            
             <article class="job__nobox"> 
               <h3 class="text--light">Nackademin</h3> 
               <span class="text-xxs text--white">2021- 2023</span>
@@ -175,31 +184,61 @@
               </p>
               <p class="text--xxs text--white">YH-utbildning på två år där vi lär oss HTML, CSS, och massor av JavaScript. Samt CMS-system och att jobba i projekt.</p>
                <p class="cv__link text--xxs">
-                  <a class="text--bold text--light" href="https://nackademin.se/utbildningar/frontend-utvecklare/"> Läs mer här!
+                  <a class="text--bold text--light" 
+                  target="_blank"
+                  href="https://nackademin.se/utbildningar/frontend-utvecklare/"
+                  > Läs mer här!
                   </a>
                 </p>
                 <button id="openBetyg" class="button--small-round button--light">Betyg</button>
-                <div id="betyg" class="betyg container__flex--row">
-                  <div id="closeBetyg" class="betyg--close">&times;</div>
+                <div id="betyg" 
+                class="betyg container__flex--row">
+                  <div id="closeBetyg" 
+                  class="betyg--close">&times;</div>
                     <div class="betyg--content">
                       <p class="text--xxs text--bold">
                         Frontend-utveckling, introduktion och projektmetodik
                       </p>
-                      <p class="text--xxs ">VG</p>
+                      <p class="text--xxs">VG</p>
                       <br>
                       <p class=" text--cursive  text--xxs text--bold">JavaScript 1</p>
                       <p class="text--xxs ">VG</p>
                       <br>
+                      <p class=" text--cursive  text--xxs text--bold">HTML & CSS</p>
+                      <p class="text--xxs ">VG</p>
+                      <br>
+                      <p class=" text--cursive  text--xxs text--bold">Grafikverktyg</p>
+                      <p class="text--xxs">TBA</p>
+                      <br>
                       <hr>
                       <br>
+
                       <p class="text--xs">Pågående:</p>
                       <p class="text--xxs">Affärsmannaskap</p>
-                      <p class="text--xxs">HTML & CSS</p>
-                      <p class="text--xxs">Grafikverktyg</p>
+                      <p class="text--xxs">Frontend-projekt</p>
                   </div>
                 </div>
-            </article>
-           
+              </article>
+              <div class="container__flex container--circle">
+                <div class="padding--xs">
+                   
+                      <canvas id="circle--25" 
+                      width="200" 
+                      height="200">
+                      </canvas>
+                      <h3 class="text--light">Nackademin: <br>
+                         26% avklarat</h3>
+                </div>  
+               
+              </div>  
+              <article class="job__nobox"> 
+                <h3 class="text--light">Konstfack</h3> 
+                <span class="text-xxs text--white">2013-2016 </span>
+                <p class="text--xs text--bold text--cursive text--white">
+                Kandidatexamen: <br>Visuell Kommunikation / Grafisk Design & Illustration
+                </p>
+                <p class="text--xxs text--white">Treårig kandidatutbildning som innebar formgivning, främst med fokus på print, samt illustration. Fokus låg på det konstnärliga utövandet.</p>
+              </article>
             <article class="job__nobox"> 
               <h3 class="text--light">Uppsala Universitet</h3> 
               <span class="text-xxs text--white">Vårterminen 2021</span>
@@ -207,39 +246,20 @@
                Konstvetenskap (kurs)
               </p>
               <p class="text--xxs text--white">Kurs i konstvetenskap från Antiken till nutid. Arkitektur, design och konst.</p>
-            </article>
-            <article class="job__nobox"> 
+            </article> 
+            <!-- <article class="job__nobox"> 
               <h3 class="text--light">Tjejer som kodar</h3> 
               <span class="text-xxs text--white">2017 </span>
               <p class="text--xs text--bold text--cursive text--white">
               Bygg din första hemsida! (kurs)
               </p>
               <p class="text--xxs text--white">En kurs i CSS, HTML och JS under cirka en månads tid.</p>
-            </article>
-
-            <article class="job__nobox"> 
-              <h3 class="text--light">Konstfack</h3> 
-              <span class="text-xxs text--white">2013-2016 </span>
-              <p class="text--xs text--bold text--cursive text--white">
-              Kandidatexamen: <br>Visuell Kommunikation / Grafisk Design & Illustration
-              </p>
-              <p class="text--xxs text--white">Treårig kandidatutbildning som innebar formgivning, främst med fokus på print, samt illustration. Fokus låg på det konstnärliga utövandet.</p>
-            </article>
+            </article> -->
+            
           </div>
         </div>
       </div>
-    <div class="container__flex container--circle">
-      <div class="padding--xs">
-         
-            <canvas id="circle--25" 
-            width="200" 
-            height="200">
-            </canvas>
-            <h3 class="text--light">Nackademin: <br>
-               26% avklarat</h3>
-      </div>  
-      </div>
-    </div>  
+ 
     </div>
   </section>
 
@@ -250,22 +270,69 @@
       <div class="cols-key-figures w-row">
         <div class="col-key-figures-content w-col w--col6">
           <div class="w-layout-grid grid-wrapper-jobs container--cv">
+            <!--Yrkeskunskap-->
             <article class="job__skills">
                 <h3 class="text--white text--bold">Yrkeskunskap</h3>
-                <p class="text--xs text--bold text--light ">Mycket goda kunskaper:</p>
-                <ul class="text--xs text--white">
+                <p class="text--bold text--xs text--light ">Mycket goda kunskaper:</p>
+                <ul class="text--white">
                 <li>Ansvarstagande</li>
                 <li>Kreativitet</li>
                 <li>Analytisk</li>
+                <li>Kommunikation</li>
                 </ul>
                 <p class="text--xs text--bold text--light ">Goda kunskaper:</p>
                 <ul class="text--xs text--white">
-                  <li>Ansvarstagande</li>
-                  <li>Kreativitet</li>
-                  <li>Analytisk</li>
+                  <li>Teamplayer</li>
+                  <li>Problemlösning</li>
                   </ul>
-   
-
+            </article>
+            <!--Koda-->
+            <article class="job__skills">
+              <h3 class="text--white text--bold">Kodning</h3>
+              <p class="text--bold text--xs text--light ">Mycket goda kunskaper:</p>
+              <ul class=" text--white">
+              <li>Tillgänglighet</li>
+              </ul>
+              <p class="text--bold text--xs text--light ">Goda kunskaper:</p>
+              <ul class="text--white">
+                <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (vanilla)</li>
+                </ul>
+                <p class="text--bold text--xs text--light ">Nybörjare:</p>
+              <ul class="text--white">
+                <li>C#</li>
+                </ul>
+            </article>
+            <!--programvara-->
+            <article class="job__skills">
+              <h3 class="text--white text--bold">Programvara:</h3>
+              <p class="text--bold text--xs text--light ">Mycket goda kunskaper:</p>
+              <ul class=" text--white">
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+                <li>Adobe Illustrator</li>
+              </ul>
+              <p class="text--bold text--xs text--light ">Goda kunskaper:</p>
+              <ul class="text--white">
+                <li>Visual Studio Code</li>
+                <li>Wordpress</li>
+                <li>After Effects</li>
+                <li>Github</li>
+                <li>CMS-system (tex Squarespace & EpiServer)</li>
+                </ul>
+            </article>
+            <article class= "job__skills">
+              <h4 class="text--xs text--white">
+                Jag lär mig snabbt och har under åren utforskat och kombinerat många olika kunskaper och tools of the trade.Jag har därför en bred bas av erfarenhet och kunskaper: allt från det konstnärliga till det tekniska, det kunskapstörstande och taktila, samt det strategiska, analytiska, affärsmannamässiga och sociala. 
+              </h4>
+            </article>
+          
+            </div>  
+          </div>
+        </div>
+      </div>
+   </div>
   </section>
   
 </main>

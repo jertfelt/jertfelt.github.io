@@ -12,7 +12,8 @@
     }
   grid-row-gap: 1em;
   @include breakpoint(medium-tablet){
-    @include flexBox(column,center,center);
+    display:flex;
+    flex-direction:column;
   }
 
   }
@@ -34,10 +35,11 @@
     margin-bottom:2rem;
     width:90%;
     @include breakpoint(medium-tablet-max){ 
-    height:450px;
+    max-height:500px;
     width:350px;
     padding:2rem;
    }
+
     h3{
       margin-right:3rem;
       margin-bottom:1rem;
@@ -51,6 +53,7 @@
     a{
       line-height: 1.8em;
     }
+
     &__nobox{
       @include breakpoint(medium-tablet-max){ 
       height:350px;
@@ -62,14 +65,14 @@
       padding-right:3rem;
       margin-bottom:2rem;
 
-        h3{
+      h3{
         margin-right:3rem;
         margin-bottom:1rem;
       }
-        span{
+      span{
         line-height: 1.8em;;
       }
-        p {
+      p {
         margin: 6px 0;
         width:80%;
           @include breakpoint(medium-tablet-max){ 
@@ -91,7 +94,7 @@
     &:hover{
       @include breakpoint(medium-tablet-max){ 
     transition: all 300ms ease-in;
-    margin-top: -30px;
+    margin-left: -30px;
     background:$color--primary--light;
     h3{
       margin-right:3rem;
@@ -115,7 +118,7 @@
 }
 &__skills{
   @include breakpoint(medium-tablet-max){ 
-  height:350px;
+  height:400px;
   width:350px;
   padding:2rem;
   }
@@ -131,24 +134,40 @@
     span{
     line-height: 1.8em;;
   }
-    p {
+    p{
     margin: 6px 0;
     width:80%;
       @include breakpoint(medium-tablet-max){ 
       width:100%;
       }
   }
-    &:hover{
-    transition: all 100ms ease-in;
-    background-color: $color--black;
-    filter: drop-shadow(0 6mm 4mm $color--primary--blue);
-    @include breakpoint(small-max){
-      filter: drop-shadow(0 0mm 0mm $color--primary--blue);
+    li{
+      font-size: 20px;
+      line-height:1.8rem;
     }
-    border-radius:45% 55% 52% 48% / 50% 25% 75% 50%
+    ul{
+      padding:0.4rem;
+      padding-left:0;
+    }
+
+    &:hover{
+    transition: all 600ms ease-in;
+    ul{
+      color:$color--primary--light;
+    }
+    li{
+    font-size: 22px;
+    }
+    p{
+      text-transform: uppercase;
+      color:$color--white;
+    }
+    h3{
+      color:$color--primary--light;
+    }    
 }
 }
-  }
+}
 }
 
 
@@ -165,11 +184,11 @@
       margin-top:6rem;
       margin-left:1rem;
     }
-     @include breakpoint(extra-large){
-    padding-bottom:3rem;}
+    @include breakpoint(extra-large){
+    padding-bottom:6rem;}
     @include flexBox(column,center,center);
     @include breakpoint(medium-tablet-max){
-      @include flexBox(row,center,center);
+    @include flexBox(row,center,center);
     }
   }  
   &__education{
@@ -216,8 +235,6 @@
       @include flexBox(row,center,center);
     }
   }  
-
-
 }
 
 
