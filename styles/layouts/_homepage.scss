@@ -97,7 +97,6 @@ img {
 }
 
 .col-who-am-I-1{
-  
   @include breakpoint(small-min){
     padding-right:2em;
     padding-left:1em;
@@ -183,7 +182,8 @@ img {
     @include breakpoint(small-min){
     grid-column-gap: 8em;
     }
-  grid-row-gap: 1em;
+  grid-row-gap: 2em;
+  grid-row-gap: 20px
   
 }
 
