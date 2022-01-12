@@ -147,10 +147,13 @@ img {
 }
 
 .cols-key-figures{
- 
   display:flex;
   margin-top:3em;
   margin-bottom:3em;
+
+  p{
+    line-height:2em;
+  }
 
   @include breakpoint(xmall-max){
     margin-top:0em;
@@ -195,6 +198,7 @@ img {
 }
 
 .words-about-me{
+  height:800px;
   background-color: $color--primary--dark;
   width:100%;
   margin-bottom:3rem;
@@ -270,31 +274,34 @@ position: relative;
   @include breakpoint(small-min){ 
   width:90%;
   line-height: 1.3em;
-  }@include breakpoint     (medium-tablet-max){
+  }
+  @include breakpoint(medium-tablet-max){
     margin-top:-50px;
-  }@include breakpoint(medium-min){
+    margin-left:2rem;
+  }
+  @include breakpoint(medium-min){
     padding:2rem;
     max-width:40%;
   }
       
   .mySlides{
-    max-height:260px; 
+   max-height:560px; 
    margin-bottom:1rem;
+   h3{
+     margin-bottom:2rem;
+   }
+
    @include breakpoint    (small-max)
       {
       h3{
+      margin-top:20px;
       margin-bottom:20px;
         }
       }
   }
   .slide__link{
-     text-align:center;
      margin-top:0.8rem;
      text-transform: uppercase;
-    
-    &:hover{
-       font-size:1.8em;
-    }
   }
   
 }

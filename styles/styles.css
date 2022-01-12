@@ -2321,6 +2321,10 @@ header img {
   margin-bottom: 3em;
 }
 
+.cols-key-figures p {
+  line-height: 2em;
+}
+
 @media only screen and (max-width: 600px) {
   .cols-key-figures {
     margin-top: 0em;
@@ -2390,6 +2394,7 @@ header img {
 }
 
 .words-about-me {
+  height: 800px;
   background-color: #483d8b;
   width: 100%;
   margin-bottom: 3rem;
@@ -2519,6 +2524,7 @@ header img {
 @media only screen and (min-width: 991px) {
   .homepage__slider {
     margin-top: -50px;
+    margin-left: 2rem;
   }
 }
 
@@ -2530,24 +2536,24 @@ header img {
 }
 
 .homepage__slider .mySlides {
-  max-height: 260px;
+  max-height: 560px;
   margin-bottom: 1rem;
+}
+
+.homepage__slider .mySlides h3 {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
   .homepage__slider .mySlides h3 {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
 
 .homepage__slider .slide__link {
-  text-align: center;
   margin-top: 0.8rem;
   text-transform: uppercase;
-}
-
-.homepage__slider .slide__link:hover {
-  font-size: 1.8em;
 }
 
 .section-cases {
