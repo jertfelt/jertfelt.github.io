@@ -169,6 +169,10 @@ ol {
   grid-template-rows: auto auto;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
+   @include breakpoint(xmall-max){
+    
+      @include flexBox(column,center,center);
+  };
 }
 
 .border-item{
@@ -179,8 +183,11 @@ ol {
   }
   @include breakpoint(small-min){
   width:80%;
-  border-radius:64% 96% 92% 48% / 40% 99% 0% 99%;}}
-
+  border-radius:64% 96% 92% 48% / 40% 99% 0% 99%;}
+  @include breakpoint(xmall-max){
+    border-radius:50%;
+  }
+}
   &--second{
     width:100%;
     @include breakpoint(small-max)
@@ -188,6 +195,9 @@ ol {
     @include breakpoint(small-min){
     width:80%;
    border-radius: 54% 46% 52% 48% / 0% 74% 26% 100%; }
+   @include breakpoint(xmall-max){
+    border-radius:50%;
+  }
   }
 
   &--third{
@@ -198,6 +208,9 @@ ol {
     @include breakpoint(small-min){
     width:80%;
     border-radius:45% 55% 52% 48% / 50% 25% 75% 50%;}
+    @include breakpoint(xmall-max){
+      border-radius:50%;
+    }
   }
 }
 
@@ -282,6 +295,10 @@ ol {
   margin-left:6rem;
   max-width:100%;}
   padding-bottom:1rem;
+  @include breakpoint(xmall-max){
+    margin-bottom:2rem;
+   }
+
 }
 
 .w-dyn-item{
@@ -290,6 +307,11 @@ ol {
     flex-direction: column;
     align-items: center;
     width:100%;
+  }
+  @include breakpoint(xmall-max){
+   max-height:30px;
+   margin-bottom:5rem;
+    
   }
 }
 centered--flex{

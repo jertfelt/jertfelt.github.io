@@ -374,6 +374,24 @@ ol {
   grid-column-gap: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .w-layout-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .border-item {
   width: 100%;
 }
@@ -388,6 +406,12 @@ ol {
   .border-item--first {
     width: 80%;
     border-radius: 64% 96% 92% 48% / 40% 99% 0% 99%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .border-item--first {
+    border-radius: 50%;
   }
 }
 
@@ -408,6 +432,12 @@ ol {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .border-item--second {
+    border-radius: 50%;
+  }
+}
+
 .border-item--third {
   width: 100%;
 }
@@ -423,6 +453,12 @@ ol {
   .border-item--third {
     width: 80%;
     border-radius: 45% 55% 52% 48% / 50% 25% 75% 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .border-item--third {
+    border-radius: 50%;
   }
 }
 
@@ -537,6 +573,12 @@ ol {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .w-dyn-list {
+    margin-bottom: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1279px) {
   .w-dyn-item {
     display: -webkit-box;
@@ -550,6 +592,13 @@ ol {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .w-dyn-item {
+    max-height: 30px;
+    margin-bottom: 5rem;
   }
 }
 
@@ -2369,7 +2418,6 @@ header img {
 .grid-wrapper-key-figures {
   grid-column-gap: 2.5em;
   grid-row-gap: 2em;
-  grid-row-gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2486,7 +2534,9 @@ header img {
 
 @media only screen and (max-width: 600px) {
   .words-about-me .words-about-me__img img {
-    border-radius: 0;
+    border-radius: 19px;
+    margin-bottom: 1rem;
+    margin-top: -3em;
   }
 }
 
@@ -2643,6 +2693,27 @@ header img {
   padding-right: 5rem;
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper-cases {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .footer {

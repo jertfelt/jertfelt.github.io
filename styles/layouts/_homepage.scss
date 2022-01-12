@@ -19,11 +19,11 @@
     left:10%;
     bottom:10%;
   }
-  @include breakpoint(small-min){ 
+  @include breakpoint(small-min){
     bottom:0%;
     left:15%;
   }
- 
+
 img {
   position:relative;
   display:flex;
@@ -32,18 +32,18 @@ img {
   justify-content: center;
   flex-wrap:wrap;
   align-items:center;
-  border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;  
-   
+  border-radius:86% 14% 52% 48% / 50% 52% 48% 50%;
+
 }
 }
 
 .section-tova{
-  @include breakpoint(small-max){ 
+  @include breakpoint(small-max){
     margin-top:5rem;
     padding:0;
     margin-bottom:0em;
   }
-  @include breakpoint(small-min){ 
+  @include breakpoint(small-min){
     margin-top:2rem;
     margin-bottom:2em;
   }
@@ -53,11 +53,11 @@ img {
   min-height: 50vh;
   width:100%;
   margin-bottom:2em;
-  
+
 
   }
   .first-header{
-    @include breakpoint(small-max){ 
+    @include breakpoint(small-max){
       font-size:2rem;
       margin-top:2rem;
       margin-left:2rem;
@@ -183,11 +183,11 @@ img {
     grid-column-gap: 8em;
     }
   grid-row-gap: 2em;
-  grid-row-gap: 20px
-  
+
 }
 
 .words-about-me{
+
   height:800px;
   background-color: $color--primary--dark;
   width:100%;
@@ -208,10 +208,12 @@ img {
       padding:2rem;
       padding-bottom:3rem;
     }
-  
+
 .words-about-me__row {
   @include flexBox(column-reverse, center, center);
-  @include breakpoint(medium-tablet-max){  
+  
+  
+  @include breakpoint(medium-tablet-max){
     @include flexBox(row, center, space-between);
 }}
 
@@ -234,7 +236,7 @@ position: relative;
     transform: skewY(-4deg);
     transform-origin: 0% 0;
   }
-  
+
   &:after {
     bottom: 0;
     transform: skewY(0deg);
@@ -248,20 +250,22 @@ position: relative;
         margin-left:90px;
          }
       @include breakpoint(xmall-max){
-        border-radius:0;
+        border-radius:19px;
+        margin-bottom:1rem;
+        margin-top:-3em;
       }
     }
       &:hover{
       opacity:0.7;
        }
   }
-  
+
 }
 
 .homepage__slider{
   background-color: $color--primary--dark;
   width:100%;
-  @include breakpoint(small-min){ 
+  @include breakpoint(small-min){
   width:90%;
   line-height: 1.3em;
   }
@@ -273,9 +277,9 @@ position: relative;
     padding:2rem;
     max-width:40%;
   }
-      
+
   .mySlides{
-   max-height:560px; 
+   max-height:560px;
    margin-bottom:1rem;
    h3{
      margin-bottom:2rem;
@@ -293,7 +297,7 @@ position: relative;
      margin-top:0.8rem;
      text-transform: uppercase;
   }
-  
+
 }
 
 .section-cases{
@@ -311,7 +315,7 @@ position: relative;
   @include breakpoint (extra-large){
     padding-left:3rem;
     width:80%;
-  }  
+  }
 }
 
 
@@ -334,7 +338,7 @@ position: relative;
         @include breakpoint (xmall-max){
          text-transform: uppercase;
         }
-  }  
+  }
 
   p{
     @include breakpoint (xmall-max){
@@ -349,7 +353,7 @@ position: relative;
   transition: all 100ms ease-in;
   cursor: pointer;
   box-shadow: inset 0px 0px 400px 110px $color--fontblack;
- 
+
 }
 
 .wrapper-button-case-item{
@@ -364,4 +368,10 @@ position: relative;
   padding-right:5rem;
   margin-top:6rem;
   margin-bottom:6rem;
+  @include breakpoint(xmall-max){
+    @include flexBox(column,center,center);
+  padding-right:0rem;
+  margin-top:3rem;
+  margin-bottom:6rem;
+  }
 }
