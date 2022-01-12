@@ -2859,6 +2859,43 @@ header img {
   font-size: 2em;
 }
 
+.didyouknow {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 500px;
+  height: 300px;
+  overflow: auto;
+  background-color: #483d8b;
+  color: #bee5f5;
+  border-radius: 19px;
+}
+
+.didyouknow--content {
+  margin: 15% auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.didyouknow--close {
+  color: #f4f4f4;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.didyouknow--close:hover {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2em;
+}
+
 #did-you-know {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2876,8 +2913,8 @@ header img {
 }
 
 #did-you-know button {
-  border-radius: 56% 14% 52% 48% / 50% 52% 48% 50%;
-  padding: 12px;
+  border-radius: 1px;
+  padding: 1rem;
   border: none;
   cursor: pointer;
   background-color: #000;
