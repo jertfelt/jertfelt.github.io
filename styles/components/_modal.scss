@@ -49,12 +49,21 @@
     background-color: $color--primary--blue;
     position: fixed;
     overflow: auto;
-    height: 300px;
+    height: 360px;
     width: 60%;
     z-index: 1;
     right: 200px;
     top: 0;
+    border-radius: 19px;
+
+    @include breakpoint(medium-tablet){
+     top:0;
+     left:0;
+     width:100%;
+     }
+    
   }
+
 .pennstorlek__content{
   background-color: $color--primary--blue;
   color: $color--white;
@@ -63,6 +72,7 @@
     @include flexBox(column,flex-start,space-between);
     padding:2rem;
     p{
+      margin-top:1rem;
       margin-bottom:1rem;
       line-height:1.5rem;
     }
@@ -84,4 +94,34 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+//modal drawingboard-shortcuts
+
+.drawingboard__shortcuts{
+  display: none; 
+  border-radius: 19px;
+  position: fixed;
+  overflow: auto;
+  height: 240px;
+  width: 260px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $color--primary--light;
+  span{
+  margin-top:0;
+  position:absolute;
+  
+  }
+  div{
+    margin-top:10px;
+    padding:1rem;  
+    background-color: 
+  ul{
+    line-height: 1.2rem;
+  }
+
+  }
 }

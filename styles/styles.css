@@ -1417,6 +1417,12 @@ header img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  cursor: pointer;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.drawingboard__nav .drawingboard__nav--1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1430,9 +1436,34 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  cursor: pointer;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+}
+
+.drawingboard__nav .drawingboard__nav--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+  .drawingboard__nav {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .drawingboard__nav {
+    margin-top: 8rem;
+  }
 }
 
 .color {
@@ -1504,6 +1535,16 @@ button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #282828;
+}
+
+.question {
+  background-color: transparent;
+}
+
+.question:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: transparent;
 }
 
 .main__cases {
@@ -3000,11 +3041,20 @@ button:hover {
   background-color: #344ce6;
   position: fixed;
   overflow: auto;
-  height: 300px;
+  height: 360px;
   width: 60%;
   z-index: 1;
   right: 200px;
   top: 0;
+  border-radius: 19px;
+}
+
+@media only screen and (max-width: 991px) {
+  .pennstorlek__modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .pennstorlek__content {
@@ -3031,6 +3081,7 @@ button:hover {
 }
 
 .pennstorlek__content div p {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
@@ -3051,5 +3102,30 @@ button:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.drawingboard__shortcuts {
+  display: none;
+  border-radius: 19px;
+  position: fixed;
+  overflow: auto;
+  height: 240px;
+  width: 260px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #bee5f5;
+}
+
+.drawingboard__shortcuts span {
+  margin-top: 0;
+  position: absolute;
+}
+
+.drawingboard__shortcuts div {
+  margin-top: 10px;
+  padding: 1rem;
+  background-color: ul;
+  background-color-line-height: 1.2rem;
 }
 /*# sourceMappingURL=styles.css.map */

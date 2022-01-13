@@ -91,14 +91,6 @@ penButtonGig.addEventListener("click", () =>{
 })
 
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    penModal.style.display ="none";
-  }
-  if (event.key === 'Enter'){
-    penModal.style.display ="none";
-  }
-})
 
 // let pennButtons = document.querySelectorAll(".pennstorlek--button");
 
@@ -137,6 +129,23 @@ window.addEventListener("mousemove", (e) => {
     prevMouseY = currentMouseY;
 })
 
+let shortcutModal = document.getElementById("drawingboard__shortcuts");
+let shortcutButt = document.getElementsByClassName("question")[0];
+let shortcutClose = document.getElementsByClassName("pennstorlek__close")[1];
+
+shortcutButt.addEventListener("click", () =>{
+  shortcutModal.style.display="block";
+})
+shortcutClose.addEventListener("click", () =>{
+  shortcutModal.style.display ="none";
+})
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    penModal.style.display ="none";
+    shortcutModal.style.display ="none";
+  }
+})
 
 
 //* future project:
