@@ -40,3 +40,48 @@
     background-color: $color--fontblack;
   }
 }
+
+
+//modal pennstorlek drawingboard
+
+.pennstorlek__modal{
+    display: none; 
+    background-color: $color--primary--blue;
+    position: fixed;
+    overflow: auto;
+    height: 300px;
+    width: 60%;
+    z-index: 1;
+    right: 200px;
+    top: 0;
+  }
+.pennstorlek__content{
+  background-color: $color--primary--blue;
+  color: $color--white;
+  width: 80%; 
+  div{
+    @include flexBox(column,flex-start,space-between);
+    padding:2rem;
+    p{
+      margin-bottom:1rem;
+      line-height:1.5rem;
+    }
+    button{
+      border-radius: 0;
+    }
+  }
+
+  }
+.pennstorlek__close{
+    float: right;
+    font-size: 28px;
+    margin-right:-30px;
+    margin-top:30px;
+  }
+
+.pennstorlek__close:hover,
+.pennstorlek__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link type="text/css" href="styles/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +26,6 @@
   <title>Tova Jertfelt Portfolio</title>
 
 </head>
-
-
 
 <body class="drawingboard__body">
   <header>
@@ -111,29 +108,63 @@
       class="text--light"> 
       maila den till mig!</p></a>
   </div>
-    <canvas id="drawingboard"></canvas>
+
+    <canvas id="drawingboard"
+    height="1400"
+    ></canvas>
     <div class="drawingboard__nav"> 
-      
         <div class="color" data-clr="#000"></div>
         <div class="color" data-clr="#344ce6"></div>
         <div class="color" data-clr="rgb(204, 91, 91)"></div>
         <div class="color" data-clr="#483d8b"></div>
-        <div class="color" data-clr="#d8bfd8"></div>
-        <button class="clear text--bold">Rensa</button>
+        <div class="color" data-clr="#bee5f5"></div>
+        <button class="erase text--bold">
+          <img src="styles/img/icons8-eraser-60.png" 
+          title="Suddgummi" 
+          alt="Suddgummi">
+        </button>
+      <button class="width text--bold">
+          <img src="styles/img/icons8-pen-100.png" 
+          title="Byt pennstorlek" 
+          alt="Byt pennstorlek">
+        </button>
+        <!--modal för pennstorlek-->
+        <div id="pennstorlek--modal" class="pennstorlek__modal">
+          <div class="pennstorlek__content">
+            <span class="pennstorlek__close text--bold text--white">&times;</span>
+            <div>
+              <p class="text--bold">Välj storlek på pennan:</p>
+            <button id="pennstorlek--liten" class="pennstorlek--button text--bold">Smal</button>
+            <button id="pennstorlek--mellan" class="text--bold">Mellan</button>
+            <button id="pennstorlek--stor" class="pennstorlek--button text--bold">Stor</button>
+            <button id="pennstorlek--gigant" class=" pennstorlek--button text--bold">Gigantisk</button>
+          </div>
+          </div>
+        </div>
+        <!-- future project: <button class="filling text--bold">
+          <img src="styles/img/icons8-fill-color-48.png" 
+          title="Färglägg fält" 
+          alt="Fill with color">
+        </button>  -->
+        <button class="clear text--bold"> 
+          <img src="styles/img/icons8-trash-60.png" 
+          title="Börja om" 
+          alt="Trashcan">
+        </button>
         <button class="save text--bold">Spara</button>
-       
-    </div>
-
+        
+      
+  </div>
+  
 </main>
 <footer class="footer">
-  
-
   <div class="container--xlarge padding--s">
     <h2>Hör av dig!</h2>
       <ul>
         <li>
           <a href="mailto:tovajertfelt@gmail.com"
-          target="_blank" >tovajertfelt@gmail.com
+          target="_blank" >
+          tovajertfelt@gmail.com
           </a>
         </li>
         <li>
@@ -149,66 +180,21 @@
   </div>
 
 </footer>
-<script src="script.js"></script>
+<script src="drawingboard.js"></script>
 <script>
-let canvas = document.getElementById("drawingboard");
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
 
-let toolDrawing = canvas.getContext("2d")
+//Menu button mobile
+let menuButton = document.getElementById("menutoggle");
+let menuMobile = document.querySelector("#drop-down");
+menuButton.addEventListener("click", dropdown);
 
-let prevMouseX = null
-let prevMouseY = null
-
-toolDrawing.lineWidth = 5
-
-let draw = false
-
-let clearAllBtn = document.querySelector(".clear");
-
-clearAllBtn.addEventListener("click", () => {
-    toolDrawing.clearRect(0, 0, canvas.width, canvas.height)
-})
-
-let saveButt = document.querySelector(".save");
-
-saveButt.addEventListener("click", () => {
-  let info = canvas.toDataURL("imag/png");
-  let a = document.createElement("a");
-  a.href = info;
-  a.download = "bild-till-tova.png";
-  a.click();
-})
-
-let colors = document.querySelectorAll(".color")
-colors = Array.from(colors)
-colors.forEach(color => {
-    color.addEventListener("click", () => {
-        toolDrawing.strokeStyle = color.dataset.clr
-    })
-})
-
-window.addEventListener("mousedown", (e) => draw = true)
-window.addEventListener("mouseup", (e) => draw = false)
-
-window.addEventListener("mousemove", (e) => {
-    if(prevMouseX == null || prevMouseY == null || !draw){
-      prevMouseX = e.clientX;
-      prevMouseY = e.clientY;
-        return
-    }
-    
-    let currentMouseX = e.clientX;
-    let currentMouseY = e.clientY;
-
-    toolDrawing.beginPath();
-    toolDrawing.moveTo(prevMouseX, prevMouseY);
-    toolDrawing.lineTo(currentMouseX, currentMouseY);
-    toolDrawing.stroke()
-
-    prevMouseX = currentMouseX;
-    prevMouseY = currentMouseY;
-})
+function dropdown(){
+ if (menuMobile.classList.contains("drop-down"))
+ {menuMobile.classList.remove("drop-down");
+}
+else 
+menuMobile.classList.add("drop-down");
+}
 
 </script>
 </body>
