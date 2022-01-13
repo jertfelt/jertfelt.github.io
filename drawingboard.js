@@ -5,14 +5,16 @@ let canvas = document.getElementById("drawingboard");
 canvas.width = window.innerWidth;
 // canvas.height = window.innerHeight;
 
-let toolDrawing = canvas.getContext("2d")
+let toolDrawing = canvas.getContext("2d");
 
-let prevMouseX = null
-let prevMouseY = null
+let prevMouseX = null;
+let prevMouseY = null;
+let prevTouchX = null;
+let prevTouchY = null;
 
-toolDrawing.lineWidth = 5
+toolDrawing.lineWidth = 5;
 
-let draw = false
+let draw = false;
 
 
 let clearAllBtn = document.querySelector(".clear");
@@ -114,14 +116,16 @@ penClose.addEventListener("click", () =>{
   penModal.style.display ="none";
 })
 
-window.addEventListener("mousedown", (e) => draw = true)
-window.addEventListener("mouseup", (e) => draw = false)
+window.addEventListener("mousedown", (e) => draw = true);
+window.addEventListener("mouseup", (e) => draw = false);
+window.addEventListener("touchstart", (e) => draw = true);
+window.addEventListener("touchend", (e) => draw =false);
 
 window.addEventListener("mousemove", (e) => {
     if(prevMouseX == null || prevMouseY == null || !draw){
       prevMouseX = e.clientX;
       prevMouseY = e.clientY;
-        return
+        return;
     }
     
     let currentMouseX = e.clientX;
@@ -134,6 +138,26 @@ window.addEventListener("mousemove", (e) => {
 
     prevMouseX = currentMouseX;
     prevMouseY = currentMouseY;
+})
+
+window.addEventListener("touchmove", (e) => {
+  if (prevTouchX ==null|| prevTouchY == null || !draw ){
+    prevTouchX = e.clientX;
+    prevTouchY = e.clientY;
+    return;
+  }
+
+  let currentTouchX = e.clientX;
+  let currentTouchY = e.clientY;
+
+  toolDrawing.beginPath();
+  toolDrawing.moveTo(prevTouchX, prevTouchY);
+  toolDrawing.lineTo(currentTouchX, currentTouchY);
+  toolDrawing.stroke()
+
+  prevTouchX = currentTouchX;
+  prevTouchY = currentTouchY;
+  
 })
 
 let shortcutModal = document.getElementById("drawingboard__shortcuts");
