@@ -1122,7 +1122,7 @@ h6 {
 }
 
 .button--small-round {
-  padding: 8px;
+  padding: 1rem;
   border: none;
   text-transform: uppercase;
   font-family: "Merriweather", Trebuchet, sans-serif;
@@ -1182,6 +1182,15 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/styles/img/illustration.jpg);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
+.background--drawing {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/draw-a-picture.png);
   -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
           box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
 }
@@ -3153,7 +3162,7 @@ button:hover {
   position: fixed;
   overflow: auto;
   height: 360px;
-  width: 60%;
+  width: 100%;
   z-index: 1;
   right: 200px;
   top: 0;

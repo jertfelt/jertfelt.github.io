@@ -57,7 +57,7 @@
 
 .button{
   &--small-round{
-    padding:8px;
+    padding:1rem;
     border:none;
     text-transform: uppercase;
     font-family: $font--alternative;
@@ -117,6 +117,14 @@
     background-image: url(/styles/img/illustration.jpg);
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
     
+  }
+
+  &--drawing{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/draw-a-picture.png);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
   }
 }
 
