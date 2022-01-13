@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Merriweather:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="icon" href="/styles/img/favicon.ico">
+  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/styles/img/tova-jertfelt-logo2.png" sizes="144x144">
+
+  <title>Tova Jertfelt Portfolio</title>
+
+</head>
+
+<body class="drawingboard__body">
+  <header>
+    <nav class="nav">
+     <div class="container--xlarge header">
+       <div class="flex-split padding--xs">
+           <a class="nav-logo-container w--inline-block" 
+             href="index.html"
+             aria-current="page">
+             <img src="styles/img/tova-jertfelt-logo.png" 
+               loading="lazy" 
+               alt="logotype Tova Jertfelt" 
+               class="logotype--nav"/>
+           </a>
+           <ul class="main-menu">
+             <li>
+               <a href="index.html" 
+               class="text--bold text--bold text--light text--xs text text--center ">
+               Hem
+               </a>
+             </li>
+             <li>
+               <a
+                href="cv.html"
+                class="text--bold text--light text--xs text text--center active">
+               CV
+               </a>
+             </li>
+             <li>
+               <a
+               href="cases.html"
+               class="text--bold text--light text--xs text text--center">
+               Cases
+               </a>
+             </li>
+           </ul>
+     <button class="menu-toggle button-menu mobile" 
+             id="menutoggle">
+       <span class="darkmode">
+         <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" 
+               alt="burger-menu for mobile" 
+               class="default-mobile">
+       </span>
+   
+     </button>
+     <ul class="main-menu-mobile drop-down mobile" 
+         id="drop-down">
+       <li>
+         <a href="index.html" 
+            class="text--bold text--dark text--xs text text--center">
+           Hem
+         </a>
+       </li>
+       <li>
+         <a
+           href="cv.html"
+           class="text--bold text--dark text--xs text text--center">
+           CV
+         </a>
+       </li>
+       <li>
+         <a
+           href="cases.html"
+           class="text--bold text--dark text--xs text text--center">
+           Cases
+         </a>
+       </li>
+     </ul>
+   </div>
+   </div>
+    </nav>
+    <div class="line"></div>
+   </header>
+
+  <main class="drawingboard__main">
+    <div class="drawingboard__intro">
+      <h1 class="text--center text--white">Rita en bild</h1>
+      <p class="text--center text--xs text--white text--bold">
+        Var med och bidra i mitt spontana galleri! Rita en bild och 
+        <a href="mailto:tovajertfelt@gmail.com"
+        target="_blank" 
+        class="text--light"> 
+        maila den till mig!</a>
+      </p>
+  </div>
+
+    <canvas id="drawingboard"
+    height="1400"
+    ></canvas>
+    <div class="drawingboard__nav"> 
+      <div class="drawingboard__nav--1">
+        <div class="color" data-clr="#000"></div>
+        <div class="color" data-clr="#344ce6"></div>
+        <div class="color" data-clr="rgb(204, 91, 91)"></div>
+        <div class="color" data-clr="#483d8b"></div>
+        <div class="color" data-clr="#bee5f5"></div>
+      </div>
+      <div class="drawingboard__nav--2">
+        <button class="erase text--bold">
+          <img src="styles/img/icons8-eraser-60.png" 
+          title="Suddgummi" 
+          alt="Suddgummi">
+        </button>
+      <button class="width text--bold">
+          <img src="styles/img/icons8-pen-100.png" 
+          title="Byt pennstorlek" 
+          alt="Byt pennstorlek">
+        </button>
+        <!--modal för pennstorlek-->
+        <div id="pennstorlek--modal" class="pennstorlek__modal">
+          <div class="pennstorlek__content">
+            <span class="pennstorlek__close text--bold text--white">&times;</span>
+            <div>
+              <p class="text--bold">Välj storlek på pennan:</p>
+            <button id="pennstorlek--liten" class="pennstorlek--button text--bold">Smal</button>
+            <button id="pennstorlek--mellan" class="text--bold">Mellan</button>
+            <button id="pennstorlek--stor" class="pennstorlek--button text--bold">Stor</button>
+            <button id="pennstorlek--gigant" class=" pennstorlek--button text--bold">Gigantisk</button><br>
+          </div>
+          </div>
+        </div>
+        <!-- future project: <button class="filling text--bold">
+          <img src="styles/img/icons8-fill-color-48.png" 
+          title="Färglägg fält" 
+          alt="Fill with color">
+        </button>  -->
+        <button class="clear text--bold"> 
+          <img src="styles/img/icons8-trash-60.png" 
+          title="Börja om" 
+          alt="Trashcan">
+        </button>
+        <button class="save text--bold">Spara</button>
+        <button class="question text--bold text--font-black">?</button>
+        <div id="drawingboard__shortcuts" class="drawingboard__shortcuts">
+            <div>
+              <span class="pennstorlek__close text--bold text--black">&times;</span>
+
+              <div class="text--black text--bold">
+                <p class="text--xs">Kortkommandon: 
+                  <ul>
+                    <li>E = Suddgummi </li>
+                    <li>P = Byt penntjocklek </li>
+                    <li>Delete = Börja om</li>
+                    <li>S = Spara</li>
+                    <li>Esc = Stänga</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  
+</main>
+<footer class="footer">
+  <div class="container--xlarge padding--s">
+    <h2>Hör av dig!</h2>
+      <ul>
+        <li>
+          <a href="mailto:tovajertfelt@gmail.com"
+          target="_blank" >
+          tovajertfelt@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tovajertfelt/"
+          target="_blank">Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jertfelt"
+          target="_blank">Github</a>
+        </li>
+      </ul>
+  </div>
+
+</footer>
+<script src="drawingboard.js"></script>
+<script>
+
+//Menu button mobile
+let menuButton = document.getElementById("menutoggle");
+let menuMobile = document.querySelector("#drop-down");
+menuButton.addEventListener("click", dropdown);
+
+function dropdown(){
+ if (menuMobile.classList.contains("drop-down"))
+ {menuMobile.classList.remove("drop-down");
+}
+else 
+menuMobile.classList.add("drop-down");
+}
+
+</script>
+</body>
+</html>
