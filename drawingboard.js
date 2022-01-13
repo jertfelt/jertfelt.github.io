@@ -73,28 +73,31 @@ penSizeButton.addEventListener("click", () => {
 let penButtonSmall = document.getElementById("pennstorlek--liten");
 penButtonSmall.addEventListener("click", () => {
   toolDrawing.lineWidth = 5;
-  penModal.style.display ="none";
+  if (penModal.style.display === "block"){
+    penModal.style.display ="none";};
 })
 
 let penButtonMed = document.getElementById("pennstorlek--mellan");
 penButtonMed.addEventListener("click", () => {
   toolDrawing.lineWidth = 10;
-  penModal.style.display ="none";
+  if (penModal.style.display === "block"){
+    penModal.style.display ="none";};
   
 })
 let penButtonLg = document.getElementById("pennstorlek--stor");
 penButtonLg.addEventListener("click", () => {
   toolDrawing.lineWidth =20;
-  penModal.style.display ="none";
+  if (penModal.style.display === "block"){
+    penModal.style.display ="none";};
+
 })
 
 let penButtonGig = document.getElementById("pennstorlek--gigant");
 penButtonGig.addEventListener("click", () =>{
   toolDrawing.lineWidth =100;
-  penModal.style.display ="none";
+  if (penModal.style.display === "block"){
+  penModal.style.display ="none";};
 })
-
-
 
 // let pennButtons = document.querySelectorAll(".pennstorlek--button");
 
