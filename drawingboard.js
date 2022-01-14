@@ -44,6 +44,7 @@ color.addEventListener("click", () => {
 
 
 
+
 //*pen sizes
 let penModal = document.getElementById("pennstorlek--modal");
 let penClose = document.getElementsByClassName("pennstorlek__close")[0];
@@ -205,6 +206,7 @@ let rect = canvasDom.getBoundingClientRect();
     renderCanvas();
   })();
 
+
 })();
 
 
@@ -226,3 +228,4 @@ penModal.style.display ="none";
 shortcutModal.style.display ="none";
 }
 })
+

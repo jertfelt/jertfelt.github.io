@@ -81,14 +81,14 @@
 
 .pennstorlek__modal{
     display: none; 
-    background-color: $color--primary--blue;
+    background-color: $color--primary--light;
     position: fixed;
     overflow: auto;
-    height: 360px;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     z-index: 1;
-    right: 200px;
-    top: 0;
+    right: 50;
+    top: 50;
     border-radius: 19px;
 
     @include breakpoint(medium-tablet){
@@ -100,8 +100,7 @@
   }
 
 .pennstorlek__content{
-  background-color: $color--primary--blue;
-  color: $color--white;
+  color: $color--fontblack;
   width: 80%; 
   div{
     @include flexBox(column,flex-start,space-between);
@@ -112,6 +111,7 @@
       line-height:1.5rem;
     }
     button{
+      background-color: transparent;
       border-radius: 0;
     }
   }
@@ -122,11 +122,12 @@
     font-size: 28px;
     margin-right:-30px;
     margin-top:30px;
+    color:$color--fontblack;
   }
 
 .pennstorlek__close:hover,
 .pennstorlek__close:focus {
-  color: black;
+  color: $color--primary--dark;
   text-decoration: none;
   cursor: pointer;
 }
@@ -139,11 +140,11 @@
   border-radius: 19px;
   position: fixed;
   overflow: auto;
-  height: 240px;
+  height: 300px;
   width: 260px;
   z-index: 1;
-  left: 0;
-  top: 0;
+  left: 50;
+  top: 60;
   background-color: $color--primary--light;
   span{
   margin-top:0;
