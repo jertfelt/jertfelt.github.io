@@ -1,112 +1,115 @@
+
 .drawingboard{
-&__main{
-  height:100%;
-  width:100%;
-  background-color: $color--white;
-  padding-bottom:3rem;
-
-}
-&__space{
-  height:1800px;
-  width:100%;
-}
-&__intro{
-  background-color: $color--black;
-  margin-top:5rem;
-  padding:1rem;
-  position: fixed;
-  width:100%;
-  @include breakpoint(small-max){
-    margin-bottom: 4rem;
-  }
-}
-&__nav{
-  position: fixed;
-  top: 240px;
-  left: 50%;
-  transform: translateX(-50%);
-  .drawingboard__nav--1{
- @include flexBox(row,center,space-between);
-}
-.drawingboard__nav--2{
-  @include flexBox(row,center,space-between);
-}
-  cursor: pointer;
-  transition: opacity .5s;
-  @include breakpoint(exmall-max){
-   margin-top:12rem;
-  }
-  @include breakpoint(exmall){
-    margin-top:7rem;
-  }
-  @include breakpoint(xsmall-min){
-    margin-top:4.5rem;
-  }
-}
-}
-
-.color{
-  margin:0.3rem;
-  height: 30px;
-  width: 30px;
-  background-color: blue;
-  border-radius: 50%;
-  transition: transform .5s;
- 
-}
-
-.color:hover{
-  transform: scale(1.2);
-}
-.color:nth-child(1){
-  background-color: #000;
-}
-.color:nth-child(2){
-  background-color: #344ce6;
-}
-.color:nth-child(3){
-  background-color: rgb(204, 91, 91);
-}
-.color:nth-child(4){
-  background-color: #483d8b;
-}
-.color:nth-child(5){
-  background-color: #bee5f5;
-}
-
-button{
-  margin:0.3rem;
-  border: none;
-  outline: none;
-  padding: .6em .6em;
-  border-radius: 50%;
-  background-color: $color--fontblack;
-  color: #fff;
-
-img{
-  max-width:26px;
-  max-height:26px;
-}
-&:hover{
-  transform: scale(1.2);
-  background-color: $color--primary--blue;
-}
-}
-.save{
-  background-color: $color--primary--blue;
-  border-radius: 19px;
-  padding: .6em 1em;
-  text-transform: uppercase;
-  &:hover{
-    transform: scale(1.1);
+  &__body{
     background-color: $color--black;
   }
-}
+ 
+  &__header{
+    margin-top:6rem;
+    width:100%;
+    line-height: 1.8rem;
+    @include flexBox(column,center,space-between);
+    @include breakpoint(small-max){
+      padding:2;
+    }
+    }
+  
+  &__nav{
+    cursor: pointer;
+    transition: opacity .5s;
+    @include flexBox(column,center,space-between);
 
-.question{
-  background-color: transparent;
-  &:hover{
-    transform: scale(1.5);
-    background-color:transparent;
+    .drawingboard__nav--1 {
+      @include flexBox(row,center,space-between);
+    }
+    .drawingboard__nav--2 {
+      @include flexBox(row,center,space-between);
+      padding-bottom:1rem;
+    }
+  }
+  &__content{
+    background-color: $color--primary--blue;
+   .center{
+     @include flexBox(column,center,space-between);
+   }
+   padding-bottom:8rem;
+   padding-top:2rem;
   }
 }
+
+  #drawingboard--canvas{
+    border-radius: 19px;
+    cursor: crosshair;
+    background-color: #f4f4f4;
+    margin-bottom:1rem;
+    @include breakpoint(small-max){
+      width:250px;
+      height:250px;
+    }
+  }
+
+  .color{
+    margin:0.4rem;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    transition: transform .5s;
+  }
+  
+  .color:hover{
+    transform: scale(1.2);
+  }
+  .color:nth-child(1){
+    background-color: #000;
+  }
+  .color:nth-child(2){
+    background-color: #344ce6;
+  }
+  .color:nth-child(3){
+    background-color: rgb(204, 91, 91);
+  }
+  .color:nth-child(4){
+    background-color: #483d8b;
+  }
+  .color:nth-child(5){
+    background-color: #bee5f5;
+  }
+  
+  button{
+    margin:0.3rem;
+    border: none;
+    outline: none;
+    padding: .6em .6em;
+    border-radius: 50%;
+    background-color: $color--primary--blue;
+  
+  img{
+    max-width:30px;
+    max-height:30px;
+  }
+  &:hover{
+    transform: scale(1.2);
+    background-color: $color--primary--dark;
+  }
+  }
+  .save{
+    background-color: $color--fontblack;
+    border-radius: 19px;
+    padding: .6em 1em;
+    text-transform: uppercase;
+
+    &:hover{
+      transform: scale(1.1);
+      background-color: $color--primary--dark;
+    }
+  }
+  
+  .question{
+    background-color: transparent;
+    &:hover{
+      transform: scale(1.5);
+      background-color:transparent;
+    }
+  }
+

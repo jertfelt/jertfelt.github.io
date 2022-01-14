@@ -132,115 +132,149 @@
     </nav>
     <div class="line"></div>
    </header>
+   <!-- Content -->
+   <main class="drawingboard__main">
 
-  <main class="drawingboard__main">
-    <div class="drawingboard__intro">
-      <h1 class="text--center text--white">Rita en bild</h1>
-      <p class="text--center text--xs text--white text--bold">
-        Var med och bidra i mitt spontana galleri!<br> Rita en bild och 
-        <a href="mailto:tovajertfelt@gmail.com"
-        target="_blank" 
-        class="text--light"> 
-        maila den till mig!</a>
-      </p>
-      <p class="text--center text--xxs text--white text--cursive"> Obs: mobilversion under utveckling. För att delta, använd dator så länge! </p>
-  </div>
-
-    <canvas id="drawingboard"
-    height="1400"
-    ></canvas>
-    <div class="drawingboard__nav"> 
-      <div class="drawingboard__nav--1">
-        <div class="color" data-clr="#000"></div>
-        <div class="color" data-clr="#344ce6"></div>
-        <div class="color" data-clr="rgb(204, 91, 91)"></div>
-        <div class="color" data-clr="#483d8b"></div>
-        <div class="color" data-clr="#bee5f5"></div>
-      </div>
-      <div class="drawingboard__nav--2">
-        <button class="erase text--bold">
-          <img src="styles/img/icons8-eraser-60.png" 
-          title="Suddgummi" 
-          alt="Suddgummi">
-        </button>
-      <button class="width text--bold">
-          <img src="styles/img/icons8-pen-100.png" 
-          title="Byt pennstorlek" 
-          alt="Byt pennstorlek">
-        </button>
-        <!--modal för pennstorlek-->
-        <div id="pennstorlek--modal" class="pennstorlek__modal">
-          <div class="pennstorlek__content">
-            <span class="pennstorlek__close text--bold text--white">&times;</span>
-            <div>
-              <p class="text--bold">Välj storlek på pennan:</p>
-            <button id="pennstorlek--liten" class="pennstorlek--button text--bold">Smal</button>
-            <button id="pennstorlek--mellan" class="text--bold">Mellan</button>
-            <button id="pennstorlek--stor" class="pennstorlek--button text--bold">Stor</button>
-            <button id="pennstorlek--gigant" class=" pennstorlek--button text--bold">Gigantisk</button><br>
-          </div>
-          </div>
+    <section class="drawingboard__header">
+      <div class="container--xlarge">
+        <div class="filler">
+         <span></span>
         </div>
-        <!-- future project: <button class="filling text--bold">
-          <img src="styles/img/icons8-fill-color-48.png" 
-          title="Färglägg fält" 
-          alt="Fill with color">
-        </button>  -->
-        <button class="clear text--bold"> 
-          <img src="styles/img/icons8-trash-60.png" 
-          title="Börja om" 
-          alt="Trashcan">
-        </button>
-        <button class="save text--bold">Spara</button>
-        <button class="question text--bold text--font-black">?</button>
-        <div id="drawingboard__shortcuts" class="drawingboard__shortcuts">
-            <div>
-              <span class="pennstorlek__close text--bold text--black">&times;</span>
 
-              <div class="text--black text--bold">
-                <p class="text--xs">Kortkommandon: 
-                  <ul>
-                    <li>E = Suddgummi </li>
-                    <li>P = Byt penntjocklek </li>
-                    <li>Delete = Börja om</li>
-                    <li>S = Spara</li>
-                    <li>Esc = Stänga</li>
-                  </ul>
-                </p>
+          <div class="text--center text--white">
+            <h1>Rita en bild</h1>
+            <p class="text--xs">Var med och bidra i mitt spontana galleri!<p class="text--cursive"> Work in Progress: mer features kommer snart</p>
+       
+       </div>
+       <div class="drawingboard__nav">
+         <!--colors-->
+          <div class="drawingboard__nav--1">
+            <div class="color" 
+            data-clr="#000"
+            title="Svart" 
+            alt="Svart"></div>
+            <div class="color" 
+            data-clr="#344ce6"
+            title="Kornblå" 
+            alt="Blå"></div>
+            <div class="color" 
+            data-clr="rgb(204, 91, 91)"
+            title="Rött" 
+            alt="Rött"></div>
+            <div class="color" 
+            data-clr="#483d8b"
+            title="Lila" 
+            alt="Lila"></div>
+            <div class="color" 
+            data-clr="#bee5f5"
+            title="Ljusblå" 
+            alt="Ljusblå"></div>
+          </div>
+          <!--tools-->
+          <div class="drawingboard__nav--2">
+            <button class="erase text--bold">
+              <img src="styles/img/icons8-eraser-60.png" 
+              title="Suddgummi" 
+              alt="Suddgummi">
+            </button>
+
+            <!--pennsize-->
+            <button class="width text--bold">
+              <img src="styles/img/icons8-pen-100.png" 
+              title="Byt pennstorlek" 
+              alt="Byt pennstorlek">
+            </button>
+
+            <!--modal for pennsize-->
+            <div id="pennstorlek--modal" class="pennstorlek__modal">
+              <div class="pennstorlek__content">
+                <span class="pennstorlek__close text--bold text--white">&times;</span>
+                <div>
+                  <p class="text--bold">Välj storlek på pennan:</p>
+                <button id="pennstorlek--liten" class="pennstorlek--button text--bold">Smal</button>
+                <button id="pennstorlek--mellan" class="text--bold">Mellan</button>
+                <button id="pennstorlek--stor" class="pennstorlek--button text--bold">Stor</button>
+                <button id="pennstorlek--gigant" class=" pennstorlek--button text--bold">Gigantisk</button><br>
+              </div>
               </div>
             </div>
+            <!--button for trash-->
+        
+            <button class="clear text--bold"> 
+              <img src="styles/img/icons8-trash-60.png" 
+              title="Börja om" 
+              alt="Trashcan">
+            </button>
+
+                <!-- future project: <button class="filling text--bold">
+              <img src="styles/img/icons8-fill-color-48.png" 
+              title="Färglägg fält" 
+              alt="Fill with color">
+            </button>  -->
+
+            <!--shortcuts explanation-->
+            <button class="question text--bold text--white">?</button>
+            <div id="drawingboard__shortcuts" class="drawingboard__shortcuts">
+                <div>
+                  <span class="pennstorlek__close text--bold text--black">&times;</span>
+    
+                  <div class="text--black text--bold">
+                    <p class="text--xs">Kortkommandon: 
+                      <ul>
+                        <li>E = Suddgummi </li>
+                        <li>P = Byt penntjocklek </li>
+                        <li>Delete = Börja om</li>
+                        <li>S = Spara</li>
+                        <li>Esc = Stänga</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+            </div>
           </div>
-        </div>
-
+       </div>
+      </div>
+    </section>
+    <section class="drawingboard__content">
+      <div class="padding--m">
+		<div class="center">
+		 	<canvas id="drawingboard--canvas"  width="500" height="500">
+		 			Tyvärr funkar detta inte på din browser! Prova någon annanstans kanske?
+		 	</canvas>
+    <div class="drawingboard__nav--3">
+      <button class="save text--bold text--white">Spara</button>
+    </div>
+    </section>
+	</main>
   
-</main>
-<footer class="footer">
-  <div class="container--xlarge padding--s">
-    <h2>Hör av dig!</h2>
-      <ul>
-        <li>
-          <a href="mailto:tovajertfelt@gmail.com"
-          target="_blank" >
-          tovajertfelt@gmail.com
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/tovajertfelt/"
-          target="_blank">Linkedin
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/jertfelt"
-          target="_blank">Github</a>
-        </li>
-      </ul>
-  </div>
+  <footer class="footer">
+    <div class="container--xlarge padding--s">
+      <h2>Hör av dig!</h2>
+        <ul>
+          <li>
+            <a href="mailto:tovajertfelt@gmail.com"
+            target="_blank" >
+            tovajertfelt@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tovajertfelt/"
+            target="_blank">Linkedin
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jertfelt"
+            target="_blank">Github</a>
+          </li>
+        </ul>
+    </div>
+  
+  </footer>
 
-</footer>
-<script src="drawingboard.js"></script>
-<script>
-
-//Menu button mobile
+	<!-- Scripts -->
+  <script src="drawingboard.js"></script>
+  <script>
+	//Menu button mobile
 let menuButton = document.getElementById("menutoggle");
 let menuMobile = document.querySelector("#drop-down");
 menuButton.addEventListener("click", dropdown);
@@ -252,7 +286,4 @@ function dropdown(){
 else 
 menuMobile.classList.add("drop-down");
 }
-
-</script>
-</body>
-</html>
+	</script>
