@@ -101,65 +101,68 @@ penClose.addEventListener("click", () =>{
 canvas.width = window.innerWidth;
 // canvas.height = window.innerHeight;
 
-// let toolDrawing = canvas.getContext("2d");
-
-// let prevMouseX = null;
-// let prevMouseY = null;
-// let prevTouchX = null;
-// let prevTouchY = null;
-
-// toolDrawing.lineWidth = 5;
-
-// let draw = false;
-
-// window.addEventListener("touchstart", function(e){
-//   console.log("event start");
-// });
 
 
-// window.addEventListener("mousedown", (e) => draw = true);
-// window.addEventListener("mouseup", (e) => draw = false);
-// window.addEventListener("touchstart", (e) => draw = true);
-// window.addEventListener("touchend", (e) => draw =false);
 
-// window.addEventListener("mousemove", (e) => {
-//     if(prevMouseX == null || prevMouseY == null || !draw){
-//       prevMouseX = e.clientX;
-//       prevMouseY = e.clientY;
-//         return;
-//     }
+let toolDrawing = canvas.getContext("2d");
+
+let prevMouseX = null;
+let prevMouseY = null;
+let prevTouchX = null;
+let prevTouchY = null;
+
+toolDrawing.lineWidth = 5;
+
+let draw = false;
+
+window.addEventListener("touchstart", function(e){
+  console.log("event start");
+});
+
+
+window.addEventListener("mousedown", (e) => draw = true);
+window.addEventListener("mouseup", (e) => draw = false);
+window.addEventListener("touchstart", (e) => draw = true);
+window.addEventListener("touchend", (e) => draw =false);
+
+window.addEventListener("mousemove", (e) => {
+    if(prevMouseX == null || prevMouseY == null || !draw){
+      prevMouseX = e.clientX;
+      prevMouseY = e.clientY;
+        return;
+    }
     
-//     let currentMouseX = e.clientX;
-//     let currentMouseY = e.clientY;
+    let currentMouseX = e.clientX;
+    let currentMouseY = e.clientY;
 
-//     toolDrawing.beginPath();
-//     toolDrawing.moveTo(prevMouseX, prevMouseY);
-//     toolDrawing.lineTo(currentMouseX, currentMouseY);
-//     toolDrawing.stroke()
+    toolDrawing.beginPath();
+    toolDrawing.moveTo(prevMouseX, prevMouseY);
+    toolDrawing.lineTo(currentMouseX, currentMouseY);
+    toolDrawing.stroke()
 
-//     prevMouseX = currentMouseX;
-//     prevMouseY = currentMouseY;
-// })
+    prevMouseX = currentMouseX;
+    prevMouseY = currentMouseY;
+})
 
-// window.addEventListener("touchmove", (e) => {
-//   if (prevTouchX ==null|| prevTouchY == null || !draw ){
-//     prevTouchX = e.clientX;
-//     prevTouchY = e.clientY;
-//     return;
-//   }
+window.addEventListener("touchmove", (e) => {
+  if (prevTouchX ==null|| prevTouchY == null || !draw ){
+    prevTouchX = e.clientX;
+    prevTouchY = e.clientY;
+    return;
+  }
 
-//   let currentTouchX = e.clientX;
-//   let currentTouchY = e.clientY;
+  let currentTouchX = e.clientX;
+  let currentTouchY = e.clientY;
 
-//   toolDrawing.beginPath();
-//   toolDrawing.moveTo(prevTouchX, prevTouchY);
-//   toolDrawing.lineTo(currentTouchX, currentTouchY);
-//   toolDrawing.stroke()
+  toolDrawing.beginPath();
+  toolDrawing.moveTo(prevTouchX, prevTouchY);
+  toolDrawing.lineTo(currentTouchX, currentTouchY);
+  toolDrawing.stroke()
 
-//   prevTouchX = currentTouchX;
-//   prevTouchY = currentTouchY;
+  prevTouchX = currentTouchX;
+  prevTouchY = currentTouchY;
   
-// })
+})
 
 //*shortcut modal
 let shortcutModal = document.getElementById("drawingboard__shortcuts");
