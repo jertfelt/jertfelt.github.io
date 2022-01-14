@@ -1471,6 +1471,12 @@ header img {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .drawingboard__intro {
+    margin-bottom: 4rem;
+  }
+}
+
 .drawingboard__nav {
   position: fixed;
   top: 240px;
@@ -1514,15 +1520,21 @@ header img {
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 400px) {
   .drawingboard__nav {
-    margin-top: 2rem;
+    margin-top: 12rem;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 400px) {
   .drawingboard__nav {
-    margin-top: 8rem;
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .drawingboard__nav {
+    margin-top: 4.5rem;
   }
 }
 

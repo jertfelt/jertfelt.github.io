@@ -101,29 +101,16 @@ penClose.addEventListener("click", () =>{
 canvas.width = window.innerWidth;
 // canvas.height = window.innerHeight;
 
-
-
-
 let toolDrawing = canvas.getContext("2d");
-
-let prevMouseX = null;
-let prevMouseY = null;
-let prevTouchX = null;
-let prevTouchY = null;
-
 toolDrawing.lineWidth = 5;
 
+//*touch event
+let prevMouseX = null;
+let prevMouseY = null;
 let draw = false;
-
-window.addEventListener("touchstart", function(e){
-  console.log("event start");
-});
-
 
 window.addEventListener("mousedown", (e) => draw = true);
 window.addEventListener("mouseup", (e) => draw = false);
-window.addEventListener("touchstart", (e) => draw = true);
-window.addEventListener("touchend", (e) => draw =false);
 
 window.addEventListener("mousemove", (e) => {
     if(prevMouseX == null || prevMouseY == null || !draw){
@@ -144,15 +131,28 @@ window.addEventListener("mousemove", (e) => {
     prevMouseY = currentMouseY;
 })
 
-window.addEventListener("touchmove", (e) => {
-  if (prevTouchX ==null|| prevTouchY == null || !draw ){
+//! touch function (not working atm)
+let prevTouchX = null;
+let prevTouchY = null;
+window.addEventListener("touchstart", (e) => {
+  console.log("touch starting");
+ console.log(prevTouchX);
+})
+
+window.addEventListener("ontouchstart", (e) => draw = true);
+window.addEventListener("ontouchend", (e) => draw = false);
+
+
+ window.addEventListener("ontouchmove", (e) => {
+  if (prevTouchX == null|| prevTouchY == null || !draw ){
     prevTouchX = e.clientX;
     prevTouchY = e.clientY;
     return;
   }
+  toolDrawing.lineCap = 'round';
 
-  let currentTouchX = e.clientX;
-  let currentTouchY = e.clientY;
+  let currentTouchX = e.touches[0].clientX;
+  let currentTouchY = e.touches[0].clientY;
 
   toolDrawing.beginPath();
   toolDrawing.moveTo(prevTouchX, prevTouchY);
@@ -161,8 +161,8 @@ window.addEventListener("touchmove", (e) => {
 
   prevTouchX = currentTouchX;
   prevTouchY = currentTouchY;
-  
-})
+});
+// })
 
 //*shortcut modal
 let shortcutModal = document.getElementById("drawingboard__shortcuts");

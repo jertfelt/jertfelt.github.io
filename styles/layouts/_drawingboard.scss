@@ -16,6 +16,9 @@
   padding:1rem;
   position: fixed;
   width:100%;
+  @include breakpoint(small-max){
+    margin-bottom: 4rem;
+  }
 }
 &__nav{
   position: fixed;
@@ -30,13 +33,15 @@
 }
   cursor: pointer;
   transition: opacity .5s;
-@include breakpoint(medium-tablet){
- margin-top:2rem;
-}
-@include breakpoint(exmall-max)
-{
-  margin-top:8rem;
-}
+  @include breakpoint(exmall-max){
+   margin-top:12rem;
+  }
+  @include breakpoint(exmall){
+    margin-top:7rem;
+  }
+  @include breakpoint(xsmall-min){
+    margin-top:4.5rem;
+  }
 }
 }
 

@@ -29,7 +29,7 @@ $screen-xl: 1450px;
     }
   }
   @if $canvas==exmall{
-    @media only screen and (min-width: $screen-extremely-xs){
+    @media only screen and (min-width: $screen-extremely-xs) {
       @content;
     }
   }
