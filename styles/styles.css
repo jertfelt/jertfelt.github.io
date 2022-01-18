@@ -1195,6 +1195,15 @@ h6 {
           box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
 }
 
+.background--clownartistinc {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/merforsaljning.jpg);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+}
+
 .buttonsnav {
   background-color: #282828;
   border: none;
