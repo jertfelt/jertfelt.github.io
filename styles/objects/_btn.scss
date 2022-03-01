@@ -70,6 +70,14 @@
 
 //background to homepage buttons
 .background{
+  &--ecoline{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/styles/img/155897432-727bd8eb-6a3a-4ef5-aa41-bbab07381d7d.png);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  }
+
   &--palt{
   background-size: cover;
   background-repeat: no-repeat;

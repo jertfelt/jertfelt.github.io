@@ -628,8 +628,22 @@ centered--flex {
   .grid--3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 33% 33% 33%;
-        grid-template-columns: 33% 33% 33%;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .grid--3 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid--3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -1130,6 +1144,15 @@ h6 {
 
 .button--light {
   background-color: #bee5f5;
+}
+
+.background--ecoline {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/styles/img/155897432-727bd8eb-6a3a-4ef5-aa41-bbab07381d7d.png);
+  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
 }
 
 .background--palt {

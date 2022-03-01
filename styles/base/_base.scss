@@ -320,8 +320,15 @@ centered--flex{
 
 .grid--3{
   @include breakpoint(medium-min-menu){display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+  @include breakpoint(medium-tablet){
+ 
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint(small-max){
+
+  grid-template-columns: 1fr;}
   column-gap: 2em;;
   row-gap:4em;
   @include breakpoint(medium-max-menu){
