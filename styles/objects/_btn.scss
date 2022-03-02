@@ -6,7 +6,24 @@
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   border-radius:15%;
+
+  &--square{
+    padding:1rem;
+    border-radius: 0%;
+    background-color:$color--white;
+    color:$color--black;
+    font-weight: bold;
+    text-transform: uppercase;
+  }&--square:hover{
+    padding:1rem;
+    border-radius: 0%;
+    background-color:$color--primary--blue;
+    color:$color--primary--light;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
+
 
 .button-menu{
   margin-right:-40px;

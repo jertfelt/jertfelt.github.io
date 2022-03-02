@@ -9,11 +9,11 @@
         "subtitle": "En fiktiv webbshop gjord med javascript"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/Webshop-clownartists/",
+        "link": "https://jertfelt.github.io/Webshop-clownartists/",
         "image": {"url" : "./styles/img/merforsaljning.jpg"},
         "imagealt": "En bild på en webbshop",
         "githublinks": {
-          "github": "href= https://github.com/jertfelt/Webshop-clownartists"
+          "github": "https://github.com/jertfelt/Webshop-clownartists"
         }
       },
       "description":{
@@ -31,11 +31,11 @@
         "subtitle": "Grupparbete med querystrings, JSON, localStorage"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/webshop/",
+        "link": "https://jertfelt.github.io/webshop/",
         "image": {"url" : "./styles/img/ekoline.png"},
         "imagealt": "Bild på en hemsida som visar upp en varukorg, digital med varor.",
         "githublinks": {
-          "github": "href= https://github.com/jertfelt/webshop"
+          "github": "https://github.com/jertfelt/webshop"
         }
       },
       "description":{
@@ -53,11 +53,11 @@
         "subtitle": "Uppgift i Vanilla JS"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/webshop/",
-        "image": {"url" : "./styles/img/ekoline.png"},
+        "link": "https://jertfelt.github.io/webshop/",
+        "image": {"url" : "./styles/img/quiz.jpg"},
         "imagealt" : "Bild från filmen 'Who framed Rober Rabbit?'",
         "githublinks": {
-          "github": "href= https://github.com/jertfelt/quiz-javascript-course"
+          "github": "https://github.com/jertfelt/quiz-javascript-course"
         }
       },
       "description":{
@@ -75,11 +75,11 @@
         "subtitle": "Grupparbete i CSS"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/PALT/",
+        "link": "https://jertfelt.github.io/PALT/",
         "image": {"url" : "./styles/img/palt-screenshot.png"},
         "imagealt" : "Printscreen från PALT: visar tre rosa ikoner",
         "githublinks": {
-          "github": "href= https://jertfelt.github.io/PALT/"
+          "github": "https://jertfelt.github.io/PALT/"
         }
       },
       "description":{
@@ -97,11 +97,11 @@
         "subtitle": "Eget projekt i javascript"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/drawingboard.html",
+        "link": "https://jertfelt.github.io/drawingboard.html",
         "image": {"url" : "./styles/img/draw-a-picture.png"},
         "imagealt" : "Printscreen från PALT: visar tre rosa ikoner",
         "githublinks": {
-          "github": "href= https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
+          "github": "https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
         }
       },
       "description":{
@@ -119,11 +119,11 @@
         "subtitle": "Nybörjarprojekt i javascript"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/queue-system.html",
+        "link": "https://jertfelt.github.io/queue-system.html",
         "image": {"url" : "./styles/img/queue-cases.png"},
         "imagealt" : "Visar på koden bakom kösystemet",
         "githublinks": {
-          "github": "href= https://github.com/jertfelt/queue-assignment-nackademin"
+          "github": "https://github.com/jertfelt/queue-assignment-nackademin"
         }
       },
       "description":{
@@ -141,7 +141,7 @@
         "subtitle": "Nybörjarprojekt i CSS"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/css-recipe-nackademin/",
+        "link": "https://jertfelt.github.io/css-recipe-nackademin/",
         "image": {"url" : "./styles/img/html-css-kurs-ex-2.png"},
         "imagealt" : "Bild på en äcklig maträtt",
         "githublinks" : "https://github.com/jertfelt/css-recipe-nackademin"
@@ -161,7 +161,7 @@
         "subtitle": "Nybörjarprojekt i CSS"
       },
       "sources":{
-        "link": "href= https://jertfelt.github.io/accessibility-css/",
+        "link": "https://jertfelt.github.io/accessibility-css/",
         "image": {"url" : "./styles/img/accessability-tova-jertfelt2021.png"},
         "imagealt" : "Printscreen från tillgänglighets-sidan. Visar en hemsida.",
         "githublinks" : "https://github.com/jertfelt/accessibility-css"
