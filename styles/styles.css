@@ -1076,6 +1076,24 @@ h6 {
   border-radius: 15%;
 }
 
+.button--square {
+  padding: 1rem;
+  border-radius: 0%;
+  background-color: #f4f4f4;
+  color: #282828;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button--square:hover {
+  padding: 1rem;
+  border-radius: 0%;
+  background-color: #344ce6;
+  color: #bee5f5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .button-menu {
   margin-right: -40px;
   background-color: transparent;
@@ -1696,6 +1714,10 @@ button:hover {
   width: 120%;
 }
 
+.cases__img {
+  border-radius: 19px;
+}
+
 .cases__all {
   padding: 3rem;
   display: -webkit-box;
@@ -1713,23 +1735,12 @@ button:hover {
           justify-content: space-between;
 }
 
-.cases__all img {
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .cases__all img {
-    margin-left: 3rem;
-  }
-}
-
 .cases__all img:hover {
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  -webkit-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-  border-radius: 45% 55% 52% 48% / 50% 25% 35% 10%;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  border-radius: 65% 55% 52% 48% / 50% 55% 55% 57%;
 }
 
 .cases__article {
@@ -1748,22 +1759,72 @@ button:hover {
           justify-content: center;
 }
 
-@media only screen and (max-width: 991px) {
-  .cases__article button {
-    margin: 1rem;
-    padding-right: 1rem;
+@media only screen and (min-width: 1070px) {
+  .cases__article img {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 300px;
+    max-width: 300px;
   }
 }
 
-.cases__article button:hover {
-  background-color: #f4f4f4;
-  text-transform: lowercase;
-  border-radius: 4%;
-  cursor: pointer;
+.cases__article--content {
+  width: 100%;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
 }
 
-@media only screen and (min-width: 991px) {
-  .cases__article--column {
+@media only screen and (min-width: 1070px) {
+  .cases__article--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 15rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .cases__article--content p {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .cases__article--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cases__article--content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1778,34 +1839,108 @@ button:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .cases__article--column img {
-    max-width: 100%;
-    min-width: 300px;
+}
+
+.cases__article--content a {
+  margin-bottom: 1rem;
+}
+
+.cases__article--content a:hover {
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
+.cases__article--column {
+  padding-bottom: 3rem;
+}
+
+.cases__article--column h4 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .cases__article--column h3 {
+    text-align: left;
+  }
+  .cases__article--column h4 {
+    text-align: left;
+    margin-bottom: 1rem;
   }
 }
 
-@media only screen and (min-width: 991px) {
-  .cases__article--content {
+@media only screen and (max-width: 768px) {
+  .cases__article--column h3 {
+    text-align: center;
+  }
+  .cases__article--column h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1070px) {
+  .cases__article--column {
+    padding-left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .cases__article--imgcolumn img {
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+  }
+}
+
+.cases__article--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .cases__article--right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
   }
-  .cases__article--content p {
-    padding-left: 3rem;
+}
+
+.cases__article--right button {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1279px) {
+  .cases__article--right {
+    width: 50%;
   }
-  .cases__article--content button {
-    margin-left: 3rem;
-    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .cases__article--right {
+    margin: 1rem;
+    width: 80%;
   }
 }
 
