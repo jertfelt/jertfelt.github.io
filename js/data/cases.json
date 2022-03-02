@@ -11,9 +11,9 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/Webshop-clownartists/",
         "image": {"url" : "./styles/img/merforsaljning.jpg"},
-        "image alt": "En bild på en webbshop",
-        "github links": {
-          "github": "https://github.com/jertfelt/Webshop-clownartists"
+        "imagealt": "En bild på en webbshop",
+        "githublinks": {
+          "github": "href= https://github.com/jertfelt/Webshop-clownartists"
         }
       },
       "description":{
@@ -33,9 +33,9 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/webshop/",
         "image": {"url" : "./styles/img/ekoline.png"},
-        "image alt": "Bild på en hemsida som visar upp en varukorg, digital med varor.",
-        "github links": {
-          "github": "https://github.com/jertfelt/webshop"
+        "imagealt": "Bild på en hemsida som visar upp en varukorg, digital med varor.",
+        "githublinks": {
+          "github": "href= https://github.com/jertfelt/webshop"
         }
       },
       "description":{
@@ -55,10 +55,9 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/webshop/",
         "image": {"url" : "./styles/img/ekoline.png"},
-        "image alt" : "Bild från filmen 'Who framed Rober Rabbit?'",
-        "github links": {
-          "krav": "https://github.com/jertfelt/quiz-javascript-course/blob/master/instructions-swedish",
-          "github": "https://github.com/jertfelt/quiz-javascript-course"
+        "imagealt" : "Bild från filmen 'Who framed Rober Rabbit?'",
+        "githublinks": {
+          "github": "href= https://github.com/jertfelt/quiz-javascript-course"
         }
       },
       "description":{
@@ -78,10 +77,9 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/PALT/",
         "image": {"url" : "./styles/img/palt-screenshot.png"},
-        "image alt" : "Printscreen från PALT: visar tre rosa ikoner",
-        "github links": {
-          "krav": "https://github.com/jertfelt/PALT/blob/main/instruktioner.txt",
-          "github": "https://jertfelt.github.io/PALT/"
+        "imagealt" : "Printscreen från PALT: visar tre rosa ikoner",
+        "githublinks": {
+          "github": "href= https://jertfelt.github.io/PALT/"
         }
       },
       "description":{
@@ -101,9 +99,9 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/drawingboard.html",
         "image": {"url" : "./styles/img/draw-a-picture.png"},
-        "image alt" : "Printscreen från PALT: visar tre rosa ikoner",
-        "github links": {
-          "github": "https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
+        "imagealt" : "Printscreen från PALT: visar tre rosa ikoner",
+        "githublinks": {
+          "github": "href= https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
         }
       },
       "description":{
@@ -123,9 +121,8 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/queue-system.html",
         "image": {"url" : "./styles/img/queue-cases.png"},
-        "image alt" : "Visar på koden bakom kösystemet",
-        "github links": {
-          "krav" : "href= https://github.com/jertfelt/queue-assignment-nackademin/blob/master/.txt",
+        "imagealt" : "Visar på koden bakom kösystemet",
+        "githublinks": {
           "github": "href= https://github.com/jertfelt/queue-assignment-nackademin"
         }
       },
@@ -146,7 +143,8 @@
       "sources":{
         "link": "href= https://jertfelt.github.io/css-recipe-nackademin/",
         "image": {"url" : "./styles/img/html-css-kurs-ex-2.png"},
-        "image alt" : "Printscreen från PALT: visar tre rosa ikoner"
+        "imagealt" : "Bild på en äcklig maträtt",
+        "githublinks" : "https://github.com/jertfelt/css-recipe-nackademin"
       },
       "description":{
         "text": "Beskrivning: Din uppgift är att skapa en receptsida innehållandes tre recept på för olika maträtter. Använd minst två olika typsnitt på sidan. Använd minst två bakgrundsfärger/bakgrundsbilder. Sidan ska använda sig utav semantiska HTML-taggar.",
@@ -163,9 +161,10 @@
         "subtitle": "Nybörjarprojekt i CSS"
       },
       "sources":{
-        "link": "https://jertfelt.github.io/accessibility-css/",
+        "link": "href= https://jertfelt.github.io/accessibility-css/",
         "image": {"url" : "./styles/img/accessability-tova-jertfelt2021.png"},
-        "image alt" : "Printscreen från tillgänglighets-sidan. Visar en hemsida."
+        "imagealt" : "Printscreen från tillgänglighets-sidan. Visar en hemsida.",
+        "githublinks" : "https://github.com/jertfelt/accessibility-css"
       },
       "description":{
         "text": "Beskrivning: Din uppgift är att skapa en informationssida om tillgänglighet. Använd er utav bilder, text och/eller illustrationer för att uppnå detta. Hemsidan ska också vara tillgänglig och testad för detta. ",
