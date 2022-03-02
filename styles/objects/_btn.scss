@@ -5,7 +5,7 @@
   @include font-size(18);
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  border-radius:15%;
+
 
   &--square{
     padding:1rem;
@@ -14,7 +14,8 @@
     color:$color--black;
     font-weight: bold;
     text-transform: uppercase;
-  }&--square:hover{
+  }
+  &--square:hover{
     padding:1rem;
     border-radius: 0%;
     background-color:$color--primary--blue;
@@ -31,6 +32,7 @@
   border-color:transparent;
   width:50px;
   height:50px;
+
   span{
     width:80%;
     height:10px;
@@ -63,12 +65,13 @@
   font-family: $font--primary;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+
   &--absolute{
     position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
   } 
 }
 
@@ -182,11 +185,12 @@
   text-align: center;
   display: inline-block;
   font-size:16px;
-  border-radius: 12px;
+
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom:1rem;
   cursor: pointer;
+  
   &:hover{
     background-color: $color--primary--light;
     color:$color--fontblack;

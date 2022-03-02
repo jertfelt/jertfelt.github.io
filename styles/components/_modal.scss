@@ -68,7 +68,7 @@
 #did-you-know{
   @include flexBox(column,center,center);
   button{
-    border-radius:1+px;
+    border-radius: 19px;
     padding:1rem;
     border:none;
     cursor: pointer;
@@ -146,6 +146,7 @@
   left: 50;
   top: 60;
   background-color: $color--primary--light;
+  
   span{
   margin-top:0;
   position:absolute;
@@ -154,7 +155,6 @@
   div{
     margin-top:10px;
     padding:1rem;  
-    background-color: 
   ul{
     line-height: 1.2rem;
   }

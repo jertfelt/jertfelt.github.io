@@ -12,62 +12,54 @@ hr:hover{
 
 .cases{
 
+  &__hr{
+    --grey{
+      border: 10px solid $color--black;
+      border-radius: 5px;
+    }
+  }
+
   &__img{
     border-radius: 19px;
+
+    &--container{
+      position: relative;
+      overflow: hidden;
+    }
   }
 
   &__all{
-    
+  
   padding: 3rem;
   @include flexBox(column,center,space-between);
 
-
- img:hover{
+  img:hover{
   transition: all 300ms ease-in;
-  transform: rotate(3deg);
   border-radius:65% 55% 52% 48% / 50% 55% 55% 57%;
- }
+  }
   }
   
   &__article{
-  
-    @include flexBox(column,center,center);
-    @include breakpoint(medium-min){
-      img{ min-height:200px;
-        min-width:200px;
-        max-height:300px;
-        max-width:300px;
-    }
-    
-  }
-
-  
-    &--content{
-      
-      width:100%;
-      padding:3rem;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 1rem;
-
-      @include breakpoint(medium-min){
-      @include flexBox(row,center,center);
-      padding-left:5rem;
-      column-gap: 3rem;
    
+  background-color: $color--primary--dark;
+  border-radius: 29px;
+  margin-bottom:5rem;
+  padding-bottom:3rem;
+
+    &--content{
+  
+      @include breakpoint(medium-tablet-max){
+     
+      display: grid;
+      grid-template-columns: 50% 50%;
+      column-gap: 4rem;
       }
       
-      @include breakpoint(medium-tablet){
-  
+      @include breakpoint (medium-tablet){
         @include flexBox(column,center,center);
-        padding:1rem;
-        margin:2rem;
-        }
+        width:100%;
+      }
 
-     @include breakpoint(small-max){
-      @include flexBox(column,center,center);
-      
-     }
      a {
        margin-bottom:1rem;
      }
@@ -75,53 +67,66 @@ hr:hover{
        color:$color--white;
        font-weight:bold;
      }
+     button:hover{
+      margin-left:2rem;
+    }
     }
 
    
    
     &--column{
-    padding-bottom:3rem;
-      h4{
-        margin-bottom:2rem;
-      }
-
-      @include breakpoint(medium-tablet){
-       
-        h3{
-          text-align: left;
+      @include breakpoint(medium-tablet-max){ 
+        h3 {
+          font-size:30px;
         }
         h4{
-          text-align: left;
-          margin-bottom:1rem;
+          font-size:20px;
+          line-height:0.3rem;
+          margin-bottom:-1rem;
         }
       }
-    
-      @include breakpoint(small-max){
-       
-      h3{
-        text-align: center;
-      }
+      @include breakpoint(medium-tablet){
+      @include flexBox(column,center,center);
       h4{
-        text-align: center;
+        margin-bottom:1rem;
+      }
+      img {
+        width:100%;
+      }
+      a{
+        margin-top:2rem;
         margin-bottom:2rem;
       }
+      button{
+        letter-spacing: 2px;
+        margin-bottom:2rem;
+      }
+  
+    
+      
     }
+
     @include breakpoint(medium-min){
       padding-left:7rem;   
     }
-  
-   
   }
-    &--imgcolumn{
 
-    
+    &--imgcolumn{
+      @include breakpoint(medium-tablet-max){
+       img {
+         margin-top:3rem;
+         width:100%;
+         max-width: 300px;
+       }
+        }
+
       @include breakpoint(medium-tablet){
      
       img{
       
         width:100%;
-        height:300px;
-        max-width:300px;
+        max-height:400px;
+        max-width:400px;
        
       }
       }
@@ -130,32 +135,58 @@ hr:hover{
     
 
     &--right{
+      @include breakpoint(medium-tablet-max){ 
+        margin-top:6rem;
+        width:100%;
+        max-width:400px;
+        p{
+          margin-top:1rem;
+        }
+      }
 
- 
-      @include breakpoint(medium-tablet){
-        @include flexBox(column,center,center);
+     @include breakpoint(medium-tablet){
+       @include flexBox(column,center,center);
+
+       a{
+         text-align: left;
+       }
+
+       p{
+         @include breakpoint(small-max){
+           width:100%;
+         }
+         width:60%;
+         text-align: left;
+         margin-left:5%;
+       }
+       button {
+         margin:0;
+       }
+     }
+      // @include breakpoint(medium-tablet){
+      //   @include flexBox(column,center,center);
        
-        padding:1rem;
-      }
+      //   padding:1rem;
+      // }
 
-      @include breakpoint(small-max){
+      // @include breakpoint(small-max){
        
-      }
+      // }
 
-      @include flexBox(column,flex-start,space-around);
-      margin:2rem;
+      // @include flexBox(column,flex-start,space-around);
+      // margin:2rem;
 
-      button{
-        margin-top:1rem;
-      }
-      @include breakpoint(medium-min-menu){
-        width:50%;
+      // button{
+      //   margin-top:1rem;
+      // }
+      // @include breakpoint(medium-min-menu){
+      //   width:50%;
         
-      }
-      @include breakpoint(medium-tablet){
-        margin:1rem;
-        width:80%;
-      }
+      // }
+      // @include breakpoint(medium-tablet){
+      //   margin:1rem;
+      //   width:80%;
+      // }
     }
     }
    
