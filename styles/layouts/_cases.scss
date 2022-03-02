@@ -52,9 +52,9 @@ hr:hover{
 
       @include breakpoint(medium-min){
       @include flexBox(row,center,center);
-      padding-left:15rem;
+      padding-left:5rem;
       column-gap: 3rem;
-      p{width:60%;}
+   
       }
       
       @include breakpoint(medium-tablet){

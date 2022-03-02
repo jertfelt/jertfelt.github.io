@@ -1794,12 +1794,9 @@ button:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 15rem;
+    padding-left: 5rem;
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
-  }
-  .cases__article--content p {
-    width: 60%;
   }
 }
 
