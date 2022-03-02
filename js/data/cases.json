@@ -1,0 +1,177 @@
+{ 
+  "cases": [
+    {
+      "system": {
+        "id": "case01"
+      },
+      "headings":{
+        "title": "Clown Artists Inc",
+        "subtitle": "En fiktiv webbshop gjord med javascript"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/Webshop-clownartists/",
+        "image": {"url" : "./styles/img/merforsaljning.jpg"},
+        "image alt": "En bild på en webbshop",
+        "github links": {
+          "github": "https://github.com/jertfelt/Webshop-clownartists"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Jag har med hjälp av javascript dels kodat en dynamisk webbshop, som sparar din kundkorg i browserns lokala storage, samt en gör din egen meme-funktion, även denna i javascript.",
+        "subject":"Eget projekt",
+        "tag":"#javascript #localstorage #css"
+      }
+    },
+    {
+      "system": {
+        "id": "case02"
+      },
+      "headings":{
+        "title": "Ekoline webbshop",
+        "subtitle": "Grupparbete med querystrings, JSON, localStorage"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/webshop/",
+        "image": {"url" : "./styles/img/ekoline.png"},
+        "image alt": "Bild på en hemsida som visar upp en varukorg, digital med varor.",
+        "github links": {
+          "github": "https://github.com/jertfelt/webshop"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Vår grupp hade två veckor på sig att skapa en webbutik med hjälp av localstorage och querystrings. I projektet har vi använt oss av agil projektmetod (kanban och scrum). Jag lajvade tech lead och designer.",
+        "subject":"Frontendprojekt",
+        "tag":"#javascript #html #css #sass #localstorage #json #querystrings #routing"
+      }
+    },
+    {
+      "system": {
+        "id": "case03"
+      },
+      "headings":{
+        "title": "Quiz",
+        "subtitle": "Uppgift i Vanilla JS"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/webshop/",
+        "image": {"url" : "./styles/img/ekoline.png"},
+        "image alt" : "Bild från filmen 'Who framed Rober Rabbit?'",
+        "github links": {
+          "krav": "https://github.com/jertfelt/quiz-javascript-course/blob/master/instructions-swedish",
+          "github": "https://github.com/jertfelt/quiz-javascript-course"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttens och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
+        "subject":"Vanilla JS",
+        "tag":" #javascript #css #dynamisk HTML #html"
+      }
+    },
+    {
+      "system": {
+        "id": "case04"
+      },
+      "headings":{
+        "title": "PALT",
+        "subtitle": "Grupparbete i CSS"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/PALT/",
+        "image": {"url" : "./styles/img/palt-screenshot.png"},
+        "image alt" : "Printscreen från PALT: visar tre rosa ikoner",
+        "github links": {
+          "krav": "https://github.com/jertfelt/PALT/blob/main/instruktioner.txt",
+          "github": "https://jertfelt.github.io/PALT/"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Vår uppgift var att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val. Webbplatsen ska bestå av minst följande fyra undersidor - Startsida, Om oss, Cases och Kontakt. Vi började med att ta fram en mockup på webbplatsen som vi förhöll oss till när vi kodade.",
+        "subject":"CSS/SASS",
+        "tag":" #html #css #sass "
+      }
+    },
+    {
+      "system": {
+        "id": "case05"
+      },
+      "headings":{
+        "title": "Rita en bild",
+        "subtitle": "Eget projekt i javascript"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/drawingboard.html",
+        "image": {"url" : "./styles/img/draw-a-picture.png"},
+        "image alt" : "Printscreen från PALT: visar tre rosa ikoner",
+        "github links": {
+          "github": "https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: jag har med hjälp av javascript kodat så att besökare kan rita en bild och spara ner. Kommer att utöka denna med en gallerifunktion och lite mer funktioner allt eftersom.",
+        "subject":"Javascript",
+        "tag":" #javascript #mouseevent #mousetouch #localstorage"
+      }
+    },
+    {
+      "system": {
+        "id": "case06"
+      },
+      "headings":{
+        "title": "Kösystemet",
+        "subtitle": "Nybörjarprojekt i javascript"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/queue-system.html",
+        "image": {"url" : "./styles/img/queue-cases.png"},
+        "image alt" : "Visar på koden bakom kösystemet",
+        "github links": {
+          "krav" : "href= https://github.com/jertfelt/queue-assignment-nackademin/blob/master/.txt",
+          "github": "href= https://github.com/jertfelt/queue-assignment-nackademin"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Din uppgift är att ansvara för ett kösystem för incheckning av bagage på Arlanda flygplats. Skapa ett verktyg som hjälper dig visualisera och hålla reda på kön.",
+        "subject":"Javascript",
+        "tag":" #javascript"
+      }
+    },
+    {
+      "system": {
+        "id": "case07"
+      },
+      "headings":{
+        "title": "Tre recept",
+        "subtitle": "Nybörjarprojekt i CSS"
+      },
+      "sources":{
+        "link": "href= https://jertfelt.github.io/css-recipe-nackademin/",
+        "image": {"url" : "./styles/img/html-css-kurs-ex-2.png"},
+        "image alt" : "Printscreen från PALT: visar tre rosa ikoner"
+      },
+      "description":{
+        "text": "Beskrivning: Din uppgift är att skapa en receptsida innehållandes tre recept på för olika maträtter. Använd minst två olika typsnitt på sidan. Använd minst två bakgrundsfärger/bakgrundsbilder. Sidan ska använda sig utav semantiska HTML-taggar.",
+        "subject":"CSS",
+        "tag":" #css"
+      }
+    },
+    {
+      "system": {
+        "id": "case08"
+      },
+      "headings":{
+        "title": "Tillgänglighet",
+        "subtitle": "Nybörjarprojekt i CSS"
+      },
+      "sources":{
+        "link": "https://jertfelt.github.io/accessibility-css/",
+        "image": {"url" : "./styles/img/accessability-tova-jertfelt2021.png"},
+        "image alt" : "Printscreen från tillgänglighets-sidan. Visar en hemsida."
+      },
+      "description":{
+        "text": "Beskrivning: Din uppgift är att skapa en informationssida om tillgänglighet. Använd er utav bilder, text och/eller illustrationer för att uppnå detta. Hemsidan ska också vara tillgänglig och testad för detta. ",
+        "subject":"CSS",
+        "tag":" #css #tillgänglighet #html"
+      }
+    }
+  ]
+}
