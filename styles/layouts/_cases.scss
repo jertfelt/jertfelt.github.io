@@ -11,57 +11,150 @@ hr:hover{
 } 
 
 .cases{
+
+  &__img{
+    border-radius: 19px;
+  }
+
   &__all{
+    
   padding: 3rem;
   @include flexBox(column,center,space-between);
 
- img {
-   margin-bottom:3rem;
-   margin-top:2rem;
-   @include breakpoint(small-min){
-      margin-left:3rem;};
- }
+
  img:hover{
-  transition: all 100ms ease-in;
-  transform: rotate(-8deg);
-  border-radius:45% 55% 52% 48% / 50% 25% 35% 10%;
+  transition: all 300ms ease-in;
+  transform: rotate(3deg);
+  border-radius:65% 55% 52% 48% / 50% 55% 55% 57%;
  }
-  
   }
   
   &__article{
+  
     @include flexBox(column,center,center);
-    button {
-      @include breakpoint(medium-tablet){
-       margin:1rem;
-       padding-right:1rem;
-      }
-    }
-    button:hover{
-      background-color: $color--white;
-      text-transform: lowercase;
-      border-radius: 4%;
-      cursor: pointer;
-      
+    @include breakpoint(medium-min){
+      img{ min-height:200px;
+        min-width:200px;
+        max-height:300px;
+        max-width:300px;
     }
     
-    &--column{
+  }
+
+  
+    &--content{
       
-      @include breakpoint(medium-tablet-max){
+      width:100%;
+      padding:3rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 1rem;
+
+      @include breakpoint(medium-min){
+      @include flexBox(row,center,center);
+      padding-left:15rem;
+      column-gap: 3rem;
+      p{width:60%;}
+      }
+      
+      @include breakpoint(medium-tablet){
+  
         @include flexBox(column,center,center);
-        img{
-          max-width:100%;
-          min-width:300px;
+        padding:1rem;
+        margin:2rem;
+        }
+
+     @include breakpoint(small-max){
+      @include flexBox(column,center,center);
+      
+     }
+     a {
+       margin-bottom:1rem;
+     }
+     a:hover{
+       color:$color--white;
+       font-weight:bold;
+     }
+    }
+
+   
+   
+    &--column{
+    padding-bottom:3rem;
+      h4{
+        margin-bottom:2rem;
+      }
+
+      @include breakpoint(medium-tablet){
+       
+        h3{
+          text-align: left;
+        }
+        h4{
+          text-align: left;
+          margin-bottom:1rem;
         }
       }
-     
+    
+      @include breakpoint(small-max){
+       
+      h3{
+        text-align: center;
+      }
+      h4{
+        text-align: center;
+        margin-bottom:2rem;
+      }
     }
-    &--content{
-      @include breakpoint(medium-tablet-max){
-        @include flexBox(row,center,space-between);
-        p {padding-left:3rem;}
-        button {margin-left:3rem;
-        margin-top:3rem;}
+    @include breakpoint(medium-min){
+      padding-left:7rem;   
+    }
+  
+   
+  }
+    &--imgcolumn{
+
+    
+      @include breakpoint(medium-tablet){
+     
+      img{
+      
+        width:100%;
+        height:300px;
+        max-width:300px;
+       
+      }
+      }
+    
+      }
+    
+
+    &--right{
+
+ 
+      @include breakpoint(medium-tablet){
+        @include flexBox(column,center,center);
+       
+        padding:1rem;
+      }
+
+      @include breakpoint(small-max){
+       
+      }
+
+      @include flexBox(column,flex-start,space-around);
+      margin:2rem;
+
+      button{
+        margin-top:1rem;
+      }
+      @include breakpoint(medium-min-menu){
+        width:50%;
+        
+      }
+      @include breakpoint(medium-tablet){
+        margin:1rem;
+        width:80%;
       }
     }
     }
