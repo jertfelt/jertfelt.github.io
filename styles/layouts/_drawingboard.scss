@@ -76,7 +76,7 @@
     background-color: #bee5f5;
   }
   
-  button{
+  .button__drawing{
     margin:0.3rem;
     border: none;
     outline: none;
@@ -88,7 +88,7 @@
     max-width:30px;
     max-height:30px;
   }
-  &:hover{
+  &.button__drawing:hover{
     transform: scale(1.2);
     background-color: $color--primary--dark;
   }
