@@ -1256,6 +1256,12 @@ h6 {
   font-size: 1rem;
 }
 
+.buttonsnav:hover {
+  background-color: #000;
+  margin-left: 3rem;
+  border-radius: 100%;
+}
+
 .quiz__check {
   margin-top: 1rem;
   padding: 20px;
@@ -1654,7 +1660,7 @@ header img {
   background-color: #bee5f5;
 }
 
-button {
+.button__drawing {
   margin: 0.3rem;
   border: none;
   outline: none;
@@ -1663,12 +1669,12 @@ button {
   background-color: #344ce6;
 }
 
-button img {
+.button__drawing img {
   max-width: 30px;
   max-height: 30px;
 }
 
-button:hover {
+.button__drawing.button__drawing:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: #483d8b;
