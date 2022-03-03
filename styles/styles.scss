@@ -3,9 +3,6 @@
 @import 'variables/colors';
 @import 'variables/typography';
 
-// Libraries and helpers
-// ---------------------
-
 
 // Mixins
 // --------------------
@@ -16,7 +13,6 @@
 @import 'base/reset';
 @import 'base/base';
 @import 'base/font';
-
 
 // Objects
 // --------------------
@@ -31,7 +27,6 @@
 @import "layouts/cases";
 @import "layouts/cv";
 @import "layouts/quiz";
-
 @import "layouts/homepage";
 @import "layouts/footer";
 @import "layouts/queue";
@@ -43,6 +38,9 @@
 
 // Utilities
 // --------------------
+// Libraries and helpers
+// ---------------------
+@import 'lib/helpers';
 
 
 //Fonts

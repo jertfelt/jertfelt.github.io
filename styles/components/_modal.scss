@@ -30,7 +30,7 @@
 
   //modal in cases
 .didyouknow{
-  display:none;
+  display:block;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -39,18 +39,18 @@
   width:500px;
   height:300px;
   overflow:auto;
-  background-color:$color--primary--dark;
-  color:$color--primary--light;
+  background-color:$color--primary--light;
+  color:$color--fontblack;
   border-radius:19px;
 
-  &--content{
+  &__content{
     margin:15% auto;
     padding:10px;
     width:80%;
   
   }
   &--close{
-    color:$color--white;
+    color:$color--primary--blue;
     font-weight:bold;
     float:right;
     font-size:30px;
@@ -68,7 +68,7 @@
 #did-you-know{
   @include flexBox(column,center,center);
   button{
-    border-radius:1+px;
+    border-radius: 19px;
     padding:1rem;
     border:none;
     cursor: pointer;
@@ -146,6 +146,7 @@
   left: 50;
   top: 60;
   background-color: $color--primary--light;
+  
   span{
   margin-top:0;
   position:absolute;
@@ -154,7 +155,6 @@
   div{
     margin-top:10px;
     padding:1rem;  
-    background-color: 
   ul{
     line-height: 1.2rem;
   }

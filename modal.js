@@ -1,14 +1,23 @@
-let modalDYK = document.getElementById("didyouknowContainer");
+const modalDYK = document.getElementById("didyouknowContainer");
 let openDYK = document.getElementById("openDidYouKnow");
-let closeDYK = document.getElementById("closeDidYouKnow");
 
-openDYK.addEventListener("click",showBetyg);
+
+openDYK.addEventListener("click", showBetyg);
+
+document.getElementById("closeDidYouKnow").addEventListener("click", () => {
+  modalDYK.classList.add("hidden");
+})
+
+
 
 function showBetyg(){
-  modalDYK.style.display ="block";
+  if (modalDYK.classList.contains("hidden") === true ){
+    console.log(modalDYK);
+    modalDYK.classList.remove("hidden");
+  }
+ else{
+  modalDYK.classList.add("hidden");
+}
 }
 
-closeDYK.addEventListener("click", closeBetyg);
 
-function closeBetyg(){
-  modalDYK.style.display ="none"};

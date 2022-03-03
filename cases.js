@@ -28,7 +28,7 @@ const drawCases = (casesInfo) => {
 
 
   articleContent.innerHTML= `
-  <div class="cases__article--item">
+  <article class="cases__article--item">
   <div class="cases__article--column">
   <span>  <h3 class="text--light text--bold ">
   ${item.headings.title} </h3>
@@ -65,7 +65,7 @@ const drawCases = (casesInfo) => {
   <button class="button--square">
   Kolla in projektet på github</button></a>
   </div>
-  </div>
+  </article>
   `
   caseGridElem.appendChild(articleContent);
 
@@ -78,7 +78,7 @@ async function fetchingJson() {
 const response = await fetch("./js/data/cases.json");
 const casesInfo = await response.json();
 casesArray = [...casesInfo.cases];
-console.log(casesArray);
+
 const caseDraw = casesArray.map(item => {
   return item;
 })
