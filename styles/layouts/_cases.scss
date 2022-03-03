@@ -20,6 +20,7 @@ hr:hover{
 
   padding: 3rem;
   @include flexBox(column,center,space-between);
+  padding-bottom:8rem;
 
 
  img:hover{
@@ -211,30 +212,7 @@ hr:hover{
          margin:0;
        }
      }
-      // @include breakpoint(medium-tablet){
-      //   @include flexBox(column,center,center);
-       
-      //   padding:1rem;
-      // }
-
-      // @include breakpoint(small-max){
-       
-      // }
-
-      // @include flexBox(column,flex-start,space-around);
-      // margin:2rem;
-
-      // button{
-      //   margin-top:1rem;
-      // }
-      // @include breakpoint(medium-min-menu){
-      //   width:50%;
-        
-      // }
-      // @include breakpoint(medium-tablet){
-      //   margin:1rem;
-      //   width:80%;
-      // }
+ 
     }
   }
     &--imgcolumn{
