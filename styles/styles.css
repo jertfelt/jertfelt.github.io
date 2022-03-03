@@ -1732,6 +1732,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 8rem;
 }
 
 .cases__all img:hover {
