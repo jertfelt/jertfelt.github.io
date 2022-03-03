@@ -8,6 +8,14 @@ caseArticleElmen.classList.add("cases__article");
 
 caseSectionAll.appendChild(caseArticleElmen);
 
+
+const caseGridElem = document.createElement("div");
+caseGridElem.classList.add("cases__article--content");
+caseGridElem.classList.add("container--large");
+caseGridElem.classList.add("padding--m");
+
+caseArticleElmen.appendChild(caseGridElem);
+
 let casesArray = [];
 
 
@@ -16,14 +24,11 @@ const drawCases = (casesInfo) => {
 
   casesInfo.forEach(item => {
 
-  const articleContent = document.createElement("div");
-  articleContent.classList.add("cases__article--content");
-  // articleContent.classList.add("container--large");
-  // articleContent.classList.add("padding--m");
-  const hrContent = document.createElement("hr");
-  caseArticleElmen.appendChild(hrContent);
+    const articleContent = document.createElement("div");
+
 
   articleContent.innerHTML= `
+  <div class="cases__article--item">
   <div class="cases__article--column">
   <span>  <h3 class="text--light text--bold ">
   ${item.headings.title} </h3>
@@ -60,9 +65,9 @@ const drawCases = (casesInfo) => {
   <button class="button--square">
   Kolla in projektet på github</button></a>
   </div>
-
+  </div>
   `
-  caseArticleElmen.appendChild(articleContent);
+  caseGridElem.appendChild(articleContent);
 
 })
 
