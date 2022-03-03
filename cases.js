@@ -73,27 +73,18 @@ const drawCases = (casesInfo) => {
 
 }
 
-//*----fetching json
-async function fetchingJson() {
-const response = await fetch("./js/data/cases.json");
-const casesInfo = await response.json();
-casesArray = [...casesInfo.cases];
+// //*----fetching json
+// async function fetchingJson() {
+// const response = await fetch("./js/data/cases.json");
+// const casesInfo = await response.json();
+// casesArray = [...casesInfo.cases];
 
-const caseDraw = casesArray.map(item => {
-  return item;
-})
-drawCases(caseDraw);
-}
+// const caseDraw = casesArray.map(item => {
+//   return item;
+// })
 
-fetchingJson();
+// drawCases(caseDraw);
+// }
 
+// fetchingJson();
 
-/* <a href="
-${item.sources.link}"
-target="_blank">
-  <img class="drop--blue border-item--third"
-  src="${item.sources.image.url}"
-  alt="${item.sources.imagealt}"
-  title="Gå till sidan"
-  aria-label="Go to page"></img>
-</a> */

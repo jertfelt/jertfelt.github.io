@@ -1713,12 +1713,17 @@ button:hover {
   width: 120%;
 }
 
+.main__cases p {
+  max-width: 1000px;
+}
+
 .cases__img {
   border-radius: 19px;
 }
 
 .cases__all {
-  padding: 3rem;
+  padding: 1rem;
+  padding-bottom: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

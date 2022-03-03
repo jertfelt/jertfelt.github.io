@@ -8,6 +8,9 @@ hr:hover{
   width:120%;
 
 }
+p{
+  max-width: 1000px;
+}
 }
 
 .cases{
@@ -17,8 +20,9 @@ hr:hover{
   }
 
   &__all{
-
-  padding: 3rem;
+    padding: 1rem;
+  padding-bottom: 8rem;
+ 
   @include flexBox(column,center,space-between);
   padding-bottom:8rem;
 
