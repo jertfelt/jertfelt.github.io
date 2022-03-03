@@ -16,12 +16,11 @@
     text-transform: uppercase;
   }
   &--square:hover{
-    padding:1rem;
-    border-radius: 0%;
+    
     background-color:$color--primary--blue;
     color:$color--primary--light;
-    font-weight: bold;
-    text-transform: uppercase;
+  
+    
   }
 }
 

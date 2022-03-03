@@ -24,7 +24,7 @@ const drawCases = (casesInfo) => {
 
   casesInfo.forEach(item => {
 
-    const articleContent = document.createElement("div");
+    const articleContent = document.createElement("article");
 
 
   articleContent.innerHTML= `

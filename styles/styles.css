@@ -1086,12 +1086,8 @@ h6 {
 }
 
 .button--square:hover {
-  padding: 1rem;
-  border-radius: 0%;
   background-color: #344ce6;
   color: #bee5f5;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .button-menu {
@@ -1718,7 +1714,6 @@ button:hover {
 }
 
 .cases__all {
-  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1732,6 +1727,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 8rem;
 }
 
 .cases__all img:hover {
@@ -2063,6 +2059,10 @@ button:hover {
 
 .cases--right button {
   margin-top: 1rem;
+}
+
+.cases--right button:hover {
+  margin-left: 3rem;
 }
 
 @media only screen and (min-width: 1279px) {
