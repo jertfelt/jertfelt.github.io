@@ -43,8 +43,8 @@ p{
         max-height:300px;
         max-width:300px;
     }
-
   }
+
   &--item{
    background-color: $color--primary--dark;
    padding:1rem;
@@ -73,12 +73,7 @@ p{
       @include breakpoint(medium-min){
         grid-template-columns: repeat(2, 2fr);
       }
-      a:hover{
-        color:$color--white;
-        font-weight:bold;
-        font-size:1.8rem;
-        line-height:3rem;
-      }
+      
    
     }
 
@@ -160,35 +155,30 @@ p{
       }
   
     }
-
-   
   }
 
     &--imgcolumn{
-    
-
-       img {
-         
-         margin-top:1rem;
-         width:100%;
-         max-width: 300px;
-       }
-    
-
+      img {
+        margin-top:1rem;
+        width:100%;
+        max-width: 300px;
+      }
       @include breakpoint(medium-tablet){
-     
       img{
-      
         width:100%;
         max-height:400px;
         max-width:400px;
-       
       }
       }
-    
       }
   
     &--right{
+      a:hover{
+        color:$color--white;
+        font-weight:bold;
+        font-size:1.8rem;
+        line-height:3rem;
+      }
       @include breakpoint(medium-tablet-max){ 
         margin-top:1rem;
         width:100%;

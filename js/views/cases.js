@@ -73,18 +73,18 @@ const drawCases = (casesInfo) => {
 
 }
 
-// //*----fetching json
-// async function fetchingJson() {
-// const response = await fetch("./js/data/cases.json");
-// const casesInfo = await response.json();
-// casesArray = [...casesInfo.cases];
+//*----fetching json
+async function fetchingJson() {
+const response = await fetch("./js/data/cases.json");
+const casesInfo = await response.json();
+casesArray = [...casesInfo.cases];
 
-// const caseDraw = casesArray.map(item => {
-//   return item;
-// })
+const caseDraw = casesArray.map(item => {
+  return item;
+})
 
-// drawCases(caseDraw);
-// }
+drawCases(caseDraw);
+}
 
-// fetchingJson();
+fetchingJson();
 

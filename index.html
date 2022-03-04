@@ -18,7 +18,7 @@
     
     Sedan hösten 2021 går jag på Nackademins YH-utbildning för frontend-programmering. Studierna är fokuserade på javascript och webben, med kurser som går igenom CMS, javascript, HTML och CSS (samt tex SASS), grafikverktyg och att jobba i projekt. Jag själv gillar agila projekt, det är jag van med sedan tidigare i livet.
     ">
-    <meta property="og:image" content="styles/img/linkedin.png">
+    <meta property="og:image" content="./styles/img/linkedin.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -31,13 +31,13 @@
     ">
     
     <meta property="twitter:image" 
-    content="styles/img/linkedin.png">
-    <meta name="image" property="og:image" content="styles/img/linkedin.png">
+    content="./styles/img/linkedin.png">
+    <meta name="image" property="og:image" content="./styles/img/linkedin.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -49,12 +49,12 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 
-  <link rel="icon" href="/styles/img/favicon.ico">
-  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="/styles/img/tova-jertfelt-logo2.png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/styles/img/tova-jertfelt-logo2.png" sizes="144x144">
+  <link rel="icon" href="./styles/img/favicon.ico">
+  <link rel="icon" type="image/png" href="./styles/img/tova-jertfelt-logo2.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./styles/img/tova-jertfelt-logo2.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./styles/img/tova-jertfelt-logo2.png" sizes="144x144">
 
   <title>Tova Jertfelt Portfolio</title>
 
@@ -68,7 +68,7 @@
         <a class="nav-logo-container w--inline-block" 
           href="index.html"
           aria-current="page">
-          <img src="styles/img/tova-jertfelt-logo.png" 
+          <img src="./styles/img/tova-jertfelt-logo.png" 
             loading="lazy" 
             alt="logotype Tova Jertfelt" 
             class="logotype--nav"/>
@@ -98,7 +98,7 @@
   <button class="menu-toggle button-menu mobile" 
           id="menutoggle">
     <span class="darkmode">
-      <img src="styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" 
+      <img src="./styles/img/pngkey.com-mobile-menu-icon-png-3321462.png" 
             alt="burger-menu for mobile" 
             class="default-mobile">
     </span>
@@ -136,7 +136,7 @@
   
 <div class="page-wrapper">
     <div class="wrapper-img-hero container--medium padding--lg z-index1 drop--blue">
-        <img src="styles/img/tova-linkedin-portratt.png" 
+        <img src="./styles/img/tova-linkedin-portratt.png" 
              alt="Svartvit bild på Tova som tittar in i kameran" 
              class="img-skew" 
              loading="lazy"/>
@@ -263,6 +263,8 @@ class="section-whoamI">
       </p> 
     </div>
 
+    
+
     <div class="slide__content mySlides">
       <h3 class="heading--alternative text--cursive text--bold text--white">
         Erfaren</h3>
@@ -292,18 +294,30 @@ class="section-whoamI">
               – Partisk pojkvän
             </p>
     </div>
+    <div class="slide__content mySlides">
+     
+      <h3 class="heading--alternative text--cursive text--bold text--white">Driven</h3>
+      <blockquote class="text--xs text--light text--bold">
+        "Tova är mycket kompetent och driven."
+      </blockquote><br>
+      <p class="text--xs text--white text--cursive">
+     – Fredrika, klasskamrat Nackademin<br>
+      </p> 
     </div>
+  </div>
      <article class="words-about-me__img">
       <img class="border-item--third drop--blue" 
       src="/styles/img/publishing-priset-2.png" 
       alt="Svartvit bild på Tova och kollega Louise Gårdemyr som står på scen och tar emot pris." 
       title='Tova tar emot Publishingpriset 2018'>
     </article> 
+
+   
   </div>
 </section>  
 
 <section class="section-cases">
-  <!-- <div class="background--light"> -->
+  
     <div class="container--xlarge padding--s">
      <div class="div-hide">
        <h2 class="text--dark text--bold margin-top--xxsmall praktik">
@@ -318,11 +332,46 @@ class="section-whoamI">
           CASES:</h2><br>
         <p class="text--font-black text--xs text--width70">
           Under min tid på Nackademin så har jag gjort en del projekt och inlämningar. Dessa är studentprojekt, men jag delar gärna med mig av dessa för att demonstrera vad jag hittills har gjort och kan göra. De är såklart work in progress, precis som den här hemsidan är, jag tror i och för sig att programmering alltid kommer att vara work in progress: det gör det hela ännu roligare!
-          Nedan är direkta länkar till olika studentprojekt, för att läsa mer ingående om projektens kravbild, se "Mer om projekten".
         </p>
         </article>
       </div>
-      <div class="wrapper-cases grid--3 margin-top-medium drop--blue padding--m">
+      <section id="gridCasesHomePage" class="wrapper-cases margin-top-medium padding--m">
+
+      </section>
+
+  </div>
+</div>  
+</section>
+
+</main>
+    
+<footer class="footer">
+		<div class="container--xlarge padding--s">
+			<h2>Hör av dig!</h2>
+        <ul>
+          <li>
+            <a href="mailto:tovajertfelt@gmail.com" >tovajertfelt@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tovajertfelt/">Linkedin
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jertfelt">Github</a>
+          </li>
+        </ul>
+		</div>
+    <!--eventuellt byta bakgrundsfärger-->
+</footer>
+<script src="./js/script.js"></script>
+<script src="./js/toggles/slide.js"></script>
+<script src="./js/views/casesHome.js"></script>
+</body>
+</html>
+
+
+      <!-- <div class="wrapper-cases grid--3 margin-top-medium drop--blue padding--m">
         <div class="w-dyn-list" role="list">
           <div class="w-dyn-item" role="listitem">
 
@@ -380,7 +429,7 @@ class="section-whoamI">
         </div>
 
             <!--item 1-->
-              <div class="w-dyn-list" 
+              <!-- <div class="w-dyn-list" 
                role="list">
               <div class="w-dyn-item"     
                role="listitem">
@@ -403,10 +452,10 @@ class="section-whoamI">
               </div>
             </article>
           </div>
-        </div>
+        </div> -->
 
       <!--case no 2-->
-      <div class="w-dyn-list"       
+      <!-- <div class="w-dyn-list"       
             role="list">
             <div class="w-dyn-item" 
             role="listitem">
@@ -429,11 +478,11 @@ class="section-whoamI">
                 </div>
                 </article>
                 </div>
-               </div>
+               </div> -->
 
                <!--PALT-->
               
-            <div class="w-dyn-list"       
+            <!-- <div class="w-dyn-list"       
             role="list">
               <div class="w-dyn-item" 
             role="listitem">
@@ -456,11 +505,11 @@ class="section-whoamI">
                 </div>
                 </article>
                 </div>
-               </div>
+               </div> -->
             
       
        <!--case no 3-->
-                        <div  
+                        <!-- <div  
                         class="w-dyn-list"  
                         role="list">
                           <div class="w-dyn-item" 
@@ -487,10 +536,10 @@ class="section-whoamI">
                                 </div>
                               </article>
                             </div>
-                          </div>
+                          </div> -->
 
       <!--case no 4-->
-      <div class="w-dyn-list" role="list">
+      <!-- <div class="w-dyn-list" role="list">
         <div class="w-dyn-item" role="listitem">
         <article class="case-item border-item--third background--recipes">
           <div class="case-number">
@@ -510,14 +559,10 @@ class="section-whoamI">
             </div>
           </div>
         </div>
-      </div>
-
-    </article>
-
-      
+      </div> --> -->
 
         <!--case no 5-->
-        <div class="w-dyn-list" role="list">
+        <!-- <div class="w-dyn-list" role="list">
           <div class="w-dyn-item" role="listitem">
            
             <article class="case-item border-item--first background--accesibility"> 
@@ -542,10 +587,10 @@ class="section-whoamI">
             </article>
           
           </div>
-        </div>
+        </div> -->
 
         <!--CASES HEMSIDA-->
-        <div class="w-dyn-list" 
+        <!-- <div class="w-dyn-list" 
         role="list">
        <div class="w-dyn-item"     
         role="listitem">
@@ -558,43 +603,13 @@ class="section-whoamI">
          <div class="wrapper-button-case-item">
            <a href="/cases.html" class="text-button w-inline-block">
              <div class="wrapper-button-text">
-               <p class=" text--bold  text-style-button text--white text--xs">se mer</p>
-             </div>  
+               <p class=" text--bold  text-style-button text--white text--xs">se mer</p> -->
+             <!-- </div>  
            </a> 
          </div>
        </div>
      </article>
    </div>
- </div>
-      </div>
-    </div>
-  </div>
-</div>  
-</section>
-
-</main>
-    
-<footer class="footer">
-		<div class="container--xlarge padding--s">
-			<h2>Hör av dig!</h2>
-        <ul>
-          <li>
-            <a href="mailto:tovajertfelt@gmail.com" >tovajertfelt@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/tovajertfelt/">Linkedin
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/jertfelt">Github</a>
-          </li>
-        </ul>
-		</div>
-    <!--eventuellt byta bakgrundsfärger-->
-</footer>
-<script src="script.js"></script>
-<script src="slide.js"></script>
-<script src="casesHome.js"></script>
-</body>
-</html>
+        </div> -->
+      <!-- </div>
+    </div> -->

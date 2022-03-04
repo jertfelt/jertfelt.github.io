@@ -90,78 +90,84 @@
 
 //background to homepage buttons
 .background{
-  &--ecoline{
+  &--grid{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/styles/img/155897432-727bd8eb-6a3a-4ef5-aa41-bbab07381d7d.png);
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
   }
+  // &--ecoline{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/155897432-727bd8eb-6a3a-4ef5-aa41-bbab07381d7d.png);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--palt{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/palt-screenshot.png);
-  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .8);
-  }
+  // &--palt{
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-image: url(/styles/img/palt-screenshot.png);
+  // box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .8);
+  // }
 
-  &--quiz{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/quiz.jpg);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--quiz{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/quiz.jpg);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--recipes{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/html-css-kurs-ex-2.png);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--recipes{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/html-css-kurs-ex-2.png);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--accesibility{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/accessability-tova-jertfelt2021.png);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--accesibility{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/accessability-tova-jertfelt2021.png);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--queue{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/queue-cases.png);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--queue{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/queue-cases.png);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--cases{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/illustration.jpg);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // &--cases{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/illustration.jpg);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
     
-  }
+  // }
 
-  &--drawing{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/draw-a-picture.png);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--drawing{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/draw-a-picture.png);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 
-  &--clownartistinc{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/styles/img/merforsaljning.jpg);
-    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  }
+  // &--clownartistinc{
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-image: url(/styles/img/merforsaljning.jpg);
+  //   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  // }
 }
 
 //quiz buttons

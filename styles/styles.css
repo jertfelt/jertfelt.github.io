@@ -1164,83 +1164,10 @@ h6 {
   background-color: #bee5f5;
 }
 
-.background--ecoline {
+.background--grid {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/styles/img/155897432-727bd8eb-6a3a-4ef5-aa41-bbab07381d7d.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--palt {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/palt-screenshot.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.8);
-}
-
-.background--quiz {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/quiz.jpg);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--recipes {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/html-css-kurs-ex-2.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--accesibility {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/accessability-tova-jertfelt2021.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--queue {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/queue-cases.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--cases {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/illustration.jpg);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--drawing {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/draw-a-picture.png);
-  -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
-}
-
-.background--clownartistinc {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/styles/img/merforsaljning.jpg);
   -webkit-box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
           box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 0.7);
 }
@@ -1816,23 +1743,16 @@ header img {
 
 @media only screen and (min-width: 991px) {
   .cases__article--content {
-
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(2, 2fr);
   }
 }
 
 @media only screen and (min-width: 1070px) {
   .cases__article--content {
-
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(2, 2fr);
   }
-}
-
-.cases__article--content a:hover {
-  color: #f4f4f4;
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 3rem;
 }
 
 .cases__article--column {
@@ -1956,6 +1876,13 @@ header img {
     max-height: 400px;
     max-width: 400px;
   }
+}
+
+.cases__article--right a:hover {
+  color: #f4f4f4;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 3rem;
 }
 
 @media only screen and (min-width: 991px) {
