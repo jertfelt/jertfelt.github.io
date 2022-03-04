@@ -240,26 +240,29 @@
                       <p class="text--xxs ">VG</p>
                       <br>
                       <p class=" text--cursive  text--xxs text--bold">Grafikverktyg</p>
-                      <p class="text--xxs">TBA</p>
+                      <p class="text--xxs">TBA</p> 
+                      <br>
+                      <p class=" text--cursive  text--xxs text--bold">Frontendprojekt</p>
+                      <p class="text--xxs">VG</p>
                       <br>
                       <hr>
                       <br>
 
                       <p class="text--xs">Pågående:</p>
                       <p class="text--xxs">Affärsmannaskap</p>
-                      <p class="text--xxs">Frontend-projekt</p>
+                      <p class="text--xxs">Javascript 2</p>
                   </div>
                 </div>
               </article>
-              <div class="container__flex container--circle">
+              <div class="container__flex container--circle center">
                 <div class="padding--xs">
-                   
                       <canvas id="circle--25" 
                       width="200" 
                       height="200">
                       </canvas>
                       <h3 class="text--light">Nackademin: <br>
-                         26% avklarat</h3>
+                         35% avklarat</h3><br>
+                         <p class="text--light">Fjorton kurser totalt, varav två längre LIA-perioder och fyra javascript-kurser.</p>
                 </div>  
                
               </div>  
@@ -388,57 +391,10 @@
   </div>
   
 </footer>
-
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 <script>
-//circle animation:
-  function animatedCircle(opt) {
-        let context = opt.canvas.getContext("2d");
-        let handle = 0;
-        let current = 0;
-        let percent = 0;
-
-        this.start = function( percentage ) {
-            percent = percentage;
-            // start the interval
-            handle = setInterval( draw, opt.interval );
-        }
-
-        //circle
-        context.arc( opt.width / 2, opt.height / 2, opt.radius, 0, 2 * Math.PI, false );
-        context.lineWidth = opt.linewidth;
-        context.strokeStyle = opt.circlecolor;
-        context.stroke();
-
-       //fill circle
-        function draw() {
-            context.beginPath();
-            context.arc( opt.width / 2, opt.height / 2, opt.radius-(opt.linewidth/2), 0, 2 * Math.PI, false );
-            context.clip();
-         
-            let height = ((100-current)*opt.radius*2)/100 + (opt.height-(opt.radius*2))/2;
-            context.fillStyle = opt.fillcolor;
-            context.fillRect( 0, height, opt.width, opt.radius*2 );
-
-            if ( current < percent ) current+=opt.step;
-            else clearInterval(handle);
-        }
-    }
-    let  canvas = document.getElementById("circle--25");
-    new animatedCircle({
-        'canvas': canvas,
-        'width': canvas.width,
-        'height': canvas.height,
-        'radius': 100,
-        'linewidth': 2,        
-        'interval': 20,
-        'step': 1,
-        'circlecolor': 'rgb(190, 229, 245)',
-        'fillcolor': 'rgb(190, 229, 245)'
-    }).start( 26 );
-
 //modal:
-  let modal = document.getElementById("betyg");
+let modal = document.getElementById("betyg");
   let buttModal = document.getElementById("openBetyg");
   let closeModal = document.getElementById("closeBetyg");
 
@@ -452,6 +408,54 @@
 
   function closeBetyg(){
     modal.style.display ="none"};
+
+  function animatedCircle (opt){
+  let context = opt.canvas.getContext("2d");
+  let handle = 0;
+  let current = 0;
+  let percent = 0;
+
+  this.start = function( percentage ) {
+      percent = percentage;
+      // start the interval
+      handle = setInterval( draw, opt.interval );
+  }
+
+  //circle
+  context.arc( opt.width / 2, opt.height / 2, opt.radius, 0, 2 * Math.PI, false );
+  context.lineWidth = opt.linewidth;
+  context.strokeStyle = opt.circlecolor;
+  context.stroke();
+
+ //fill circle
+  const draw = () => {
+      context.beginPath();
+      context.arc( opt.width / 2, opt.height / 2, opt.radius-(opt.linewidth/2), 0, 2 * Math.PI, false );
+      context.clip();
+   
+      let height = ((100-current)*opt.radius*2)/100 + (opt.height-(opt.radius*2))/2;
+      
+      context.fillStyle = opt.fillcolor;
+      context.fillRect( 0, height, opt.width, opt.radius*2 );
+
+      if ( current < percent ) {current+=opt.step;}
+      else clearInterval(handle);
+  }
+}
+
+let canvas = document.getElementById("circle--25");
+new animatedCircle({
+  'canvas': canvas,
+  'width': canvas.width,
+  'height': canvas.height,
+  'radius': 100,
+  'linewidth': 2,        
+  'interval': 20,
+  'step': 1,
+  'circlecolor': 'rgb(190, 229, 245)',
+  'fillcolor': 'rgb(190, 229, 245)'
+}).start( 26 );
+
 </script>
 
 </body>
