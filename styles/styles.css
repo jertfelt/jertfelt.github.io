@@ -1800,8 +1800,7 @@ header img {
 
 @media only screen and (min-width: 1070px) {
   .cases__article--item {
-    height: 100%;
-    max-height: 1000px;
+    height: 1000px;
     padding: 2rem;
   }
 }
@@ -1817,14 +1816,14 @@ header img {
 
 @media only screen and (min-width: 991px) {
   .cases__article--content {
-    -ms-grid-columns: (2fr)[2];
+
         grid-template-columns: repeat(2, 2fr);
   }
 }
 
 @media only screen and (min-width: 1070px) {
   .cases__article--content {
-    -ms-grid-columns: (2fr)[2];
+
         grid-template-columns: repeat(2, 2fr);
   }
 }
