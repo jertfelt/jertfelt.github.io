@@ -89,7 +89,7 @@
         }
       },
       "description":{
-        "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttens och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
+        "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttons och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
         "subject":"Vanilla JS",
         "tag":" #javascript #css #dynamisk HTML #html"
       },
@@ -108,6 +108,36 @@
             }
         }
     },
+    {"system": {
+      "id": "case11"
+    },
+    "headings":{
+      "title": "Starwars API",
+      "subtitle": "Skoluppgift"
+    },
+    "sources":{
+      "link": "https://jertfelt.github.io/starwars-api/",
+      "image": {"url" : "./styles/img/starwars.jpg"},
+      "imagealt" : "Bild på hur interfacet ser ut",
+      "githublinks": {
+        "github": "https://github.com/jertfelt/starwars-api"
+      }
+    },
+    "description":{
+      "text": "Beskrivning: Du ska med hjälp av ett API skapa en applikation där användaren kan jämföra en Star Wars-karaktär med andra karaktärer och deras egenskaper! Här har jag jobbat med fetch, async, classes och lite setTimeOut.",
+      "subject":"Vanilla JS",
+      "tag":" #API #fetch #classes #async #javascript #css #dynamisk HTML #html"
+    },
+    "extra":{
+      "extraimages": {
+        "file01":
+          {"url" : "./styles/img/starwars--2.png",
+            "alt" : "Another pic",
+            "id": "002",
+            "buttonid": 3039}
+          }
+      }
+  },
     {
       "system": {
         "id": "case04"
