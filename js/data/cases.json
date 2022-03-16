@@ -117,7 +117,7 @@
     },
     "sources":{
       "link": "https://jertfelt.github.io/starwars-api/",
-      "image": {"url" : "./styles/img/starwars.jpg"},
+      "image": {"url" : "./styles/img/starwars.png"},
       "imagealt" : "Bild på hur interfacet ser ut",
       "githublinks": {
         "github": "https://github.com/jertfelt/starwars-api"
