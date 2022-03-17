@@ -265,7 +265,7 @@
                       height="200">
                       </canvas>
                       <h3 class="text--light">Nackademin: <br>
-                         35% avklarat</h3><br>
+                         43% avklarat</h3><br>
                          <p class="text--light">Fjorton kurser totalt, varav två längre LIA-perioder och fyra javascript-kurser.</p>
                 </div>  
                
@@ -399,14 +399,68 @@
 <script src="./js/script.js"></script>
 <script>
 //modal:
+let allGrades = [];
+let doneGrades = [];
+let wipGrades = [];
+let upcomingGrades = [];
+
+async function getGrades(){
+  let response = await fetch("./js/data/grades.json");
+  let data = await response.json();
+  let grades = data.grades;
+  
+  grades.forEach((item) => {
+  allGrades.push(item);
+  if (item.status === "Done"){
+    doneGrades.push(item);
+  }
+  else if (item.status === "Pågående"){
+    wipGrades.push(item);
+  }
+  else {
+    upcomingGrades.push(item);
+  }
+  })
+  return data;
+}
+getGrades();
+
+
 let modal = document.getElementById("betyg");
   let buttModal = document.getElementById("openBetyg");
   let closeModal = document.getElementById("closeBetyg");
 
   buttModal.addEventListener("click",showBetyg);
 
-  function showBetyg(){
+  let betygCont = document.querySelector(".betyg--content");
+ 
+
+  // function getGradesAll() {
+
+  //   getGrades();
+  //   console.log(allGrades);
+  //   console.log(doneGrades);
+  //   let option = ""; 
+  //   doneGrades.forEach((grade) => {
+  //     option +=  `<p class="text--xxs text--bold">
+  //       ${grade.subject}</p>
+  //     <p class="text--xxs">${grade.grade}</p>`
+  //   }
+  //   )
+  //   let wip = "";
+  //   wipGrades.forEach((grade) => {
+  //     wip +=`<p class="text--xxs text--bold">
+  //       ${grade.subject}</p>
+  //     <p class="text--xxs">${grade.grade}</p>`
+  //   })
+  //   betygCont.innerHTML = option + wip;
+  // }
+  
+  // getGradesAll();
+  function showBetyg(e){
+    prevent.default(e)
     modal.style.display ="block";
+    // getGradesAll();
   }
 
   closeModal.addEventListener("click", closeBetyg);
@@ -449,6 +503,7 @@ let modal = document.getElementById("betyg");
 }
 
 let canvas = document.getElementById("circle--25");
+
 new animatedCircle({
   'canvas': canvas,
   'width': canvas.width,

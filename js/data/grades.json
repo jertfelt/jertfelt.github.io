@@ -1,0 +1,88 @@
+{
+  "grades":[
+    {
+      "id": "grade01",
+      "subject": "JavaScript 1",
+      "grade": "VG",
+      "status": "Done"
+    },
+    {
+      "id": "grade02",
+      "subject": "JavaScript 2",
+      "grade": "TBA",
+      "status": "Done"
+    },
+    {
+      "id": "grade03",
+      "subject": "Frontendprojekt",
+      "grade": "VG",
+      "status": "Done"
+    },
+    {
+      "id": "grade04",
+      "subject": "Frontend-utveckling, introduktion och projektmetodik",
+      "grade": "VG",
+      "status": "Done"
+    },
+    {
+      "id": "grade05",
+      "subject": "HTML & CSS",
+      "grade": "VG",
+      "status": "Done"
+    },
+    {
+      "id": "grade06",
+      "subject": "Grafikverktyg",
+      "grade": "G",
+      "status": "Done"
+    },
+    {
+      "id": "grade07",
+      "subject": "Affärsmannaskap",
+      "grade": "TBA",
+      "status": "Pågående"
+    },
+    {
+      "id": "grade08",
+      "subject": "Interaktion med CMS",
+      "grade": "TBA",
+      "status": "Pågående"
+    },
+    {
+      "id": "grade09",
+      "subject": "JS som backend-språk",
+      "grade": "TBA",
+      "status": "Upcoming"
+    },
+    {
+      "id": "grade10",
+      "subject": "Javascript 3",
+      "grade": "TBA",
+      "status": "Upcoming"
+    },
+    {
+      "id": "grade11",
+      "subject": "Javascript 4",
+      "grade": "TBA",
+      "status": "Upcoming"
+    },
+    {
+      "id": "grade12",
+      "subject": "LIA 1",
+      "grade": "TBA",
+      "status": "Upcoming"
+    },
+    {
+      "id": "grade13",
+      "subject": "LIA 2",
+      "grade": "TBA",
+      "status": "Upcoming"
+    },
+    {
+      "id": "grade14",
+      "subject": "Examensarbete",
+      "grade": "TBA",
+      "status": "Upcoming"
+    }
+  ]
+}

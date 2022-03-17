@@ -1743,14 +1743,14 @@ header img {
 
 @media only screen and (min-width: 991px) {
   .cases__article--content {
-    -ms-grid-columns: (2fr);
+    -ms-grid-columns: (2fr)[2];
         grid-template-columns: repeat(2, 2fr);
   }
 }
 
 @media only screen and (min-width: 1070px) {
   .cases__article--content {
-    -ms-grid-columns: (2fr);
+    -ms-grid-columns: (2fr)[2];
         grid-template-columns: repeat(2, 2fr);
   }
 }
@@ -2301,7 +2301,7 @@ header img {
   background-color: #483d8b;
   position: relative;
   z-index: 1;
-  padding-bottom: 3rem;
+  padding: 7rem;
 }
 
 .cv__education:before, .cv__education:after {
