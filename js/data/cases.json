@@ -161,7 +161,7 @@
       "extraimages": {
        
         "file01":
-          {"url" : "./styles/img/bookcicks--profile.png",
+          {"url" : "./styles/img/bookducks--profile.png",
             "alt" : "Profilsida Bookducks",
             "id": "1",
             "buttonid": 903},
