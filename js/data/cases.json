@@ -137,6 +137,42 @@
             "buttonid": 3039}
           }
       }
+  },  {
+    "system": {
+      "id": "case09"
+    },
+    "headings":{
+      "title": "Bookducks",
+      "subtitle": "Interaktion med CMS"
+    },
+    "sources":{
+      "link": "https://github.com/jertfelt/bookducks/",
+      "image": {"url" : "./styles/img/bookducks--homepage.png"},
+      "imagealt" : "Printscreen från bookducks, visar homepage. ",
+      "githublinks" : "https://github.com/jertfelt/bookducks/"
+    },
+    "description":{
+      "text": "Du har fått i uppdrag att ta fram en applikation för ett community vid namn BookDucks som lånar/utbyter böcker och ljudböcker på CD med varandra.",
+      "subject":"CMS",
+      "tag":" #cms #strapi #axios #api"
+    },
+    "extra":{
+      "extraid": "imgxtra",
+      "extraimages": {
+       
+        "file01":
+          {"url" : "./styles/img/bookcicks--profile.png",
+            "alt" : "Profilsida Bookducks",
+            "id": "1",
+            "buttonid": 903},
+      
+        "file02":
+          {"url" : "./styles/img/bookducks.png",
+            "alt" : "Bookducks login",
+            "id": "2",
+            "buttonid": 922}
+      }
+    }
   },
     {
       "system": {
@@ -316,43 +352,7 @@
               "buttonid": 222}
         }
       }
-    },
-    {
-      "system": {
-        "id": "case09"
-      },
-      "headings":{
-        "title": "Bookducks",
-        "subtitle": "Interaktion med CMS"
-      },
-      "sources":{
-        "link": "https://github.com/jertfelt/bookducks/",
-        "image": {"url" : "./styles/img/bookducks--homepage.png"},
-        "imagealt" : "Printscreen från bookducks, visar homepage. ",
-        "githublinks" : "https://github.com/jertfelt/bookducks/"
-      },
-      "description":{
-        "text": "Du har fått i uppdrag att ta fram en applikation för ett community vid namn BookDucks som lånar/utbyter böcker och ljudböcker på CD med varandra.",
-        "subject":"CMS",
-        "tag":" #cms #strapi #axios #api"
-      },
-      "extra":{
-        "extraid": "imgxtra",
-        "extraimages": {
-         
-          "file01":
-            {"url" : "./styles/img/bookcicks--profile.png",
-              "alt" : "Profilsida Bookducks",
-              "id": "1",
-              "buttonid": 903},
-        
-          "file02":
-            {"url" : "./styles/img/bookducks.png",
-              "alt" : "Bookducks login",
-              "id": "2",
-              "buttonid": 922}
-        }
-      }
     }
+  
   ]
 }
