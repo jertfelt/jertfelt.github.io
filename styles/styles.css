@@ -1707,7 +1707,6 @@ header img {
 }
 
 .cases__article--item {
-  background-color: #483d8b;
   padding: 1rem;
   border-radius: 29px;
   display: -webkit-box;
@@ -1717,9 +1716,9 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1727,7 +1726,7 @@ header img {
 
 @media only screen and (min-width: 1070px) {
   .cases__article--item {
-    height: 1000px;
+    height: 800px;
     padding: 2rem;
   }
 }
