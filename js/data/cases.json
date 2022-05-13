@@ -36,6 +36,41 @@
         }
       }
     },
+    {"system": {
+      "id": "case019"
+    },
+    "headings":{
+      "title": "Fyrishovs Bowling",
+      "subtitle": "Övningsuppgift med node.js"
+    },
+    "sources":{
+      "link": "https://github.com/jertfelt/nodejs-bowling",
+      "image": {"url" : "./styles/img/node-bowling.png"},
+      "imagealt": "En bild på en bowlingsidas medlemmar",
+      "githublinks": {
+        "github": "https://github.com/jertfelt/nodejs-bowling"
+      }
+    },
+    "description":{
+      "text": "Beskrivning: Uppgiften var att via node.js, mongoDB och med Express jobba med att skapa, rendera och uppdatera databaser. Jag valde att även jobba med mongoose.",
+      "subject":"Node.js",
+      "tag":"#backend #mongoDB #databas #frontend #nodejs"
+    },
+    "extra":{
+      "extraimages": {
+        "file01":
+          {"url" : "./styles/img/node-bowling-single.png",
+          "alt" : "Ensam användare",
+          "id": "13",
+          "buttonid": 1230},
+        "file02":
+          {"url" : "./styles/img/node-bowling-form.png",
+          "alt" : "Formulär för att skapa ny användare",
+          "id": "23",
+          "buttonid": 13330}
+      }
+    }
+  },
     {
       "system": {
         "id": "case02"
@@ -72,48 +107,12 @@
         }
       }
     },
-    {
-      "system": {
-        "id": "case03"
-      },
-      "headings":{
-        "title": "Quiz",
-        "subtitle": "Uppgift i Vanilla JS"
-      },
-      "sources":{
-        "link": "https://jertfelt.github.io/quiz.html",
-        "image": {"url" : "./styles/img/quiz.jpg"},
-        "imagealt" : "Bild från filmen 'Who framed Rober Rabbit?'",
-        "githublinks": {
-          "github": "https://github.com/jertfelt/quiz-javascript-course"
-        }
-      },
-      "description":{
-        "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttons och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
-        "subject":"Vanilla JS",
-        "tag":" #javascript #css #dynamisk HTML #html"
-      },
-      "extra":{
-        "extraimages": {
-          "file01":
-            {"url" : "./styles/img/disney-home.png",
-              "alt" : "Home",
-              "id": "1",
-              "buttonid": 999},
-          "file02":
-            {"url" : "./styles/img/disney-bonus.png",
-              "alt" : "Background changed",
-              "id": "2",
-              "buttonid": 342}
-            }
-        }
-    },
     {"system": {
       "id": "case11"
     },
     "headings":{
       "title": "Starwars API",
-      "subtitle": "Skoluppgift"
+      "subtitle": "Skoluppgift med API:er"
     },
     "sources":{
       "link": "https://jertfelt.github.io/starwars-api/",
@@ -245,6 +244,42 @@
               "buttonid": 2039}
         }
       }
+    },
+    {
+      "system": {
+        "id": "case03"
+      },
+      "headings":{
+        "title": "Quiz",
+        "subtitle": "Uppgift i Vanilla JS"
+      },
+      "sources":{
+        "link": "https://jertfelt.github.io/quiz.html",
+        "image": {"url" : "./styles/img/quiz.jpg"},
+        "imagealt" : "Bild från filmen 'Who framed Rober Rabbit?'",
+        "githublinks": {
+          "github": "https://github.com/jertfelt/quiz-javascript-course"
+        }
+      },
+      "description":{
+        "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttons och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
+        "subject":"Vanilla JS",
+        "tag":" #javascript #css #dynamisk HTML #html"
+      },
+      "extra":{
+        "extraimages": {
+          "file01":
+            {"url" : "./styles/img/disney-home.png",
+              "alt" : "Home",
+              "id": "1",
+              "buttonid": 999},
+          "file02":
+            {"url" : "./styles/img/disney-bonus.png",
+              "alt" : "Background changed",
+              "id": "2",
+              "buttonid": 342}
+            }
+        }
     },
     {
       "system": {

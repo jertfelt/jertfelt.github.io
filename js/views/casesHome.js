@@ -25,8 +25,6 @@ const drawHomeCases = (casesInfo) => {
     articleItem.classList.add("background--grid");
     articleItem.style.backgroundImage=`url(${item.extra.extraimages.file01.url})`
 
-    
-
     listItem.appendChild(articleItem);
 
     articleItem.innerHTML=`
