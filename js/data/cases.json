@@ -245,6 +245,41 @@
         }
       }
     },
+    {"system": {
+      "id": "case020"
+    },
+    "headings":{
+      "title": "Ekobanken",
+      "subtitle": "Studentuppgift: fullstack"
+    },
+    "sources":{
+      "link": "https://github.com/jertfelt/bankingapp-restAPI-node-mongodb",
+      "image": {"url" : "https://user-images.githubusercontent.com/30622818/169498416-483efdfd-aa48-4d0d-a939-aefddfb1731d.png"},
+      "imagealt": "Kod med Ekobankens app",
+      "githublinks": {
+        "github": "https://github.com/jertfelt/bankingapp-restAPI-node-mongodb"
+      }
+    },
+    "description":{
+      "text": "Beskrivning: Vi ska skapa en säker bank med REST-API, med databas i mongoDB där frontenden kommunicerar med JSON. Utöver detta kunde vi jobba med kryptering och cookies. Designen är rakt av snodd från ekobanken.se",
+      "subject":"Fullstack",
+      "tag":"#mongodb #kryptering #auth #fullstack #backend #nodejs #ejs #fetch #REST #API #cookies"
+    },
+    "extra":{
+      "extraimages": {
+        "file01":
+          {"url" : "./styles/img/ekobanken--loggedin.png",
+          "alt" : "Ensam användare",
+          "id": "13",
+          "buttonid": 1333330},
+        "file02":
+          {"url" : "./styles/img/ekobanken--konto2.png",
+          "alt" : "Formulär för att skapa ny användare",
+          "id": "23",
+          "buttonid": 12223330}
+      }
+    }
+  },
     {
       "system": {
         "id": "case03"
