@@ -45,14 +45,14 @@
     {
       "id": "grade08",
       "subject": "Interaktion med CMS",
-      "grade": "TBA",
-      "status": "Pågående"
+      "grade": "VG",
+      "status": "Done"
     },
     {
       "id": "grade09",
       "subject": "JS som backend-språk",
       "grade": "TBA",
-      "status": "Upcoming"
+      "status": "Done"
     },
     {
       "id": "grade10",
