@@ -6,7 +6,7 @@
       },
       "headings":{
         "title": "Clown Artists Inc",
-        "subtitle": "En fiktiv webbshop gjord med javascript"
+        "subtitle": "Fiktiv webbshop"
       },
       "sources":{
         "link": "https://jertfelt.github.io/Webshop-clownartists/",
@@ -17,19 +17,19 @@
         }
       },
       "description":{
-        "text": "Beskrivning: Jag har med hjälp av javascript dels kodat en dynamisk webbshop, som sparar din kundkorg i browserns lokala storage, samt en gör din egen meme-funktion, även denna i javascript.",
+        "text": "Jag har dels kodat en dynamisk webbshop, som sparar din kundkorg i browserns lokala storage, samt en gör din egen meme-funktion, även denna i javascript. Grafiken är gjord under en grafikverktygkurs, jag har designat bl.a. logotyp och produktbilder samt varit art director.",
         "subject":"Eget projekt",
-        "tag":"#javascript #localstorage #css"
+        "tag":"#javascript #localstorage #css #vanillaJS"
       },
       "extra":{
         "extraimages": {
           "file01":
-            {"url" : "./styles/img/clown-herocart.png",
+            {"url" : "./styles/img/clownartists-meme.png",
             "alt" : "Hero",
             "id": "1",
             "buttonid": 100},
           "file02":
-            {"url" : "./styles/img/clownartists-meme.png",
+            {"url" : "./styles/img/clown-herocart.png",
             "alt" : "Memegenerator",
             "id": "2",
             "buttonid": 120}
@@ -41,7 +41,7 @@
     },
     "headings":{
       "title": "Fyrishovs Bowling",
-      "subtitle": "Övningsuppgift med node.js"
+      "subtitle": "Node.js"
     },
     "sources":{
       "link": "https://github.com/jertfelt/nodejs-bowling",
@@ -52,9 +52,9 @@
       }
     },
     "description":{
-      "text": "Beskrivning: Uppgiften var att via node.js, mongoDB och med Express jobba med att skapa, rendera och uppdatera databaser. Jag valde att även jobba med mongoose.",
-      "subject":"Node.js",
-      "tag":"#backend #mongoDB #databas #frontend #nodejs"
+      "text": "Med node.js, mongoDB, mongoose, och express view engine har jag skapat, renderat och gett möjlighet att uppdatera en hemsidas enkla dagabas.",
+      "subject":"Skoluppgift",
+      "tag":"#backend #mongoDB #databas #frontend #nodejs #express #ejs #views #fullstack"
     },
     "extra":{
       "extraimages": {
@@ -77,7 +77,7 @@
       },
       "headings":{
         "title": "Ekoline webbshop",
-        "subtitle": "Grupparbete med querystrings, JSON, localStorage"
+        "subtitle": "Querystrings, JSON, localStorage"
       },
       "sources":{
         "link": "https://jertfelt.github.io/webshop/",
@@ -88,9 +88,9 @@
         }
       },
       "description":{
-        "text": "Beskrivning: Vår grupp hade två veckor på sig att skapa en webbutik med hjälp av localstorage och querystrings. I projektet har vi använt oss av agil projektmetod (kanban och scrum). Jag lajvade tech lead och designer.",
-        "subject":"Frontendprojekt",
-        "tag":"#javascript #html #css #sass #localstorage #json #querystrings #routing"
+        "text": "Vår grupp hade två veckor på sig att skapa en webbutik med hjälp av localstorage och querystrings. I projektet har vi använt oss av agil projektmetod (kanban och scrum). Jag lajvade tech lead och designer. Vi jobbade också med routing i vår html-fil, tack vare querystrings.",
+        "subject":"Grupparbete",
+        "tag":"#javascript #html #css #sass #localstorage #json #querystrings #routing #techlead #artdirection #html"
       },
       "extra":{
         "extraimages": {
@@ -112,7 +112,7 @@
     },
     "headings":{
       "title": "Starwars API",
-      "subtitle": "Skoluppgift med API:er"
+      "subtitle": "Hämta API:er"
     },
     "sources":{
       "link": "https://jertfelt.github.io/starwars-api/",
@@ -123,8 +123,8 @@
       }
     },
     "description":{
-      "text": "Beskrivning: Du ska med hjälp av ett API skapa en applikation där användaren kan jämföra en Star Wars-karaktär med andra karaktärer och deras egenskaper! Här har jag jobbat med fetch, async, classes och lite setTimeOut.",
-      "subject":"Vanilla JS",
+      "text": "Uppgiften var att med hjälp av ett API skapa en applikation där användaren kan jämföra Star-warskaraktärer med varandra. Här har jag jobbat med fetch, async, classes och lite setTimeOut.",
+      "subject":"Skoluppgift",
       "tag":" #API #fetch #classes #async #javascript #css #dynamisk HTML #html"
     },
     "extra":{
@@ -151,9 +151,9 @@
       "githublinks" : "https://github.com/jertfelt/bookducks/"
     },
     "description":{
-      "text": "Du har fått i uppdrag att ta fram en applikation för ett community vid namn BookDucks som lånar/utbyter böcker och ljudböcker på CD med varandra.",
-      "subject":"CMS",
-      "tag":" #cms #strapi #axios #api"
+      "text": "Jag skulle ta fram en applikation för ett community som lånar/byter böcker och ljudböcker. Uppgiften var att skapa en frontend som kan kommunicera med en databas jag skapat i CMS-systemet Strapi. Under projektets gång testade jag även React.js",
+      "subject":"Skoluppgift",
+      "tag":" #cms #strapi #axios #api #async "
     },
     "extra":{
       "extraid": "imgxtra",
@@ -190,9 +190,9 @@
         }
       },
       "description":{
-        "text": "Beskrivning: Vår uppgift var att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val. Webbplatsen ska bestå av minst följande fyra undersidor - Startsida, Om oss, Cases och Kontakt. Vi började med att ta fram en mockup på webbplatsen som vi förhöll oss till när vi kodade.",
+        "text": " Vår uppgift var att skapa en webbplats för ett påhittat företag. Webbplatsen ska bestå av minst följande fyra undersidor - Startsida, Om oss, Cases och Kontakt. Vi började med att ta fram en mockup på webbplatsen som vi förhöll oss till när vi kodade.",
         "subject":"CSS/SASS",
-        "tag":" #html #css #sass "
+        "tag":" #html #css #sass #mockup"
       },
       "extra":{
         "extraimages": {
@@ -215,7 +215,7 @@
       },
       "headings":{
         "title": "Rita en bild",
-        "subtitle": "Eget projekt i javascript"
+        "subtitle": "Eget projekt"
       },
       "sources":{
         "link": "https://jertfelt.github.io/drawingboard.html",
@@ -226,7 +226,7 @@
         }
       },
       "description":{
-        "text": "Beskrivning: jag har med hjälp av javascript kodat så att besökare kan rita en bild och spara ner. Kommer att utöka denna med en gallerifunktion och lite mer funktioner allt eftersom.",
+        "text": "Jag har med hjälp av javascript kodat så att besökare kan rita en bild och spara ner. Kommer att utöka denna med en gallerifunktion och lite mer funktioner allt eftersom.",
         "subject":"Javascript",
         "tag":" #javascript #mouseevent #mousetouch #localstorage"
       },
@@ -250,7 +250,7 @@
     },
     "headings":{
       "title": "Ekobanken",
-      "subtitle": "Studentuppgift: fullstack"
+      "subtitle": "Fullstack"
     },
     "sources":{
       "link": "https://github.com/jertfelt/bankingapp-restAPI-node-mongodb",
@@ -261,8 +261,8 @@
       }
     },
     "description":{
-      "text": "Beskrivning: Vi ska skapa en säker bank med REST-API, med databas i mongoDB där frontenden kommunicerar med JSON. Utöver detta kunde vi jobba med kryptering och cookies. Designen är rakt av snodd från ekobanken.se",
-      "subject":"Fullstack",
+      "text": "Jag skulle skapa en säker bank med REST-API, med databas i mongoDB där frontenden kommunicerar med JSON. Utöver detta kunde vi jobba med kryptering och cookies. Designen är rakt av snodd från ekobanken.se",
+      "subject":"Skoluppgift",
       "tag":"#mongodb #kryptering #auth #fullstack #backend #nodejs #ejs #fetch #REST #API #cookies"
     },
     "extra":{
@@ -298,7 +298,7 @@
       },
       "description":{
         "text": "Beskrivning: Du har fått i uppgift att skapa ett quiz med 10 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel. här ska man också jobba med radiobuttons och checkbuttons. Jag valde också att jobba med att få ut en del av frågorna med javascript istället för med HTML.",
-        "subject":"Vanilla JS",
+        "subject":"Skoluppgift",
         "tag":" #javascript #css #dynamisk HTML #html"
       },
       "extra":{
@@ -322,7 +322,7 @@
       },
       "headings":{
         "title": "Kösystemet",
-        "subtitle": "Nybörjarprojekt i javascript"
+        "subtitle": "Skoluppgift"
       },
       "sources":{
         "link": "https://jertfelt.github.io/queue-system.html",
@@ -358,7 +358,7 @@
       },
       "headings":{
         "title": "Tre recept",
-        "subtitle": "Nybörjarprojekt i CSS"
+        "subtitle": "Skoluppgift"
       },
       "sources":{
         "link": "https://jertfelt.github.io/css-recipe-nackademin/",
@@ -368,7 +368,7 @@
       },
       "description":{
         "text": "Beskrivning: Din uppgift är att skapa en receptsida innehållandes tre recept på för olika maträtter. Använd minst två olika typsnitt på sidan. Använd minst två bakgrundsfärger/bakgrundsbilder. Sidan ska använda sig utav semantiska HTML-taggar.",
-        "subject":"CSS",
+        "subject":"Skoluppgift",
         "tag":" #css"
       },
       "extra":{
@@ -392,7 +392,7 @@
       },
       "headings":{
         "title": "Tillgänglighet",
-        "subtitle": "Nybörjarprojekt i CSS"
+        "subtitle": "Skoluppgift"
       },
       "sources":{
         "link": "https://jertfelt.github.io/accessibility-css/",
@@ -402,7 +402,7 @@
       },
       "description":{
         "text": "Beskrivning: Din uppgift är att skapa en informationssida om tillgänglighet. Använd er utav bilder, text och/eller illustrationer för att uppnå detta. Hemsidan ska också vara tillgänglig och testad för detta. ",
-        "subject":"CSS",
+        "subject":"Skoluppgift",
         "tag":" #css #tillgänglighet #html"
       },
       "extra":{
