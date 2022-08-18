@@ -136,7 +136,41 @@
             "buttonid": 3039}
           }
       }
-  },  {
+  }, {
+    "system": {
+      "id": "case0992"
+    },
+    "headings":{
+      "title": "Portfolio",
+      "subtitle": "tovajertfelt.se"
+    },
+    "sources":{
+      "link": "https://www.tovajertfelt.se",
+      "image": {"url" : "./styles/img/portfolio.jpg"},
+      "imagealt" : "Bild från portföljen",
+      "githublinks" : "https://github.com/jertfelt/Portfolio"
+    },
+    "description":{
+      "text": " Jag kodade om min gamla portföljsida för min konst, illustration och design. I projektet jobbar jag med json, domäner, men mestadels är det en statisk hemsida som presenterar mina tidigare arbeten.",
+      "subject":"Eget arbete",
+      "tag":" #dns #javascript #githubpages #json #portfolio #css"
+    },
+    "extra":{
+      "extraimages": {
+        "file01":
+          {"url" : "./styles/img/portfolio.jpg",
+            "alt" : "Portfolio",
+            "id": "12",
+            "buttonid": 1982225},
+        "file02":
+          {"url" : "./styles/img/portfolio.jpg",
+            "alt" : "Portfolio",
+            "id": "3",
+            "buttonid": 222323204}
+      }
+    }
+  },
+   {
     "system": {
       "id": "case09"
     },

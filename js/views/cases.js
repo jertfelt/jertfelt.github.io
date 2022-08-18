@@ -59,7 +59,7 @@ const drawCases = (casesInfo) => {
   ${item.description.text}
   </p>
   <br>
-  <a href="${item.sources.githublinks.github}"
+  <a href="${item.sources.githublinks}"
   target="_blank"
   class="text--light text--xs text--center text--bold link--margin">
   <button class="button--square">

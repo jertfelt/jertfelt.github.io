@@ -9,6 +9,9 @@ document.getElementById("closeDidYouKnow").addEventListener("click", () => {
 })
 
 
+ 
+
+
 
 function showBetyg(){
   if (modalDYK.classList.contains("hidden") === true ){
