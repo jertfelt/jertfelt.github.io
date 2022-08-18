@@ -151,9 +151,9 @@
       "githublinks" : "https://github.com/jertfelt/Portfolio"
     },
     "description":{
-      "text": " Jag kodade om min gamla portföljsida för min konst, illustration och design. I projektet jobbar jag med json, domäner, men mestadels är det en statisk hemsida som presenterar mina tidigare arbeten.",
+      "text": " Jag kodade om min gamla portföljsida för min konst, illustration och design. I projektet jobbar jag med json, domäner, men mestadels är det en statisk hemsida som presenterar mina tidigare arbeten. Har även jobbat här med routing.",
       "subject":"Eget arbete",
-      "tag":" #dns #javascript #githubpages #json #portfolio #css"
+      "tag":" #routing #querystring #dns #javascript #githubpages #json #portfolio #css"
     },
     "extra":{
       "extraimages": {
