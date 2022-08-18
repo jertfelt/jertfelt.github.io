@@ -14,3 +14,43 @@ a {
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.disclaimer{
+  &__container{
+    position: fixed;
+    top: 330px;
+    right:0;
+    width:20%;
+    height:15%;
+    transition: all 0.3s linear;
+    background-color: $color--primary--dark;
+    color: $color--white;
+    opacity: 90%;
+  }
+  &__transparentBack{
+    visibility: visible;
+  }
+  &__content{
+    width:20%;
+    position: fixed;
+    top: 350px;
+    right: 0;
+    height:15%;
+    background: $color--white;
+    color: $color--primary--dark;
+    padding:1.5rem;
+    transition: all 0.3s linear;
+    a{
+      font-weight: bold;
+      color:$color--primary--blue;
+      text-decoration: none;
+    }
+  }
+  &__show{
+    transform: translateX(0);
+  }
+  &--close{
+    cursor:pointer;
+    height:30px;
+  }
+}
