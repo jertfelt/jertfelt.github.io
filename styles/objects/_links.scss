@@ -15,8 +15,11 @@ a {
   justify-content: space-between;
 }
 
+
+//OBS: nedan måste göras mobilvänlig också
 .disclaimer{
   &__container{
+    
     position: fixed;
     top: 330px;
     right:0;
