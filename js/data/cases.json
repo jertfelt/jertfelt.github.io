@@ -145,7 +145,7 @@
       "subtitle": "tovajertfelt.se"
     },
     "sources":{
-      "link": "https://www.tovajertfelt.se",
+      "link": "https://www.tovajertfelt.com",
       "image": {"url" : "./styles/img/portfolio.jpg"},
       "imagealt" : "Bild från portföljen",
       "githublinks" : "https://github.com/jertfelt/Portfolio"
