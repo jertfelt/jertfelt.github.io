@@ -254,10 +254,7 @@
       "sources":{
         "link": "https://jertfelt.github.io/drawingboard.html",
         "image": {"url" : "./styles/img/draw-a-picture.png"},
-        "imagealt" : "Printscreen från PALT: visar tre rosa ikoner",
-        "githublinks": {
-          "github": "https://github.com/jertfelt/jertfelt.github.io/blob/main/drawingboard.js"
-        }
+        "imagealt" : "Drawing board"
       },
       "description":{
         "text": "Jag har med hjälp av javascript kodat så att besökare kan rita en bild och spara ner. Kommer att utöka denna med en gallerifunktion och lite mer funktioner allt eftersom.",
