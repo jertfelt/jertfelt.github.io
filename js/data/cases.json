@@ -15,7 +15,7 @@
         "githublinks" : "https://github.com/jertfelt/e-wallet"
       },
       "description":{
-        "text": "Studentarbete där vi skulle jobba med redux och react.  Jag skapade en SPA-applikation där användaren kan hantera olika betalkort. Användaren ska kunna ha upp till max 4 kort, och måste alltid minst ha ett kort i sin e-wallet. Användarens namn skulle i sin tur hämtas från ett externt API, och vara med på alla kort. Jag försökte också jobba med localstorage, på eget iniativ, så man kunde göra en refresh på hemsidan och behålla username och kort.",
+        "text": "Studentarbete där vi skulle jobba med redux och react.  Jag skapade en SPA-applikation där användaren kan hantera olika betalkort.  Användarens namn skulle i sin tur hämtas från ett externt API, och vara med på alla kort. Jag försökte också jobba med localstorage, på eget iniativ, så man kunde göra en refresh på hemsidan och behålla username och kort.",
         "subject":"Studentarbete",
         "tag":" #react #redux #destructure #localstorage #react-router #lifecyclehooks #api #axios #state #css"
       },
@@ -49,7 +49,7 @@
         "githublinks" : "https://github.com/jertfelt/react-forum-js3"
       },
       "description":{
-        "text": "Din uppgift är att skapa ett forum som innehåller inlägg och kommentarer. Alla dessa ska hämtas från två olika API-endpoints. I det här projektet experimenterar jag ännu mer med map, filter och routers.Jag har även, utöver uppgifterna, labbat med att filtrera materialet. Samt försökt få den fetchade listan att hamna in en Infinite Scroller. Jag lärde mig att jag kunde göra en egen hook - useFetch - och har använt den för att slippa upprepa kod. Jag har också tittat på hur jag kan konvertera userId till namn - tex 1 till Håkan, och har testat lite olika varianter. ",
+        "text": "Din uppgift är att skapa ett forum som innehåller inlägg och kommentarer. Alla dessa ska hämtas från två olika API-endpoints.  Jag har även, utöver uppgifterna, labbat med att filtrera materialet.  Jag lärde mig att jag kunde göra en egen hook - useFetch - och har använt den för att slippa upprepa kod. ",
         "subject":"Eget arbete",
         "tag":" #react #css #state #hooks #website #filter #arraymap #react-router-dom #react-link #useFetch"
       },
