@@ -2,7 +2,7 @@
   "cases": [
     {
       "system": {
-        "id": "case022"
+        "id": "case02233"
       },
       "headings":{
         "title": "E-wallet",
@@ -56,7 +56,7 @@
       "extra":{
         "extraimages": {
           "file01":
-            {"url" : "./styles/img/react-forum",
+            {"url" : "./styles/img/react-forum.png",
               "alt" : "React Forum",
               "id": "aaaa3312",
               "buttonid": 19823232225},
